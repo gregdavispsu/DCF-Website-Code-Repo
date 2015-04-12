@@ -1,0 +1,333 @@
+<?php include("inc-library.php");
+redirectToHTTPS(); ?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Delaware Community Foundation | Make A Donation</title>
+
+<link href="styles.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+</head>
+
+<body onload="MM_preloadImages('button_login2.gif','button_donation2.gif','button_catalogue2.gif')">
+<script type="text/javascript">
+
+/***********************************************
+* Ultimate Fade-In Slideshow (v1.51): © Dynamic Drive (http://www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit http://www.dynamicdrive.com/ for this script and 100s more.
+***********************************************/
+
+var fadeimages=new Array()
+//SET IMAGE PATHS. Extend or contract array as needed
+fadeimages[0]=["home1.jpg", "", ""] //plain image syntax
+fadeimages[1]=["home2.jpg", "", ""] //plain image syntax
+fadeimages[2]=["home3.jpg", "", ""] //plain image syntax
+fadeimages[3]=["home4.jpg", "", ""] //plain image syntax
+fadeimages[4]=["home5.jpg", "", ""] //plain image syntax
+fadeimages[5]=["home6.jpg", "", ""] //plain image syntax
+
+var fadebgcolor="white"
+
+////NO need to edit beyond here/////////////
+
+var fadearray=new Array() //array to cache fadeshow instances
+var fadeclear=new Array() //array to cache corresponding clearinterval pointers
+
+var dom=(document.getElementById) //modern dom browsers
+var iebrowser=document.all
+
+function fadeshow(theimages, fadewidth, fadeheight, borderwidth, delay, pause, displayorder){
+this.pausecheck=pause
+this.mouseovercheck=0
+this.delay=delay
+this.degree=10 //initial opacity degree (10%)
+this.curimageindex=0
+this.nextimageindex=1
+fadearray[fadearray.length]=this
+this.slideshowid=fadearray.length-1
+this.canvasbase="canvas"+this.slideshowid
+this.curcanvas=this.canvasbase+"_0"
+if (typeof displayorder!="undefined")
+theimages.sort(function() {return 0.5 - Math.random();}) //thanks to Mike (aka Mwinter) :)
+this.theimages=theimages
+this.imageborder=parseInt(borderwidth)
+this.postimages=new Array() //preload images
+for (p=0;p<theimages.length;p++){
+this.postimages[p]=new Image()
+this.postimages[p].src=theimages[p][0]
+}
+
+var fadewidth=fadewidth+this.imageborder*2
+var fadeheight=fadeheight+this.imageborder*2
+
+if (iebrowser&&dom||dom) //if IE5+ or modern browsers (ie: Firefox)
+document.write('<div id="master'+this.slideshowid+'" style="position:relative;width:'+fadewidth+'px;height:'+fadeheight+'px;overflow:hidden;"><div id="'+this.canvasbase+'_0" style="position:absolute;width:'+fadewidth+'px;height:'+fadeheight+'px;top:0;left:0;filter:progid:DXImageTransform.Microsoft.alpha(opacity=10);opacity:0.1;-moz-opacity:0.1;-khtml-opacity:0.1;background-color:'+fadebgcolor+'"></div><div id="'+this.canvasbase+'_1" style="position:absolute;width:'+fadewidth+'px;height:'+fadeheight+'px;top:0;left:0;filter:progid:DXImageTransform.Microsoft.alpha(opacity=10);opacity:0.1;-moz-opacity:0.1;-khtml-opacity:0.1;background-color:'+fadebgcolor+'"></div></div>')
+else
+document.write('<div><img name="defaultslide'+this.slideshowid+'" src="'+this.postimages[0].src+'"></div>')
+
+if (iebrowser&&dom||dom) //if IE5+ or modern browsers such as Firefox
+this.startit()
+else{
+this.curimageindex++
+setInterval("fadearray["+this.slideshowid+"].rotateimage()", this.delay)
+}
+}
+
+function fadepic(obj){
+if (obj.degree<100){
+obj.degree+=10
+if (obj.tempobj.filters&&obj.tempobj.filters[0]){
+if (typeof obj.tempobj.filters[0].opacity=="number") //if IE6+
+obj.tempobj.filters[0].opacity=obj.degree
+else //else if IE5.5-
+obj.tempobj.style.filter="alpha(opacity="+obj.degree+")"
+}
+else if (obj.tempobj.style.MozOpacity)
+obj.tempobj.style.MozOpacity=obj.degree/101
+else if (obj.tempobj.style.KhtmlOpacity)
+obj.tempobj.style.KhtmlOpacity=obj.degree/100
+else if (obj.tempobj.style.opacity&&!obj.tempobj.filters)
+obj.tempobj.style.opacity=obj.degree/101
+}
+else{
+clearInterval(fadeclear[obj.slideshowid])
+obj.nextcanvas=(obj.curcanvas==obj.canvasbase+"_0")? obj.canvasbase+"_0" : obj.canvasbase+"_1"
+obj.tempobj=iebrowser? iebrowser[obj.nextcanvas] : document.getElementById(obj.nextcanvas)
+obj.populateslide(obj.tempobj, obj.nextimageindex)
+obj.nextimageindex=(obj.nextimageindex<obj.postimages.length-1)? obj.nextimageindex+1 : 0
+setTimeout("fadearray["+obj.slideshowid+"].rotateimage()", obj.delay)
+}
+}
+
+fadeshow.prototype.populateslide=function(picobj, picindex){
+var slideHTML=""
+if (this.theimages[picindex][1]!="") //if associated link exists for image
+slideHTML='<a href="'+this.theimages[picindex][1]+'" target="'+this.theimages[picindex][2]+'">'
+slideHTML+='<img src="'+this.postimages[picindex].src+'" border="'+this.imageborder+'px">'
+if (this.theimages[picindex][1]!="") //if associated link exists for image
+slideHTML+='</a>'
+picobj.innerHTML=slideHTML
+}
+
+
+fadeshow.prototype.rotateimage=function(){
+if (this.pausecheck==1) //if pause onMouseover enabled, cache object
+var cacheobj=this
+if (this.mouseovercheck==1)
+setTimeout(function(){cacheobj.rotateimage()}, 100)
+else if (iebrowser&&dom||dom){
+this.resetit()
+var crossobj=this.tempobj=iebrowser? iebrowser[this.curcanvas] : document.getElementById(this.curcanvas)
+crossobj.style.zIndex++
+fadeclear[this.slideshowid]=setInterval("fadepic(fadearray["+this.slideshowid+"])",50)
+this.curcanvas=(this.curcanvas==this.canvasbase+"_0")? this.canvasbase+"_1" : this.canvasbase+"_0"
+}
+else{
+var ns4imgobj=document.images['defaultslide'+this.slideshowid]
+ns4imgobj.src=this.postimages[this.curimageindex].src
+}
+this.curimageindex=(this.curimageindex<this.postimages.length-1)? this.curimageindex+1 : 0
+}
+
+fadeshow.prototype.resetit=function(){
+this.degree=10
+var crossobj=iebrowser? iebrowser[this.curcanvas] : document.getElementById(this.curcanvas)
+if (crossobj.filters&&crossobj.filters[0]){
+if (typeof crossobj.filters[0].opacity=="number") //if IE6+
+crossobj.filters(0).opacity=this.degree
+else //else if IE5.5-
+crossobj.style.filter="alpha(opacity="+this.degree+")"
+}
+else if (crossobj.style.MozOpacity)
+crossobj.style.MozOpacity=this.degree/101
+else if (crossobj.style.KhtmlOpacity)
+crossobj.style.KhtmlOpacity=this.degree/100
+else if (crossobj.style.opacity&&!crossobj.filters)
+crossobj.style.opacity=this.degree/101
+}
+
+
+fadeshow.prototype.startit=function(){
+var crossobj=iebrowser? iebrowser[this.curcanvas] : document.getElementById(this.curcanvas)
+this.populateslide(crossobj, this.curimageindex)
+if (this.pausecheck==1){ //IF SLIDESHOW SHOULD PAUSE ONMOUSEOVER
+var cacheobj=this
+var crossobjcontainer=iebrowser? iebrowser["master"+this.slideshowid] : document.getElementById("master"+this.slideshowid)
+crossobjcontainer.onmouseover=function(){cacheobj.mouseovercheck=1}
+crossobjcontainer.onmouseout=function(){cacheobj.mouseovercheck=0}
+}
+this.rotateimage()
+}
+
+</script>
+
+
+
+<table width="770" border="0" align="center" cellpadding="0" cellspacing="0" style="border: solid gray 1px; text-align: left;">
+  <tr hright="23">
+ <td height="23" background="top_colors.jpg" ><table width="770" border="0" cellspacing="0" cellpadding="0">
+   <tr><table width="770" border="0" align="center" cellpadding="0" cellspacing="0" style="border: solid gray 1px;">
+  <tr hright="23">
+ <td height="23" background="images/LogosIconsButtons/top_colors.jpg" ><table width="770" border="0" cellspacing="0" cellpadding="0">
+   <tr>
+     <td width="67" align="center"><a href="give.html" title="Give" class="side">Give</a></td>
+     <td width="118" align="center"><a href="newsroom.html" title="Newsroom" class="side">Newsroom</a></td>
+     <td width="114" align="center"><a href="contact.html" title="Contact Us" class="side">Contact Us</a></td>
+
+     <td width="452" align="right" class="footer"><!--<strong>Search: &nbsp;
+       <input name="textfield" type="text" style="width:130px; height:13px; border:solid 1px #849bbf; COLOR: #496792; FONT: 8pt Verdana; " id="textfield" title="Enter your search term here"/>
+</strong>--></td>
+     <td width="19">&nbsp;</td>
+   </tr>
+ </table></td>
+  </tr>
+
+   <tr>
+    <td><table width="770" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="162" align="left" valign="top" bgcolor="#eff2f7"><table width="162" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td><a href="index.html"><img src="logo.gif" alt="Back To Home" title="Back To Home" width="162" height="95" hspace="0" vspace="0" border="0" /></a></td>
+          </tr>
+          <tr>
+            <td><Div class="nav12">
+
+		<A href="index.html"> Home</A>
+			<a href="about.html"> About DCF</a>
+
+
+
+
+
+				<Div class="nav12select"><A href="ways.html"class="side"> Ways To Give</A></Div><A href="fundholders.html"> For Our Fundholders</A><A href="grants.html"> Apply For Grants</A>
+		<A href="scholarships.html"> Apply For Scholarships</A>
+
+		<A href="advisors.html"> For Professional Advisors</A>
+		<A href="events.html"> Event Registration</A>
+		<A href="contact.html"> Contact Us</A></Div>
+              </td>
+          </tr>
+          <tr>
+            <td><img src="header_quicklinks.gif" alt="Quick Links" width="162" height="33" /><br />
+                <a href="http://online.delcf.org"><img src="button_login.gif" alt="Current Donor Log-In" width="162" height="31" hspace="0" vspace="0" border="0" id="Image1" onmouseover="MM_swapImage('Image1','','button_login2.gif',1)" onmouseout="MM_swapImgRestore()" /></a><br />
+                <a href="make_donation.php"><img src="button_donation.gif" alt="Make A Donation" width="162" height="34" hspace="0" vspace="0" border="0" id="Image2" onmouseover="MM_swapImage('Image2','','button_donation2.gif',1)" onmouseout="MM_swapImgRestore()" /></a><br />
+                <a href="donations2.php?f=1"><img src="button_catalogue.gif" alt="Charitable Catalogue" width="162" height="32" hspace="0" vspace="0" border="0" id="Image3" onmouseover="MM_swapImage('Image3','','button_catalogue2.gif',1)" onmouseout="MM_swapImgRestore()" /></a><br />
+                <a href="http://classic.cof.org/members/content.cfm?itemnumber=766&amp;navItemNumber=2490" target="_blank"><img src="cflogo.gif" alt="CF Logo" width="162" height="114" hspace="0" vspace="0" border="0" /></a>
+              <p></p></td>
+          </tr>
+        </table></td>
+        <td width="608" align="left" valign="top" bgcolor="#FFFFFF"><table width="608" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left" valign="top"><img src="spacer.gif" alt="DCF" width="225" height="95" /><img src="tagline.gif" alt="Connecting People Who Care" title="Connecting People Who Care" width="383" height="95" /></td>
+          </tr>
+          <tr>
+            <td><img src="header_donation.jpg" alt="Make A Donation" title="Make A Donation" width="608" height="243" /></td>
+          </tr>
+         <!-- <tr>
+            <td bgcolor="#FFFFFF">&nbsp;</td>
+          </tr> -->
+          <tr>
+            <td><table width="608" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="28">&nbsp;</td>
+                <td width="556"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td height="45" align="left" valign="middle"><p class="header"><strong><br />
+                      IRA Charitable Rollover Extension:</strong> Deadline Jan. 31!<br />
+                      Take Advantage of Tax Benefits for 2012 <em>and</em> 2013.<br />
+                      <br />
+                      </p></td>
+                  </tr>
+                  <tr>
+                    <td height="76"><p><img src="file://///DCF-SBS01/Users/ALevine/WebSiteRoot/website/images/IRABlock.gif" alt="Age 70 1/2 or older? Make a charitable IRA rollover by Jan. 31 to avoid taxes on up to $200,000!" width="185" height="130" hspace="6" align="right" />
+                    <p><span class="bodytext">The Charitable IRA Rollover  allows individuals age 70 ½ and older to donate up to $100,000 per year to public charities <em>tax free</em> from their Individual Retirement Accounts (IRAs). </span>                                                                  
+                    <p class="bodytext"><span class="bodytext">First enacted in 2006, the provision was </span>extended for  2012 and 2013 as part of the <strong><a href="http://www.gpo.gov/fdsys/pkg/BILLS-112hr8eas/pdf/BILLS-112hr8eas.pdf">American Taxpayer Relief Act of 2012</a>.</strong></p>
+<p class="bodytext">&nbsp;</p>
+<p class="bodytext"><strong><span class="bodytext"><span class="header">Transfer up to $200,000 tax free!</span></span></strong>            </p>
+<p class="bodytext">The extension of the Charitable IRA Rollover means you can transfer up to $100,000 per person ($200,000 for a couple) to your existing or new charitable fund at the Delaware Community Foundation.  Funds are sent directly to the charitable fund and are never counted as income, so you avoid paying income tax.<br />
+            </p>
+            <p class="bodytext">  <em>(Although donor advised funds are not covered by this provision, the DCF can help donor-advised fundholders identify ways to enjoy the full benefits of this opportunity. Please contact us to discuss.</em>)</p>
+<p class="bodytext"><strong>You have until Jan. 31, 2013, to:</strong></p>
+                      <ul>
+                        <li><strong><span class="bodytext">Make a new transfer directly from your IRA, or</span></strong></li>
+                        <li><strong><span class="bodytext">Transfer automatic payouts you received in December 2012. </span></strong></li>
+                      </ul>
+<p class="bodytext">The news comes just as 2013 tax-deduction limits go down for individuals earning more than $400,000 per year and couples earning $450,000 or more. Who could this benefit most? Seniors who are required to take an IRA payout they don't need. </p>
+                      <h2 class="bodytext"><span class="header">Leverage your highest-taxed assets</span>.</h2>
+                      <p class="bodytext">Retirement distributions are some of the most highly taxed forms of income. A charitable IRA rollover can benefit Delaware seniors in two ways:</p>
+                      <ul>
+                        <li class="bodytext"><strong>Avoid the federal income tax you would normally incur on an IRA payout.</strong></li>
+                        <li class="bodytext"><strong>Reduce your state taxes by decreasing your Delaware taxable income.</strong></li>
+                      </ul>
+                      <p class="bodytext"><span class="header"><strong>How can you take advantage of this opportunity?</strong></span>
+                      </p>
+                      <p class="bodytext"><strong>Contact <a href="mailto:dfleming@delcf.org">David Fleming</a> today at 302.504.5224. </strong></p>
+                      <ul>
+                        <li class="bodytext">We will work with you or your financial advisor to arrange a rollover from your IRA to an existing fund at the DCF to maximize your tax benefits.<br />
+                        </li>
+                      </ul>
+                      <ul>
+                        <li class="bodytext">We can help you establish a new fund if you  don't already have one. Through your new fund, you can take advantage of these tax benefits, and you can support the causes you care about most -- even if you haven't decided yet what charitable causes you want to support. </li>
+                    </ul>
+                      <p class="header"><strong>Why give through the DCF? </strong></p>
+                      <p class="header"><span class="subhead">It's permanent.</span><span class="bodytext"> Unlike a one-time charitable gift, a fund at the Delaware Community Foundation -- perhaps named after you or a loved one -- will create funds to support your favorite causes forever. </span></p>
+                      <p class="header"><span class="subhead">It's easy.</span> <span class="bodytext">At the DCF, we are experts in charitable funds and in charitable organizations. We can guide you through your options to help you make the most of your gift. </span></p>
+                      <p class="header"><span class="subhead">It's local.</span> <span class="bodytext">We know Delaware's nonprofit sector inside-out. If you're not sure yet how you want to focus your charitable dollars, we can offer ideas and introduce you to organizations doing work that matches your interests.</span></p>
+                      <p class="header"><strong>Questions?</strong></p>
+<p class="bodytext"><strong>Contact <a href="mailto:dfleming@delcf.org">David Fleming</a> today at 302.504.5224. </strong>We'd be happy to talk with you about the many options available to meet your charitable goals and maximize tax advantages.                           </p>
+                      <p class="bodytext">&nbsp;</p></td>
+                  </tr>
+                </table>
+                  <br />
+
+
+                  </td>
+                <td width="24">&nbsp;</td>
+              </tr>
+            </table></td>
+          </tr>
+        </table></td>
+      </tr>
+    </table></td>
+  </tr>
+ <!-- <tr hright="28">
+ <td height="28" bgcolor="#849bbf" class="footer" ><div align="center">Delaware Community Foundation | 100 West 10th St. | Suite 115 | Wilmington, DE | phone: 302/571-8004 | fax: 302/571-1553</div></td>
+  </tr>-->
+</table>
+<div align="center">
+  <p>
+  <span class="footer"> &copy; 2010 Delaware Community Foundation &nbsp;  |  &nbsp; 100 W. 10th Street, Suite 115 &nbsp;  |  &nbsp; P.O. Box 1636 &nbsp;  |  &nbsp; Wilmington, DE 19899<br />
+  Please email comments, corrections or suggestions to <strong><a href="mailto:info@delcf.org" class="side">info@delcf.org</a></strong></span><br />
+    <br />
+  </p>
+</div><br /><br />
+</body>
+</html>

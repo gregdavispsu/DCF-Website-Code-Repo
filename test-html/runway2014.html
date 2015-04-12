@@ -1,0 +1,436 @@
+<script language="JavaScript" type="text/JavaScript"> 
+function redirect(){ 
+var loc = location.href.split(':'); 
+if(loc[0]=='http'){ 
+location.href='https:'+loc[1]; 
+} 
+} 
+onload=redirect 
+</script>  
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Delaware Community Foundation | Make A Donation</title>
+
+<link href="styles.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+<style type="text/css">
+.header td table tr td .bodytext .header {
+	text-align: left;
+}
+.header td table tr td .header {
+	text-align: left;
+}
+.header td table {
+	text-align: left;
+}
+.header td table tr .subhead .bodytext center .bodytext {
+	font-weight: normal;
+}
+</style>
+</head>
+
+<body onLoad="MM_preloadImages('images/LogosIconsButtons/button_login2.gif','images/LogosIconsButtons/button_donation2.gif','images/LogosIconsButtons/button_catalogue2.gif')">
+<script type="text/javascript">
+
+/***********************************************
+* Ultimate Fade-In Slideshow (v1.51): © Dynamic Drive (http://www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit http://www.dynamicdrive.com/ for this script and 100s more.
+***********************************************/
+
+var fadeimages=new Array()
+//SET IMAGE PATHS. Extend or contract array as needed
+fadeimages[0]=["home1.jpg", "", ""] //plain image syntax
+fadeimages[1]=["home2.jpg", "", ""] //plain image syntax
+fadeimages[2]=["home3.jpg", "", ""] //plain image syntax
+fadeimages[3]=["home4.jpg", "", ""] //plain image syntax
+fadeimages[4]=["home5.jpg", "", ""] //plain image syntax
+fadeimages[5]=["home6.jpg", "", ""] //plain image syntax
+
+var fadebgcolor="white"
+
+////NO need to edit beyond here/////////////
+
+var fadearray=new Array() //array to cache fadeshow instances
+var fadeclear=new Array() //array to cache corresponding clearinterval pointers
+
+var dom=(document.getElementById) //modern dom browsers
+var iebrowser=document.all
+
+function fadeshow(theimages, fadewidth, fadeheight, borderwidth, delay, pause, displayorder){
+this.pausecheck=pause
+this.mouseovercheck=0
+this.delay=delay
+this.degree=10 //initial opacity degree (10%)
+this.curimageindex=0
+this.nextimageindex=1
+fadearray[fadearray.length]=this
+this.slideshowid=fadearray.length-1
+this.canvasbase="canvas"+this.slideshowid
+this.curcanvas=this.canvasbase+"_0"
+if (typeof displayorder!="undefined")
+theimages.sort(function() {return 0.5 - Math.random();}) //thanks to Mike (aka Mwinter) :)
+this.theimages=theimages
+this.imageborder=parseInt(borderwidth)
+this.postimages=new Array() //preload images
+for (p=0;p<theimages.length;p++){
+this.postimages[p]=new Image()
+this.postimages[p].src=theimages[p][0]
+}
+
+var fadewidth=fadewidth+this.imageborder*2
+var fadeheight=fadeheight+this.imageborder*2
+
+if (iebrowser&&dom||dom) //if IE5+ or modern browsers (ie: Firefox)
+document.write('<div id="master'+this.slideshowid+'" style="position:relative;width:'+fadewidth+'px;height:'+fadeheight+'px;overflow:hidden;"><div id="'+this.canvasbase+'_0" style="position:absolute;width:'+fadewidth+'px;height:'+fadeheight+'px;top:0;left:0;filter:progid:DXImageTransform.Microsoft.alpha(opacity=10);opacity:0.1;-moz-opacity:0.1;-khtml-opacity:0.1;background-color:'+fadebgcolor+'"></div><div id="'+this.canvasbase+'_1" style="position:absolute;width:'+fadewidth+'px;height:'+fadeheight+'px;top:0;left:0;filter:progid:DXImageTransform.Microsoft.alpha(opacity=10);opacity:0.1;-moz-opacity:0.1;-khtml-opacity:0.1;background-color:'+fadebgcolor+'"></div></div>')
+else
+document.write('<div><img name="defaultslide'+this.slideshowid+'" src="'+this.postimages[0].src+'"></div>')
+
+if (iebrowser&&dom||dom) //if IE5+ or modern browsers such as Firefox
+this.startit()
+else{
+this.curimageindex++
+setInterval("fadearray["+this.slideshowid+"].rotateimage()", this.delay)
+}
+}
+
+function fadepic(obj){
+if (obj.degree<100){
+obj.degree+=10
+if (obj.tempobj.filters&&obj.tempobj.filters[0]){
+if (typeof obj.tempobj.filters[0].opacity=="number") //if IE6+
+obj.tempobj.filters[0].opacity=obj.degree
+else //else if IE5.5-
+obj.tempobj.style.filter="alpha(opacity="+obj.degree+")"
+}
+else if (obj.tempobj.style.MozOpacity)
+obj.tempobj.style.MozOpacity=obj.degree/101
+else if (obj.tempobj.style.KhtmlOpacity)
+obj.tempobj.style.KhtmlOpacity=obj.degree/100
+else if (obj.tempobj.style.opacity&&!obj.tempobj.filters)
+obj.tempobj.style.opacity=obj.degree/101
+}
+else{
+clearInterval(fadeclear[obj.slideshowid])
+obj.nextcanvas=(obj.curcanvas==obj.canvasbase+"_0")? obj.canvasbase+"_0" : obj.canvasbase+"_1"
+obj.tempobj=iebrowser? iebrowser[obj.nextcanvas] : document.getElementById(obj.nextcanvas)
+obj.populateslide(obj.tempobj, obj.nextimageindex)
+obj.nextimageindex=(obj.nextimageindex<obj.postimages.length-1)? obj.nextimageindex+1 : 0
+setTimeout("fadearray["+obj.slideshowid+"].rotateimage()", obj.delay)
+}
+}
+
+fadeshow.prototype.populateslide=function(picobj, picindex){
+var slideHTML=""
+if (this.theimages[picindex][1]!="") //if associated link exists for image
+slideHTML='<a href="'+this.theimages[picindex][1]+'" target="'+this.theimages[picindex][2]+'">'
+slideHTML+='<img src="'+this.postimages[picindex].src+'" border="'+this.imageborder+'px">'
+if (this.theimages[picindex][1]!="") //if associated link exists for image
+slideHTML+='</a>'
+picobj.innerHTML=slideHTML
+}
+
+
+fadeshow.prototype.rotateimage=function(){
+if (this.pausecheck==1) //if pause onMouseover enabled, cache object
+var cacheobj=this
+if (this.mouseovercheck==1)
+setTimeout(function(){cacheobj.rotateimage()}, 100)
+else if (iebrowser&&dom||dom){
+this.resetit()
+var crossobj=this.tempobj=iebrowser? iebrowser[this.curcanvas] : document.getElementById(this.curcanvas)
+crossobj.style.zIndex++
+fadeclear[this.slideshowid]=setInterval("fadepic(fadearray["+this.slideshowid+"])",50)
+this.curcanvas=(this.curcanvas==this.canvasbase+"_0")? this.canvasbase+"_1" : this.canvasbase+"_0"
+}
+else{
+var ns4imgobj=document.images['defaultslide'+this.slideshowid]
+ns4imgobj.src=this.postimages[this.curimageindex].src
+}
+this.curimageindex=(this.curimageindex<this.postimages.length-1)? this.curimageindex+1 : 0
+}
+
+fadeshow.prototype.resetit=function(){
+this.degree=10
+var crossobj=iebrowser? iebrowser[this.curcanvas] : document.getElementById(this.curcanvas)
+if (crossobj.filters&&crossobj.filters[0]){
+if (typeof crossobj.filters[0].opacity=="number") //if IE6+
+crossobj.filters(0).opacity=this.degree
+else //else if IE5.5-
+crossobj.style.filter="alpha(opacity="+this.degree+")"
+}
+else if (crossobj.style.MozOpacity)
+crossobj.style.MozOpacity=this.degree/101
+else if (crossobj.style.KhtmlOpacity)
+crossobj.style.KhtmlOpacity=this.degree/100
+else if (crossobj.style.opacity&&!crossobj.filters)
+crossobj.style.opacity=this.degree/101
+}
+
+
+fadeshow.prototype.startit=function(){
+var crossobj=iebrowser? iebrowser[this.curcanvas] : document.getElementById(this.curcanvas)
+this.populateslide(crossobj, this.curimageindex)
+if (this.pausecheck==1){ //IF SLIDESHOW SHOULD PAUSE ONMOUSEOVER
+var cacheobj=this
+var crossobjcontainer=iebrowser? iebrowser["master"+this.slideshowid] : document.getElementById("master"+this.slideshowid)
+crossobjcontainer.onmouseover=function(){cacheobj.mouseovercheck=1}
+crossobjcontainer.onmouseout=function(){cacheobj.mouseovercheck=0}
+}
+this.rotateimage()
+}
+
+</script>
+
+
+
+<table width="770" border="0" align="center" cellpadding="0" cellspacing="0" style="border: solid gray 1px;">
+  <tr hright="23">
+ <td height="23" background="images/LogosIconsButtons/top_colors.jpg" ><table width="770" border="0" cellspacing="0" cellpadding="0">
+   <tr><table width="770" border="0" align="center" cellpadding="0" cellspacing="0" style="border: solid gray 1px;">
+  <tr hright="23">
+ <td height="23" background="images/LogosIconsButtons/top_colors.jpg" ><table width="770" border="0" cellspacing="0" cellpadding="0">
+   <tr>
+     <td width="67" align="center"><a href="give.html" title="Give" class="side">Give</a></td>
+     <td width="118" align="center"><a href="newsroom.html" title="Newsroom" class="side">Newsroom</a></td>
+     <td width="114" align="center"><a href="contact.html" title="Contact Us" class="side">Contact Us</a></td>
+
+     <td width="452" align="right" class="footer"><!--<strong>Search: &nbsp;
+       <input name="textfield" type="text" style="width:130px; height:13px; border:solid 1px #849bbf; COLOR: #496792; FONT: 8pt Verdana; " id="textfield" title="Enter your search term here"/>
+</strong>--></td>
+     <td width="19">&nbsp;</td>
+   </tr>
+ </table></td>
+  </tr>
+
+   <tr>
+    <td><table width="769" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="162" height="924" align="left" valign="top" bgcolor="#eff2f7"><table width="161" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="161"><a href="index.html"><img src="images/LogosIconsButtons/logo.gif" alt="Back To Home" title="Back To Home" width="162" height="95" hspace="0" vspace="0" border="0" /></a></td>
+          </tr>
+          <tr>
+            <td><Div class="nav12">
+
+		<A href="index.html"> Home</A>
+			<a href="about.html"> About DCF</a>
+
+
+
+
+
+				<A href="ways.html"> Ways To Give</A><A href="fundholders.html"> For Our Fundholders</A><A href="grants.html"> Apply For Grants</A>
+		<A href="scholarships.html"> Apply For Scholarships</A>
+
+		<A href="advisors.html"> For Professional Advisors</A>
+		<Div class="nav12select"><A href="events.html" class="side"> Event Registration</A></Div>
+		<A href="contact.html"> Contact Us</A></Div>
+              </td>
+          </tr> <tr>
+                <td align="center" valign="middle"><img src="images/Headers/header_quicklinks.jpg" alt="Quick Links" width="162" height="33" /><br />      <A HREF="https://online.delcf.org/"><img src="images/LogosIconsButtons/button_login.gif" alt="Current Donor Log-In" width="162" height="31" hspace="0" vspace="0" border="0" id="Image1" onmouseover="MM_swapImage('Image1','','images/LogosIconsButtons/button_login2.gif',1)" onmouseout="MM_swapImgRestore()" /></a><br />
+                  <a href="give.html"><img src="images/LogosIconsButtons/button_donation.gif" alt="Make A Donation" name="Image2" width="162" height="34" hspace="0" vspace="0" border="0" id="Image2" onmouseover="MM_swapImage('Image2','','images/LogosIconsButtons/button_donation2.gif',1)" onmouseout="MM_swapImgRestore()" /></a><br />  <a href="friends.html"><img src="images/LogosIconsButtons/button_catalogue.gif" alt="Charitable Catalogue" width="162" height="32" hspace="0" vspace="0" border="0" id="Image3" onmouseover="MM_swapImage('Image3','','images/LogosIconsButtons/button_catalogue2.gif',1)" onmouseout="MM_swapImgRestore()" /></a>  <br />
+                  <br />
+                
+<iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FDelawareCommunityFoundation&amp;width=80&amp;layout=button_count&amp;action=like&amp;show_faces=true&amp;share=true&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:130px; height:21px;" allowTransparency="true"></iframe><br/>
+                      
+                    </a></strong> </span><strong><a href="http://twitter.com/@DelCommunity"><img src="images/LogosIconsButtons/twitter-logo.jpg" title="@DelCommunity on Twitter" alt="By: @DelCommunity on Twitter" width="63" height="25" hspace="0" vspace="6" border="1" /></a></strong>
+               <br /> <script src="//platform.linkedin.com/in.js" type="text/javascript">
+ lang: en_US
+</script>
+<script type="IN/FollowCompany" data-id="1717942" data-counter="right"></script>
+              
+              <p>    
+                  <a href="/contact_form.php"><span class="nav12select"><strong>JOIN OUR <br />
+                    MAILING LIST</strong></span></a><strong><a href="/contact_form.php"><span class="nav12select"><br />
+                      </span></a><br />
+                    </strong><a href="http://www.cfstandards.org"><img src="cflogo.gif" alt="CF Logo" width="162" height="114" hspace="0" vspace="0" border="0" /></a></p>
+              </div>       </p>
+                  </p></td>
+              </tr>
+        </table></td>
+        <td width="607" align="left" valign="top" bgcolor="#FFFFFF"><table width="607" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td colspan="3" align="left" valign="top"><img src="images/LogosIconsButtons/spacer.gif" alt="DCF" width="225" height="95" /><img src="images/LogosIconsButtons/tagline.gif" alt="Connecting People Who Care" title="Connecting People Who Care" width="383" height="95" /></td>
+          </tr>
+          <tr>
+            <td width="370" height="217" align="center" valign="top"><div align="left"><a href="http://kidsrunwayforresearch.com/"><img src="images/Fundholders/KidsRunwayLogo.jpg" alt="Kids Runway Logo" width="353" height="193" hspace="24" vspace="16" align="center" /></a></div>
+
+              </td>
+            <td width="235" align="center" valign="top"><p align="center">&nbsp;</p>
+              <p align="center"><span class="bodytext"><span class="subhead"><span class="header"><span class="header"><span class="header">Kids Runway</span></span></span></span></span></p>
+              <p align="center"><span class="header"><span class="header"><strong>for Research</strong></span></span></p>
+              <p align="center"><span class="header"><span class="bodytext"><span class="subhead"><span class="header"><span class="header">5th Annual Event!</span></span></span><br />
+              </span> </span><span class="bodytext"> <br />
+              </span><span class="subhead">Sunday, September 7, 2014<br />
+              2 - 6:30 p.m. <br />
+              Chase Center on the Riverfront</span></p></td>
+            <td width="5" align="center" valign="middle">&nbsp;</td>
+            </tr>
+         <!-- <tr>
+            <td bgcolor="#FFFFFF">&nbsp;</td>
+          </tr> -->
+          <tr>
+            <td height="602" colspan="3"><table width="608" height="418" border="0" cellpadding="0" cellspacing="0">
+              <tr class="header">
+                <td width="10" height="418">&nbsp;</td>
+                <td width="598" align="right"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td height="418" align="left" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td colspan="2" align="center" valign="top" class="subhead"><center>
+                          <p align="lcenter" class="bodytext"><em> Benefiting the <a href="http://www.nemours.org/service/medical/bloodandbonemarrowtransplant.html">Nemours Center for Cancer & Blood Disorders</a> (Pediatric Cancer Organization) </em></p>
+                          </center>
+                          <ul>
+                            <li>
+                              <div align="left"> Enjoy food from some of the best local restaurants </div>
+                              </li>
+                            <li>
+                              <div align="left"> Silent and live auctions </div>
+                              </li>
+                            <li>
+                              <div align="left"> Games, balloon artist, and face painting </div>
+                              </li>
+                            <li>
+                              <div align="left"> Very special fashion show featuring children who are childhood cancer survivors modeling trendy outfits donated by local boutiques </div>
+                            </li>
+                            </ul>
+                          <p class="bodytext">Please visit our <a href="http://www.kidsrunwayforresearch.com/"><strong>website</strong></a> for photos from last year's event and <br />
+                            more information about<strong> <a href="http://www.kidsrunwayforresearch.com/">Kids Runway for Research</a></strong>.</p>
+<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+  <div align="right">
+  <input type="hidden" name="cmd" value="_s-xclick">
+  <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----MIIG1QYJKoZIhvcNAQcEoIIGxjCCBsICAQExggEwMIIBLAIBADCBlDCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20CAQAwDQYJKoZIhvcNAQEBBQAEgYCaDK2yg+BmpIM/GC80v65xNE0wRYqVmVuBrMqA1j7e8rSP8Kr1OBrT0sCmSXvJz3iKmSxayAsjq3Zznxw4yUc1BNNl5VLpn0ztuOyCPER4Lfn2FvjlkyC9ItXTHOOn88ppb0UJMuVsJbW5XEKmSvx1qLVY1kKGAoIxTzjBm2zmfjELMAkGBSsOAwIaBQAwUwYJKoZIhvcNAQcBMBQGCCqGSIb3DQMHBAjJhMQSmuDkhoAwpDZfwExJWhlyWrw842IRzcCyju8hU+ovAQwkwPSLFzWhg7YAlWjsRH9bdbrfhc0eoIIDhzCCA4MwggLsoAMCAQICAQAwDQYJKoZIhvcNAQEFBQAwgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tMB4XDTA0MDIxMzEwMTMxNVoXDTM1MDIxMzEwMTMxNVowgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDBR07d/ETMS1ycjtkpkvjXZe9k+6CieLuLsPumsJ7QC1odNz3sJiCbs2wC0nLE0uLGaEtXynIgRqIddYCHx88pb5HTXv4SZeuv0Rqq4+axW9PLAAATU8w04qqjaSXgbGLP3NmohqM6bV9kZZwZLR/klDaQGo1u9uDb9lr4Yn+rBQIDAQABo4HuMIHrMB0GA1UdDgQWBBSWn3y7xm8XvVk/UtcKG+wQ1mSUazCBuwYDVR0jBIGzMIGwgBSWn3y7xm8XvVk/UtcKG+wQ1mSUa6GBlKSBkTCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb22CAQAwDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQUFAAOBgQCBXzpWmoBa5e9fo6ujionW1hUhPkOBakTr3YCDjbYfvJEiv/2P+IobhOGJr85+XHhN0v4gUkEDI8r2/rNk1m0GA8HKddvTjyGw/XqXa+LSTlDYkqI8OwR8GEYj4efEtcRpRYBxV8KxAW93YDWzFGvruKnnLbDAF6VR5w/cCMn5hzGCAZowggGWAgEBMIGUMIGOMQswCQYDVQQGEwJVUzELMAkGA1UECBMCQ0ExFjAUBgNVBAcTDU1vdW50YWluIFZpZXcxFDASBgNVBAoTC1BheVBhbCBJbmMuMRMwEQYDVQQLFApsaXZlX2NlcnRzMREwDwYDVQQDFAhsaXZlX2FwaTEcMBoGCSqGSIb3DQEJARYNcmVAcGF5cGFsLmNvbQIBADAJBgUrDgMCGgUAoF0wGAYJKoZIhvcNAQkDMQsGCSqGSIb3DQEHATAcBgkqhkiG9w0BCQUxDxcNMTQwNDA5MjIwOTI3WjAjBgkqhkiG9w0BCQQxFgQUJR7FsVG9aFM9t3yNyI+LinAz3TkwDQYJKoZIhvcNAQEBBQAEgYBJ6HeIxAcgi5cIO3PHtG4/EkEaCN7mPcT9r8pox879Ii7cSX6xJaelVwieTGWL8Dm3UD97RZMxEvOBhFp1pd5fNNgkVH8ADKCOvKadBHUDBQyBEFCllOPixdtI6PQGbg8ZFjBdxtg45tGFcR5M5QS+NmRzs+sqiciMpyi9rkbQiQ==-----END PKCS7-----
+">
+  <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_viewcart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+  <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"></div>
+</form>
+
+
+</td>
+                        <td width="11" rowspan="6">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td colspan="2" valign="top"><hr /></td>
+                      </tr>
+                      <tr>
+                        <td width="319" valign="top" class="subhead"><p align="left" class="header">DONATIONS<span class="bodytext">
+                          <br />
+                          I would like to make  
+                            a gift to Kids Runway for Research
+                            
+                            
+                            (in addition to or 
+                            in lieu of attendance).</span class="bodytext"></p>
+                          <p align="left" class="header">&nbsp;</p>
+                          <p align="left" class="header">&nbsp;</p></td>
+                        <td width="268" valign="top" class="subhead"><form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="84TCHE87S4CWC">
+<table>
+<tr><td><input type="hidden" name="on0" value="Gift">
+  <span class="bodytext">Gift</span></td></tr><tr><td><select name="os0">
+	<option value="$25 Gift --">$25 Gift -- $25.00 USD</option>
+	<option value="$50 Gift --">$50 Gift -- $50.00 USD</option>
+	<option value="$100 Gift --">$100 Gift -- $100.00 USD</option>
+	<option value="$250 Gift --">$250 Gift -- $250.00 USD</option>
+	<option value="$500 Gift --">$500 Gift -- $500.00 USD</option>
+</select> </td></tr>
+<tr><td><input type="hidden" name="on1" value="Comments:">
+  <span class="bodytext">Comments:</span></td></tr><tr><td><input type="text" name="os1" maxlength="200"></td></tr>
+</table>
+<input type="hidden" name="currency_code" value="USD">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+
+
+
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2" valign="top" class="subhead"><hr /></td>
+                      </tr>
+                      <tr>
+                        <td align="left" valign="top"><p align="left"><span class="subhead"> <span class="header">TICKETS</span><br />
+                          </span><span class="bodytext">$22.50 Adults<br />
+                            $7.50 Child (12 and under)</span></p>
+                          <p align="left">&nbsp;</p>
+                          <p align="left">&nbsp;</p>
+                          <p align="left">&nbsp;</p></td>
+                        <td valign="top"><form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="EDYXPRS2T9G78">
+<table>
+<tr><td><p>
+  <input type="hidden" name="on0" value="Tickets">
+  <span class="bodytext">Tickets </span><span class="bodytext">(Choose quantity on next page.)</span></p></td></tr><tr><td><select name="os0">
+	<option value="Adult">Adult $22.50 USD</option>
+	<option value="Child (12 and under)">Child (12 and under) $7.50 USD</option>
+</select> </td></tr>
+<tr><td><input type="hidden" name="on1" value="Names of attendees:">
+  <span class="bodytext">Names of attendees:</span></td></tr><tr><td><input type="text" name="os1" maxlength="200"></td></tr>
+</table>
+<input type="hidden" name="currency_code" value="USD">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+
+
+
+                          <p class="bodytext"><br />
+                          </p></td>
+                      </tr>
+                      <tr>
+                        <td height="2" colspan="2" valign="top"><hr /></td>
+                      </tr>
+                    </table>                      <p align="left"><span class="bodytext"></span></p></td>
+                  </tr>
+                </table></td>
+          </tr>
+        </table></td>
+      </tr>
+    </table></td>
+  </tr>
+ <!-- <tr hright="28">
+ <td height="28" bgcolor="#849bbf" class="footer" ><div align="center">Delaware Community Foundation | 100 West 10th St. | Suite 115 | Wilmington, DE | phone: 302/571-8004 | fax: 302/571-1553</div></td>
+  </tr>-->
+</table>
+<div align="center">
+  <p>
+  <span class="footer"> &copy; 2010 Delaware Community Foundation &nbsp;  |  &nbsp; 100 W. 10th Street, Suite 115 &nbsp;  |  &nbsp; P.O. Box 1636 &nbsp;  |  &nbsp; Wilmington, DE 19899<br />
+  Please email comments, corrections or suggestions to <strong><a href="mailto:info@delcf.org" class="side">info@delcf.org</a></strong></span><br />
+    <br />
+  </p>
+</div><br /><br />
+</body>
+</html>

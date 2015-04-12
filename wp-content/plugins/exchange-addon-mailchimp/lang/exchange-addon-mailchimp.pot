@@ -1,0 +1,536 @@
+# Copyright (C) 2015 iThemes Exchange - MailChimp Add-on
+# This file is distributed under the same license as the iThemes Exchange - MailChimp Add-on package.
+msgid ""
+msgstr ""
+"Project-Id-Version: iThemes Exchange - MailChimp Add-on 2.0.3\n"
+"Report-Msgid-Bugs-To: http://ithemes.com/forum/\n"
+"POT-Creation-Date: 2015-02-12 18:43:32+00:00\n"
+"PO-Revision-Date: 2015-MO-DA HO:MI+ZONE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: exchange-addon-mailchimp.php:33 lib/product-features/class.mailchimp.php:98
+msgid "MailChimp"
+msgstr ""
+
+#: exchange-addon-mailchimp.php:34
+msgid "Add MailChimp Opt-In Checkbox to user registration form."
+msgstr ""
+
+#: exchange-addon-mailchimp.php:63
+msgid ""
+"To use the MailChimp add-on for iThemes Exchange, you must be using iThemes "
+"Exchange version 1.0.3 or higher. <a href=\"%s\">Please update now</a>."
+msgstr ""
+
+#: lib/addon-settings.php:92
+msgid "MailChimp Settings"
+msgstr ""
+
+#: lib/addon-settings.php:102
+msgid "Save Changes"
+msgstr ""
+
+#: lib/addon-settings.php:121
+msgid ""
+"MailChimp allows store owners to manage and email lists of their currently "
+"subscribed customers."
+msgstr ""
+
+#: lib/addon-settings.php:122
+msgid "Video:"
+msgstr ""
+
+#: lib/addon-settings.php:122
+msgid "Setting Up MailChimp in Exchange"
+msgstr ""
+
+#: lib/addon-settings.php:123
+msgid "To setup MailChimp in Exchange, complete the settings below."
+msgstr ""
+
+#: lib/addon-settings.php:124
+msgid "MailChimp API Key"
+msgstr ""
+
+#: lib/addon-settings.php:124
+msgid ""
+"Enter your MailChimp API Key from your MailChimp dashboard, under Account "
+"Settings -> Extras -> API Keys"
+msgstr ""
+
+#: lib/addon-settings.php:126 lib/product-features/class.mailchimp.php:117
+msgid "MailChimp List"
+msgstr ""
+
+#: lib/addon-settings.php:126
+msgid ""
+"This is the list you want to use from MailChimp (only appears after saving "
+"your MailChimp API key)."
+msgstr ""
+
+#: lib/addon-settings.php:128
+msgid "Sign-up Label"
+msgstr ""
+
+#: lib/addon-settings.php:128
+msgid ""
+"This will be the label displayed next to the sign-up option on the "
+"registration page."
+msgstr ""
+
+#: lib/addon-settings.php:130
+msgid "Enable Opt-in."
+msgstr ""
+
+#: lib/addon-settings.php:130
+msgid ""
+"Enabling opt-in is a good way to prevent your list from being black listed "
+"as SPAM. Users will only be added to this list if they select the opt-in "
+"checkmark when registering for an account."
+msgstr ""
+
+#: lib/addon-settings.php:132 lib/product-features/class.mailchimp.php:127
+msgid "Enable Double Opt-in."
+msgstr ""
+
+#: lib/addon-settings.php:132 lib/product-features/class.mailchimp.php:127
+msgid ""
+"Enabling double opt-in is a good way to prevent your list from being black "
+"listed as SPAM. Users will be sent a confirmation email from MailChimp after "
+"signing up, and will only be added to your list after they have confirmed "
+"their subscription."
+msgstr ""
+
+#: lib/addon-settings.php:150
+msgid "Error. Please try again"
+msgstr ""
+
+#: lib/addon-settings.php:156
+msgid "Settings saved."
+msgstr ""
+
+#: lib/addon-settings.php:161
+msgid "Settings not saved."
+msgstr ""
+
+#: lib/addon-settings.php:178
+msgid "The MailChimp API Key field cannot be left blank."
+msgstr ""
+
+#: lib/addon-settings.php:189
+msgid "The MailChimp sign-up label cannot be left blank."
+msgstr ""
+
+#: lib/addon-settings.php:203
+msgid "Sign up to receive updates via email!"
+msgstr ""
+
+#: lib/product-features/class.mailchimp.php:40
+msgid "Set the Product's MailChimp options"
+msgstr ""
+
+#: lib/product-features/class.mailchimp.php:112
+msgid "When a customer purchases this product, add them to this list..."
+msgstr ""
+
+#: lib/product-features/class.mailchimp.php:117
+msgid "This is the list you want to use from MailChimp."
+msgstr ""
+
+#: lib/product-features/class.mailchimp.php:119
+msgid "Select a Mailchimp List"
+msgstr ""
+
+#: lib/product-features/class.mailchimp.php:131
+msgid ""
+"It appears that you do not have any MailChimp lists setup, go to Mailchimp "
+"and add at least one list to setup Mailchimp for this product."
+msgstr ""
+
+#: lib/product-features/class.mailchimp.php:134
+msgid ""
+"You have not added a Mailchimp API key to your addon settings, please go to "
+"the Mailchimp add-on settings to complete the setup and return to this "
+"product to finish setting it up with a Mailchimp list."
+msgstr ""
+
+#: lib/required-hooks.php:21
+msgid "Setup Add-on"
+msgstr ""
+
+#: lib/updater/admin.php:131
+msgid ""
+"To receive automatic updates for %l, use the <a href=\"%s\">iThemes "
+"Licensing</a> page found in the Settings menu."
+msgstr ""
+
+#: lib/updater/admin.php:138 lib/updater/admin.php:144
+#: lib/updater/settings-page.php:302
+msgid "iThemes Licensing"
+msgstr ""
+
+#: lib/updater/admin.php:170
+msgid "Manage iThemes product licenses to receive automatic upgrade support"
+msgstr ""
+
+#: lib/updater/admin.php:170
+msgid "License"
+msgstr ""
+
+#: lib/updater/api.php:41 lib/updater/api.php:56
+msgid ""
+"<p>Unable to get changelog data at this time.</p><p>Error <code>%1$s</code>: "
+"%2$s</p>"
+msgstr ""
+
+#: lib/updater/api.php:44
+msgid ""
+"<p>Unable to get changelog data at this time.</p><p>Error: Unrecognized "
+"response from <code>wp_remote_get</code>.</p>"
+msgstr ""
+
+#: lib/updater/api.php:47
+msgid ""
+"<p>Unable to get changelog data at this time.</p><p>Error code <code>%1$s</"
+"code>: %2$s</p>"
+msgstr ""
+
+#: lib/updater/api.php:58
+msgid ""
+"<p>Unable to get changelog data at this time.</p><p>Error: Unrecognized "
+"response from iThemes API server.</p>"
+msgstr ""
+
+#: lib/updater/server.php:74
+msgid ""
+"The server could not be contacted. Requests are delayed for %d minute to "
+"allow the server to recover."
+msgid_plural ""
+"The server could not be contacted. Requests are delayed for %d minutes to "
+"allow the server to recover."
+msgstr[0] ""
+msgstr[1] ""
+
+#: lib/updater/server.php:145
+msgid "The server was unable to be contacted."
+msgstr ""
+
+#: lib/updater/server.php:155
+msgid ""
+"An error occurred when communicating with the iThemes update server: %s (%s)"
+msgstr ""
+
+#: lib/updater/settings-page.php:77
+msgid ""
+"Incorrect password. Please make sure that you are supplying your iThemes "
+"membership username and password details."
+msgstr ""
+
+#: lib/updater/settings-page.php:81
+msgid ""
+"Invalid username. Please make sure that you are supplying your iThemes "
+"membership username and password details."
+msgstr ""
+
+#: lib/updater/settings-page.php:84
+msgid ""
+"The licensing server reports that the %1$s (%2$s) product is unknown. Please "
+"contact support for assistance."
+msgstr ""
+
+#: lib/updater/settings-page.php:87
+msgid ""
+"%1$s could not be licensed since the membership account is out of available "
+"licenses for this product. You can unlicense the product on other sites or "
+"upgrade your membership to one with a higher number of licenses in order to "
+"increase the amount of available licenses."
+msgstr ""
+
+#: lib/updater/settings-page.php:90
+msgid ""
+"%s could not be licensed due to an internal error. Please try to license %s "
+"again at a later time. If this problem continues, please contact iThemes "
+"support."
+msgstr ""
+
+#: lib/updater/settings-page.php:96
+msgid ""
+"An unknown error relating to the %1$s product occurred. Please contact "
+"iThemes support. Error details: %2$s"
+msgstr ""
+
+#: lib/updater/settings-page.php:98
+msgid ""
+"An unknown error occurred. Please contact iThemes support. Error details: %s"
+msgstr ""
+
+#: lib/updater/settings-page.php:129
+msgid "Settings saved"
+msgstr ""
+
+#: lib/updater/settings-page.php:136
+msgid ""
+"You must supply an iThemes membership username and password in order to "
+"license products."
+msgstr ""
+
+#: lib/updater/settings-page.php:138
+msgid ""
+"You must supply an iThemes membership username in order to license products."
+msgstr ""
+
+#: lib/updater/settings-page.php:140
+msgid ""
+"You must supply an iThemes membership password in order to license products."
+msgstr ""
+
+#: lib/updater/settings-page.php:142
+msgid ""
+"You must select at least one product to license. Ensure that you select the "
+"products that you wish to license in the listing below."
+msgstr ""
+
+#: lib/updater/settings-page.php:157
+msgid ""
+"An unknown server error occurred. Please try to license your products again "
+"at another time."
+msgstr ""
+
+#: lib/updater/settings-page.php:177
+msgid "Your product subscription has expired"
+msgstr ""
+
+#: lib/updater/settings-page.php:184
+msgid "Successfully licensed %l."
+msgstr ""
+
+#: lib/updater/settings-page.php:188 lib/updater/settings-page.php:193
+msgid "Unable to license %1$s. Reason: %2$s"
+msgstr ""
+
+#: lib/updater/settings-page.php:201
+msgid ""
+"You must supply an iThemes membership username and password in order to "
+"remove licenses."
+msgstr ""
+
+#: lib/updater/settings-page.php:203
+msgid ""
+"You must supply an iThemes membership username in order to remove licenses."
+msgstr ""
+
+#: lib/updater/settings-page.php:205
+msgid ""
+"You must supply an iThemes membership password in order to remove licenses."
+msgstr ""
+
+#: lib/updater/settings-page.php:207
+msgid ""
+"You must select at least one license to remove. Ensure that you select the "
+"licenses that you wish to remove in the listing below."
+msgstr ""
+
+#: lib/updater/settings-page.php:222
+msgid ""
+"An unknown server error occurred. Please try to remove licenses from your "
+"products again at another time."
+msgstr ""
+
+#: lib/updater/settings-page.php:243
+msgid "Unknown server error."
+msgstr ""
+
+#: lib/updater/settings-page.php:248
+msgid "Successfully removed license from %l."
+msgid_plural "Successfully removed licenses from %l."
+msgstr[0] ""
+msgstr[1] ""
+
+#: lib/updater/settings-page.php:252
+msgid "Unable to remove license from %1$s. Reason: %2$s"
+msgstr ""
+
+#: lib/updater/settings-page.php:324
+msgid "Settings"
+msgstr ""
+
+#: lib/updater/settings-page.php:330
+msgid "Quick Release Updates"
+msgstr ""
+
+#: lib/updater/settings-page.php:337
+msgid "Enable quick release updates"
+msgstr ""
+
+#: lib/updater/settings-page.php:340
+msgid ""
+"Some products have quick releases that are created to solve specific issues "
+"that some users experience. In order to avoid causing users to have updates "
+"show up too frequently, automatic updates to these quick releases are "
+"disabled by default. Enabling this feature allows quick releases to be "
+"available to the automatic update system. Using this option is only "
+"recommended if support has requested that you enable it in order to receive "
+"a quick release. You should disable this option at a later time after "
+"confirming that the quick release solves the issue for you."
+msgstr ""
+
+#: lib/updater/settings-page.php:347
+msgid "Save Settings"
+msgstr ""
+
+#: lib/updater/settings-page.php:366 lib/updater/settings-page.php:397
+#: lib/updater/settings-page.php:521 lib/updater/settings-page.php:589
+msgid "Product"
+msgstr ""
+
+#: lib/updater/settings-page.php:367 lib/updater/settings-page.php:399
+msgid "Member"
+msgstr ""
+
+#: lib/updater/settings-page.php:368 lib/updater/settings-page.php:401
+msgid "Expiration"
+msgstr ""
+
+#: lib/updater/settings-page.php:369 lib/updater/settings-page.php:402
+msgid "Remaining Licenses"
+msgstr ""
+
+#: lib/updater/settings-page.php:385
+msgid "Licensed Products"
+msgstr ""
+
+#: lib/updater/settings-page.php:391 lib/updater/settings-page.php:515
+msgid "Select All"
+msgstr ""
+
+#: lib/updater/settings-page.php:400
+msgid "Product Status"
+msgstr ""
+
+#: lib/updater/settings-page.php:410
+msgid "unlimited"
+msgstr ""
+
+#: lib/updater/settings-page.php:451 lib/updater/settings-page.php:545
+msgid "Select %s"
+msgstr ""
+
+#: lib/updater/settings-page.php:471
+msgid "Remove Licenses"
+msgstr ""
+
+#: lib/updater/settings-page.php:505
+msgid "Unlicensed Products"
+msgstr ""
+
+#: lib/updater/settings-page.php:507
+msgid ""
+"The following products have not been licensed. Licensing a product gives you "
+"access to automatic updates from within WordPress."
+msgstr ""
+
+#: lib/updater/settings-page.php:508
+msgid ""
+"To license products, select the products you wish to license, enter your "
+"iThemes membership username and password, and press the License Products "
+"button."
+msgstr ""
+
+#: lib/updater/settings-page.php:509
+msgid "Need help? <a href=\"%s\">Click here for a quick video tutorial</a>."
+msgstr ""
+
+#: lib/updater/settings-page.php:561
+msgid "License Products"
+msgstr ""
+
+#: lib/updater/settings-page.php:581
+msgid "Unrecognized Products"
+msgstr ""
+
+#: lib/updater/settings-page.php:583
+msgid ""
+"The following products were not recognized by the licensing system. This can "
+"be due to a bug in the product code, a temporary server issue, or because "
+"the product is no longer supported."
+msgstr ""
+
+#: lib/updater/settings-page.php:584
+msgid ""
+"Please check this page again at a later time to see if the problem resolves "
+"itself. If the product remains, please contact <a href=\"%s\">iThemes "
+"support</a> and provide them with the details given below."
+msgstr ""
+
+#: lib/updater/settings-page.php:590
+msgid "Type"
+msgstr ""
+
+#: lib/updater/settings-page.php:591
+msgid "Package"
+msgstr ""
+
+#: lib/updater/settings-page.php:592
+msgid "Version"
+msgstr ""
+
+#: lib/updater/settings-page.php:593
+msgid "Server Response"
+msgstr ""
+
+#: lib/updater/settings-page.php:603
+msgid "Unknown Error"
+msgstr ""
+
+#: lib/updater/settings-page.php:642
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] ""
+msgstr[1] ""
+
+#: lib/updater/settings-page.php:644
+msgid "%d hour"
+msgid_plural "%d hours"
+msgstr[0] ""
+msgstr[1] ""
+
+#: lib/updater/settings-page.php:646
+msgid "%d minute"
+msgid_plural "%d minutes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: lib/updater/settings-page.php:648
+msgid "%d second"
+msgid_plural "%d seconds"
+msgstr[0] ""
+msgstr[1] ""
+
+#: lib/updater/settings-page.php:651
+msgid "%s ago"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "iThemes Exchange - MailChimp Add-on"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "http://ithemes.com/exchange/mailchimp/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Adds the MailChimp addon to iThemes Exchange"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "iThemes"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://ithemes.com"
+msgstr ""

@@ -1,0 +1,112 @@
+1.0.0a - 2012-02-06 - Daniel Harzheim
+	-initial completed plugin, all functionality present, bugs still present, preparing for beta.
+1.0.0rc - 2012-02-09 - Daniel Harzheim
+	-all fixes completed, wording updated. Looking for bugs.
+1.0.0 - 2012-02-20 - Daniel Harzheim
+	-updater l:82 changed from $this_plugin_class_name to pb_frolic
+	-added color picker .js and .css files
+	-added image folder for colorpicker
+	-added new function to twittergitter.class.php to link username in each tweet
+	-added custom classes to each twitter object, and each list item in object along with username in each post
+1.0.1 - 2012-02-22 - Daniel Harzheim
+	-added wrapper divs to all buttons to they're easier to re-position, each div has a unique id and a generic class.
+	-wrapped object/account title listings in htmlentities() for security purposes.
+1.0.2 - 2012-02-25 - Daniel Harzheim
+	-<div class="pb-frolic pb-frolic-twitter pb-frolic-tweet-button pb-frolic-object-21">
+	-div classes now all look like the one pictured above to be more rvw friendly
+1.0.4 - 2012-03-06 - Daniel Harzheim
+	Fixed names in twittergitter so that name is wrapped in a class. Now able to use class to disable name at beginning of feed 'Dan: here is my tweet' can now be 'here is my tweet'
+1.1.0 - 2012-03-19 - Daniel Harzheim
+	Google+ Badge:   added height
+	Google+ Badge:   added theme
+	Google+ Button:  added annotation (layout)
+	Facebook Like:   added layout
+	Facebook:        added subscribe button
+	Twitter Feed:    update on save event
+	Twitter Feed:    feed title may be disabled
+	Twitter Feed:    username removable from tweets
+	Twitter Feed:    inherits theme styles
+	Frolic:          Added widget title
+	Frolic:          General changes to verbage.
+1.1.1 - 2012-03-26 - Daniel Harzheim
+	Removing debug info left in from 1.1.0 update. (oops)
+1.1.2 - 2012-03-27 - Daniel Harzheim
+	class facebook() is now pb_frolic_facebook() to reduce conflicts from other plugins.
+	added some class level checks for safety.
+1.1.3 - 2012-03-27 - Daniel Harzheim
+	Added the ability to resize G+ Badge Width.
+1.2.0 - 2012-06-05 - Daniel Harzheim
+	Added LinkedIn Objects:
+		Share
+		Profile
+		Insider
+		Company Profile
+		Recommend
+		Show Jobs
+		Follow
+	Added Google+ Object
+		Share Button
+	Fixed Javascript loading issues.
+1.2.1 - 2012-08-30 - Daniel Harzheim
+	Fixed inability to delete accounts.
+1.2.2 - 2012-10-11 - Josh Benham
+	Changed twitter rss url to newer version in classes/twittergetter.php on line 62
+1.2.3 - 2012-12-27 - Glenn Ansley
+	Replace pluginbuddy with ithemes in default Twitter settings
+	Provide a nice HTML error when failing to connect to Twitter
+	Updated Plugin Header data
+
+	Modified:
+		init.php
+		classes/twittergitter.class.php
+1.2.4 - 2013-05-09 - Josh Benham
+	New Updater
+1.2.5 - 2013-05-10 - Ronald van Weerd
+	Synch version number
+
+	Modified:
+		init.php
+1.3.0 - 2013-06-18 - Josh Benham
+	Updated class.twittergitter.php to use v1.1 of Twitter's api.
+	Added new settings for new twitter api on settings page.
+1.3.1 - 2013-06-21 - Packaging Bot
+	Updated lib/updater to version 1.0.2
+1.3.2 - 2013-06-26 - Josh Benham
+	Added compatibility for php 5.5.0.
+	Added compatibility for WordPress 3.6.
+1.3.3 - 2013-09-11 - Josh Benham
+	Removed user roll setting for multisite users due to WordPress inconsistencies.
+1.3.4 - 2013-09-20 - Packaging Bot
+	Updated lib/updater to version 1.0.3
+1.3.5 - 2013-10-02 - Packaging Bot (lib/updater)
+	Big rewrite to the updater in order to make the code more flexible. This improves compatibility with plugins that allow for remote updating of plugins and themes.
+	The updater now supports providing changelog details for plugins and themes that have updates available. These details can be viewed by clicking the "View version **** details" link for the appropriate plugin or theme.
+1.3.6 - 2013-10-04 - Packaging Bot (lib/updater)
+	Enhancement: When releases with four version digits are released (such as 2.1.0.3), by default, the updater will not offer to update if just this last digit is updated. For instance, it will not automatically offer to update 2.1.0.1 to 2.1.0.3; rather, an automatic upgrade will become available when version 2.1.1 or greater is released. If you wish to force an update to these versions, you can add ithemes-updater-force-minor-update=1 to an admin page request (such as http://domain.com/wp-admin/index.php?ithemes-updater-force-minor-update=1) in order to force the updater make these releases available for an hour. If the update is not performed within the hour, the updater reverts back to default behavior.
+	Bug Fix: Corrected source of the following error when updating: Download failed. SSL certificate problem, verify that the CA cert is OK. Details: error:14090086:SSL routines:SSL3_GET_SERVER_CERTIFICATE:certificate verify failed
+	Bug Fix: Corrected source of the following warning: Warning: require_once(/api.php) [function.require-once]: failed to open stream: No such file or directory
+1.3.7 - 2013-10-07 - Packaging Bot (lib/updater)
+	Bug Fix: Corrected another source of the following warning which occur immediate after updating the plugin or theme: Warning: require_once(/api.php) [function.require-once]: failed to open stream: No such file or directory
+1.3.8 - 2013-10-25 - Josh Benham
+	Removed deprecated ereg_replace function in classes/twittergitter.php.
+1.3.9 - 2013-10-28 - Packaging Bot (lib/updater)
+	Enhancement: Added a "Quick Release Updates" setting to the bottom of the licensing page. Enabling this option allows the site to receive automatic update notices for product quick releases (releases that do not have automatic update support by default).
+	Enhancement: Changed how the licensing page works on Multisite. Now it will appear at Settings > iThemes Licensing in the network admin Dashboard and at Settings > iThemes Licensing on sites when the current user is a network admin. This prevents exposing the licensing page to users that don't are not super users and thus should not be performing updates. As this update makes the functionality of the "Licensing Page Access" setting obsolete, the setting has been removed.
+	Enhancement: Using the ithemes-updater-force-minor-update query string variable will now force a data flush, allowing any available quick release updates to appear instantly.
+	Enhancement: Added "License" links to the Plugins and Themes pages for the Network Admin Dashboard of multisite installs.
+1.3.10 - 2013-12-13 - Packaging Bot (lib/updater)
+	Enhancement: Recently updated plugins and themes no longer report that an update is available.
+	Enhancement: Added alternate line styling to the listings on the licensing page.
+	Enhancement: Products with iThemes in the name will now properly capitalize the name.
+	Enhancement: The updater and licensing system now handle iThemes server outages without causing long page delays or by reporting confusing error messages.
+1.3.11 - 2013-12-18 - Packaging Bot (lib/updater)
+	Bug Fix: Removed unneeded check on package-info.ithemes.com which was causing performance issues on some sites.
+1.3.12 - 2013-12-19 - Packaging Bot (lib/updater)
+	Bug Fix: Licensing will now be universal across all sites of a multisite network. This means that you will only need to license on one site to have the license apply across the entire network.
+1.3.13 - 2014-02-03 - Packaging Bot (lib/updater)
+	Bug Fix: Licensing on SSL-enabled sites now works properly.
+1.3.15 - 2014-08-05 - Josh Benham
+	Added filter to change capability parameter in add_menu_page and add_submenu_page.
+1.3.16 - 2014-11-14 - Packaging Bot (lib/updater)
+	Enhancement: Reduced caching to allow updates to appear more quickly.
+	Enhancement: Authenticating users now uses the new authentication system.

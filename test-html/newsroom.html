@@ -1,0 +1,442 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Welcome to the Delaware Community Foundation</title>
+<link href="styles.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script><script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-29013850-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<style type="text/css">
+<!--
+.style4 {font-family: Verdana, Arial, Helvetica, sans-serif}
+-->
+</style>
+</head>
+
+<body onload="MM_preloadImages('images/LogosIconsButtons/button_login2.gif','images/LogosIconsButtons/button_donation2.gif','images/LogosIconsButtons/button_catalogue2.gif')">
+<script type="text/javascript">
+
+/***********************************************
+* Ultimate Fade-In Slideshow (v1.51): © Dynamic Drive (http://www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit http://www.dynamicdrive.com/ for this script and 100s more.
+***********************************************/
+
+var fadeimages=new Array()
+//SET IMAGE PATHS. Extend or contract array as needed
+fadeimages[0]=["home1.jpg", "", ""] //plain image syntax
+fadeimages[1]=["home2.jpg", "", ""] //plain image syntax
+fadeimages[2]=["home3.jpg", "", ""] //plain image syntax
+fadeimages[3]=["home4.jpg", "", ""] //plain image syntax
+fadeimages[4]=["home5.jpg", "", ""] //plain image syntax
+fadeimages[5]=["home6.jpg", "", ""] //plain image syntax
+
+var fadebgcolor="white"
+
+////NO need to edit beyond here/////////////
+
+var fadearray=new Array() //array to cache fadeshow instances
+var fadeclear=new Array() //array to cache corresponding clearinterval pointers
+
+var dom=(document.getElementById) //modern dom browsers
+var iebrowser=document.all
+
+function fadeshow(theimages, fadewidth, fadeheight, borderwidth, delay, pause, displayorder){
+this.pausecheck=pause
+this.mouseovercheck=0
+this.delay=delay
+this.degree=10 //initial opacity degree (10%)
+this.curimageindex=0
+this.nextimageindex=1
+fadearray[fadearray.length]=this
+this.slideshowid=fadearray.length-1
+this.canvasbase="canvas"+this.slideshowid
+this.curcanvas=this.canvasbase+"_0"
+if (typeof displayorder!="undefined")
+theimages.sort(function() {return 0.5 - Math.random();}) //thanks to Mike (aka Mwinter) :)
+this.theimages=theimages
+this.imageborder=parseInt(borderwidth)
+this.postimages=new Array() //preload images
+for (p=0;p<theimages.length;p++){
+this.postimages[p]=new Image()
+this.postimages[p].src=theimages[p][0]
+}
+
+var fadewidth=fadewidth+this.imageborder*2
+var fadeheight=fadeheight+this.imageborder*2
+
+if (iebrowser&&dom||dom) //if IE5+ or modern browsers (ie: Firefox)
+document.write('<div id="master'+this.slideshowid+'" style="position:relative;width:'+fadewidth+'px;height:'+fadeheight+'px;overflow:hidden;"><div id="'+this.canvasbase+'_0" style="position:absolute;width:'+fadewidth+'px;height:'+fadeheight+'px;top:0;left:0;filter:progid:DXImageTransform.Microsoft.alpha(opacity=10);opacity:0.1;-moz-opacity:0.1;-khtml-opacity:0.1;background-color:'+fadebgcolor+'"></div><div id="'+this.canvasbase+'_1" style="position:absolute;width:'+fadewidth+'px;height:'+fadeheight+'px;top:0;left:0;filter:progid:DXImageTransform.Microsoft.alpha(opacity=10);opacity:0.1;-moz-opacity:0.1;-khtml-opacity:0.1;background-color:'+fadebgcolor+'"></div></div>')
+else
+document.write('<div><img name="defaultslide'+this.slideshowid+'" src="'+this.postimages[0].src+'"></div>')
+
+if (iebrowser&&dom||dom) //if IE5+ or modern browsers such as Firefox
+this.startit()
+else{
+this.curimageindex++
+setInterval("fadearray["+this.slideshowid+"].rotateimage()", this.delay)
+}
+}
+
+function fadepic(obj){
+if (obj.degree<100){
+obj.degree+=10
+if (obj.tempobj.filters&&obj.tempobj.filters[0]){
+if (typeof obj.tempobj.filters[0].opacity=="number") //if IE6+
+obj.tempobj.filters[0].opacity=obj.degree
+else //else if IE5.5-
+obj.tempobj.style.filter="alpha(opacity="+obj.degree+")"
+}
+else if (obj.tempobj.style.MozOpacity)
+obj.tempobj.style.MozOpacity=obj.degree/101
+else if (obj.tempobj.style.KhtmlOpacity)
+obj.tempobj.style.KhtmlOpacity=obj.degree/100
+else if (obj.tempobj.style.opacity&&!obj.tempobj.filters)
+obj.tempobj.style.opacity=obj.degree/101
+}
+else{
+clearInterval(fadeclear[obj.slideshowid])
+obj.nextcanvas=(obj.curcanvas==obj.canvasbase+"_0")? obj.canvasbase+"_0" : obj.canvasbase+"_1"
+obj.tempobj=iebrowser? iebrowser[obj.nextcanvas] : document.getElementById(obj.nextcanvas)
+obj.populateslide(obj.tempobj, obj.nextimageindex)
+obj.nextimageindex=(obj.nextimageindex<obj.postimages.length-1)? obj.nextimageindex+1 : 0
+setTimeout("fadearray["+obj.slideshowid+"].rotateimage()", obj.delay)
+}
+}
+
+fadeshow.prototype.populateslide=function(picobj, picindex){
+var slideHTML=""
+if (this.theimages[picindex][1]!="") //if associated link exists for image
+slideHTML='<a href="'+this.theimages[picindex][1]+'" target="'+this.theimages[picindex][2]+'">'
+slideHTML+='<img src="'+this.postimages[picindex].src+'" border="'+this.imageborder+'px">'
+if (this.theimages[picindex][1]!="") //if associated link exists for image
+slideHTML+='</a>'
+picobj.innerHTML=slideHTML
+}
+
+
+fadeshow.prototype.rotateimage=function(){
+if (this.pausecheck==1) //if pause onMouseover enabled, cache object
+var cacheobj=this
+if (this.mouseovercheck==1)
+setTimeout(function(){cacheobj.rotateimage()}, 100)
+else if (iebrowser&&dom||dom){
+this.resetit()
+var crossobj=this.tempobj=iebrowser? iebrowser[this.curcanvas] : document.getElementById(this.curcanvas)
+crossobj.style.zIndex++
+fadeclear[this.slideshowid]=setInterval("fadepic(fadearray["+this.slideshowid+"])",50)
+this.curcanvas=(this.curcanvas==this.canvasbase+"_0")? this.canvasbase+"_1" : this.canvasbase+"_0"
+}
+else{
+var ns4imgobj=document.images['defaultslide'+this.slideshowid]
+ns4imgobj.src=this.postimages[this.curimageindex].src
+}
+this.curimageindex=(this.curimageindex<this.postimages.length-1)? this.curimageindex+1 : 0
+}
+
+fadeshow.prototype.resetit=function(){
+this.degree=10
+var crossobj=iebrowser? iebrowser[this.curcanvas] : document.getElementById(this.curcanvas)
+if (crossobj.filters&&crossobj.filters[0]){
+if (typeof crossobj.filters[0].opacity=="number") //if IE6+
+crossobj.filters(0).opacity=this.degree
+else //else if IE5.5-
+crossobj.style.filter="alpha(opacity="+this.degree+")"
+}
+else if (crossobj.style.MozOpacity)
+crossobj.style.MozOpacity=this.degree/101
+else if (crossobj.style.KhtmlOpacity)
+crossobj.style.KhtmlOpacity=this.degree/100
+else if (crossobj.style.opacity&&!crossobj.filters)
+crossobj.style.opacity=this.degree/101
+}
+
+
+fadeshow.prototype.startit=function(){
+var crossobj=iebrowser? iebrowser[this.curcanvas] : document.getElementById(this.curcanvas)
+this.populateslide(crossobj, this.curimageindex)
+if (this.pausecheck==1){ //IF SLIDESHOW SHOULD PAUSE ONMOUSEOVER
+var cacheobj=this
+var crossobjcontainer=iebrowser? iebrowser["master"+this.slideshowid] : document.getElementById("master"+this.slideshowid)
+crossobjcontainer.onmouseover=function(){cacheobj.mouseovercheck=1}
+crossobjcontainer.onmouseout=function(){cacheobj.mouseovercheck=0}
+}
+this.rotateimage()
+}
+
+</script>
+
+
+
+<table width="770" border="0" align="center" cellpadding="0" cellspacing="0" style="border: solid gray 1px;">
+  <tr hright="23">
+ <td height="23" background="images/LogosIconsButtons/top_colors.jpg" ><table width="770" border="0" cellspacing="0" cellpadding="0">
+   <tr><table width="770" border="0" align="center" cellpadding="0" cellspacing="0" style="border: solid gray 1px;">
+  <tr hright="23">
+ <td height="23" background="images/LogosIconsButtons/top_colors.jpg" ><table width="770" border="0" cellspacing="0" cellpadding="0">
+   <tr>
+     <td width="67" align="center"><a href="give.html" title="Give" class="side">Give</a></td>
+     <td width="118" align="center"><a href="newsroom.html" title="Newsroom" class="side">Newsroom</a></td>
+     <td width="114" align="center"><a href="contact.html" title="Contact Us" class="side">Contact Us</a></td>
+
+     <td width="452" align="right" class="footer"><!--<strong>Search: &nbsp;
+       <input name="textfield" type="text" style="width:130px; height:13px; border:solid 1px #849bbf; COLOR: #496792; FONT: 8pt Verdana; " id="textfield" />
+</strong>--></td>
+     <td width="19">&nbsp;</td>
+   </tr>
+ </table></td>
+  </tr>
+
+   <tr>
+    <td><table width="770" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="162" align="left" valign="top" bgcolor="#eff2f7"><table width="162" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td><a href="index.html"><img src="images/LogosIconsButtons/logo.gif" alt="Back To Home" width="162" height="95" hspace="0" vspace="0" border="0" /></a></td>
+          </tr>
+          <tr>
+            <td><Div class="nav12">
+
+	<A href="index.html"> Home</A>
+				<Div class="nav12select"><a href="about.html" class="side"> About DCF</a></div>
+
+
+                <Div class="navsub">
+
+		<A href="about_quickfacts.html">>  Quick Facts</A>
+				<a href="about_history.html">>   History</a>
+				<A href="about_financials.html">>   Financials</A><A href="about_boards_committees.html">>   Board &amp; Committees</A><A href="about_staff.html">>   Our Staff</A>
+		<A href="about_publications.html">>   Publications</A>
+
+		<Div class="navsubselect"><A href="about_news.html">>   News &amp; Stories</A></Div></Div>
+
+
+				<A href="ways.html"> Ways To Give</A><A href="fundholders.html"> For Our Fundholders</A><A href="grants.html"> Apply For Grants</A>
+		<A href="scholarships.html"> Apply For Scholarships</A>
+
+		<A href="advisors.html"> For Professional Advisors</A>
+		<A href="events.html"> Event Registration</A>
+		<A href="contact.html"> Contact Us</A></Div>
+              </td>
+          </tr>
+          <tr>
+            <td><img src="images/Headers/header_quicklinks.jpg" alt="Quick Links" width="162" height="33" /><br />
+                <a href="https://online.delcf.org"><img src="images/LogosIconsButtons/button_login.gif" alt="Current Donor Log-In" width="162" height="31" hspace="0" vspace="0" border="0" id="Image1" onmouseover="MM_swapImage('Image1','','images/LogosIconsButtons/button_login2.gif',1)" onmouseout="MM_swapImgRestore()" /></a><br />
+                <a href="donate.php"><img src="images/LogosIconsButtons/button_donation.gif" alt="Make A Donation" width="162" height="34" hspace="0" vspace="0" border="0" id="Image2" onmouseover="MM_swapImage('Image2','','images/LogosIconsButtons/button_donation2.gif',1)" onmouseout="MM_swapImgRestore()" /></a><br />
+                <a href="donations2.php?f=1"><img src="images/LogosIconsButtons/button_catalogue.gif" alt="Charitable Catalogue" width="162" height="32" hspace="0" vspace="0" border="0" id="Image3" onmouseover="MM_swapImage('Image3','','images/LogosIconsButtons/button_catalogue2.gif',1)" onmouseout="MM_swapImgRestore()" /></a><br />
+                <a href="http://classic.cof.org/members/content.cfm?itemnumber=766&amp;navItemNumber=2490" target="_blank"><img src="images/LogosIconsButtons/cflogo.gif" alt="CF Logo" width="162" height="114" hspace="0" vspace="0" border="0" /></a>
+              <p>&nbsp;</p></td>
+          </tr>
+        </table></td>
+        <td width="608" align="left" valign="top" bgcolor="#FFFFFF"><table width="608" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left" valign="top"><img src="images/LogosIconsButtons/spacer.gif" alt="DCF" width="225" height="95" /><img src="images/LogosIconsButtons/tagline.gif" alt="Connecting People Who Care" title="Connecting People Who Care" width="383" height="95" /><br />
+              <img src="home5.jpg" alt="About DCF" title="About DCF" /></td>
+          </tr>
+          <tr>
+            <td></td>
+          </tr>
+         <!-- <tr>
+            <td bgcolor="#FFFFFF">&nbsp;</td>
+          </tr> -->
+          <tr>
+            <td><table width="624" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="28">&nbsp;</td>
+                <td width="556"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td height="45" align="left" valign="middle"><span class="header">News &amp; Stories</span></td>
+                  </tr>
+                  <tr>
+                    <td> <p class="left" style="margin-top: 0; margin-bottom: 0">
+                      <span class="bodytext"><b>Media
+            Inquiries</b> </span></p>
+            <p class="left" style="margin-top: 0; margin-bottom: 0">
+              <span class="bodytext">Please
+            contact Allison Taylor Levine, Director of Communications, by calling
+            302.504.5226 or email <a href="mailto:alevine@delcf.org">alevine@delcf.org</a>.   </span></p>
+
+            <p class="left" style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+            <p class="left" style="margin-top: 0; margin-bottom: 0">
+              <span class="bodytext"><b>What is
+            the Delaware Community Foundation?</b> </span></p>
+            <p class="left" style="margin-top: 0; margin-bottom: 0">
+              <span class="bodytext">Since 1986,
+            the Delaware Community Foundation has been connecting people who
+            care with the causes they care about by helping them establish
+            charitable funds and provide grants to the nonprofit organizations
+            they wish to support. With more than 1,200 funds, over $225 million
+            in assets and annual grants of about $15 million, the Foundation
+            provides a lasting source of charitable funding to benefit
+            Delawareans now and for many generations to come. </span></p>
+            <p class="bodytext">To learn more about the work of
+            the Foundation and our involvement throughout the First State, you
+            can view the following <b>News
+            Releases </b>or our recent
+
+            <a href="about_publications.html">Publications. </a> </p>
+            <p class="bodytext" style="margin-top: 0"><b>News Releases</b><b></b> <br />
+              <em>(Updates under construction! If you need a recent press release, please <a href="mailto:alevine@delcf.org">contact us</a>.)</em></p>
+            <p class="bodytext"><a href="Download/PRs/PRs2012/prCapitalGrants12-6-12.doc">December 6, 2012</a><a href="Download/PRs/PRs2012/prScholarshipAnnouncement10-18-12.doc"><a href="Download/PRs/PRs2012/prScholarshipAnnouncement10-18-12.doc"></a><br />
+              DELAWARE COMMUNITY FOUNDATION ANNOUNCES 2013 CAPITAL GRANTS</p>
+            <p class="bodytext"><a href="Download/PRs/PRs2012/prFFWGrantsWorkshop12-3-12.doc">December 5, 2012</a><a href="Download/PRs/PRs2012/prScholarshipAnnouncement10-18-12.doc"><a href="Download/PRs/PRs2012/prScholarshipAnnouncement10-18-12.doc"></a><br />
+              FINAL WORKSHOP FOR DCF’S FUND FOR WOMEN GRANTS ON DECEMBER 12 </p>
+            <p class="bodytext" style="margin-top: 0"><b></b><a href="Download/PRs/PRs2012/prFFWGrantsWorkshop11-26-12.doc">November 26, 2012</a><a href="Download/PRs/PRs2012/prScholarshipAnnouncement10-18-12.doc"><a href="Download/PRs/PRs2012/prScholarshipAnnouncement10-18-12.doc"></a><br />
+              WORKSHOP FOR DCF’S FUND FOR WOMEN GRANTS ON DECEMBER 4 </p>
+            <p class="bodytext" style="margin-top: 0"><b></b><a href="Download/PRs/PRs2012/prYPBNCCo11-21-12.doc">November 21, 2012</a><a href="Download/PRs/PRs2012/prScholarshipAnnouncement10-18-12.doc"><a href="Download/PRs/PRs2012/prScholarshipAnnouncement10-18-12.doc"></a><br />
+              DCF’S NEW CASTLE COUNTY YOUTH PHILANTHROPY BOARD INVITES GRANT APPLICATIONS </p>
+            <p class="bodytext"><a href="Download/PRs/PRs2012/prFFWGrantsAnnouncement11-15-12.doc">November 15, 2012</a><a href="Download/PRs/PRs2012/prScholarshipAnnouncement10-18-12.doc"><a href="Download/PRs/PRs2012/prScholarshipAnnouncement10-18-12.doc"></a><br />
+DCF’S FUND FOR WOMEN LAUNCHES 2013 GRANTS PROGRAM </p>
+            <p class="bodytext"><a href="Download/PRs/PRs2012/prPotterGrants11-2-12.doc">November 2, 2012</a><a href="Download/PRs/PRs2012/prScholarshipAnnouncement10-18-12.doc"><a href="Download/PRs/PRs2012/prScholarshipAnnouncement10-18-12.doc"></a><br />
+              MORE THAN $200,000 IN GRANTS AVAILABLE FOR KENT COUNTY NONPROFITS </p>
+            <p class="bodytext"><a href="Download/PRs/PRs2012/prScholarshipAnnouncement10-18-12.doc">              October 18, 2012</a><br />
+              MORE THAN 400 SCHOLARSHIPS AVAILABLE FOR 2013-2014 SCHOOL YEAR</p>
+            <p class="bodytext"><a href="Download/PRs/PRs2012/prTNGFFF9-27-2012.doc">September 27, 2012</a><br />
+              FALL FAMILY FESTIVAL AT RAMSEY’S FARM INCLUDES PONY RIDES, FACE PAINTING &amp; MORE</p>
+            <p class="bodytext"><a href="Download/PRs/PRs2012/prCannonNCLR9-27-12.doc">September 27, 2012</a><br />
+              CHRISTINE CANNON OF THE DCF’S ARSHT-CANNON FUND ELECTED 
+              AS A NEW BOARD DIRECTOR OF NCLR </p>
+            <p class="bodytext"><a href="Download/PRs/PRs2012/prTNGGrantApps8-7-12.doc">August 7, 2012</a><br />
+              DCF’S THE NEXT GENERATION ACCEPTING GRANT APPLICATIONS</p>
+            <p class="bodytext"><a href="Download/PRs/PRs2012/prTNGSouth-Board8-6-12.doc">August 5, 2012</a><br />
+              THE NEXT GENERATION-SOUTHERN DELAWARE LAUNCHES, ELECTS NEW LEADERSHIP TEAM</p>
+            <p class="bodytext"><a href="Download/PRs/PRs2012/prTNGBoardMembers7-31-12.doc">July 31, 2012</a><br />
+              THE NEXT GENERATION WELCOMES FOUR NEW BOARD MEMBERS </p>
+            <p class="bodytext"><a href="Download/PRs/PRs2012/prRapposelliExec7-20-12.doc">July 20, 2012</a><br />
+              RAPPOSELLI ACCEPTS LEADERSHIP POSITION ON DCF BOARD OF DIRECTORS</p>
+            <p class="bodytext"><a href="Download/PRs/PRs2012/prFFWNewDirectors7-17-12.doc">July 17, 2012</a><br />
+              DCF’S FUND FOR WOMEN WELCOMES NEW BOARD OF DIRECTORS  </p>
+            <p class="bodytext"><a href="Download/PRs/PRs2012/prCapitalGrants7-9-12.doc">July 9, 2012</a><br />
+              DELAWARE COMMUNITY FOUNDATION AWARDS $237,800 IN CAPITAL GRANTS</p>
+            <p class="bodytext"><a href="Download/PRs/PRs2012/prNewDirectors7-3-12.doc">July 3, 2012</a><br />
+              DCF APPOINTS THREE NEW BOARD MEMBERS AND WELCOMES NEW LEADERSHIP </p>
+            <p class="bodytext"><a href="/Download/PRs/PRs2012/prTNGSouthKickoff6-26-12.doc">June 26, 2012</a><br />
+              THE NEXT GENERATION OF THE DCF EXPANDS TO SOUTHERN DELAWARE </p>
+            <p class="bodytext"><a href="Download/PRs/PRs2012/prNFPWAward6-26-12.doc">June 26, 2012</a><a href="Download/PRs/PRs2012/prSDelReception6-1-12.doc"></a><br />
+              DCF RECEIVES NATIONAL AWARD FOR 25TH  ANNIVERSARY COMMUNICATIONS CAMPAIGN</p>
+            <p class="bodytext"><a href="/apply.html">June 6, 2012</a> (<a href="images/DavidFleming6-2012.jpg">photo</a>)<br />
+              DCF WELCOMES DAVID FLEMING AS SENIOR VICE PRESIDENT FOR DEVELOPMENT </p>
+            <p class="bodytext"><a href="Download/PRs/PRs2012/prSDelReception6-1-12.doc">June 1, 2012</a><br />
+              AN EVENING OF INSPIRING PHILANTHROPY: DCF’S SOUTHERN DELAWARE ANNUAL RECEPTION</p>
+            <p class="bodytext"><a href="Download/PRs/PRs2012/prSDelReception6-1-12.doc">May 24 2012</a><br />
+              ELEVEN NONPROFIT AGENCIES RECEIVE GRANTS TO HELP WOMEN AND GIRLS FROM DCF’S FUND FOR WOMEN  </p>
+            <p class="bodytext"><a href="/contact.html">May 21, 2012</a><br />
+              TOMORROW: DCF FUND FOR WOMEN TO AWARD $125,000 IN STATEWIDE GRANTS</p>
+            <p class="bodytext"><a href="Download/PRs/PRs2012/prFleming6-6-12.doc">May 17 2012</a><br />
+              EDUCATORS TO EXHIBIT LITERACY PROGRAMS FUNDED BY $234,000 FROM DCF’S FUND FOR CHILDREN’S LITERACY </p>
+            <p class="bodytext"><a href="Download/PRs/PRs2012/ma2FFWGrants5-21-12.doc">May 17, 2012</a><br />
+              DCF FUND FOR WOMEN TO AWARD $125,000 IN STATEWIDE GRANTS ON MAY 22</p>
+            <p class="bodytext"><a href="Download/PRs/PRs2012/maChildrensLitEvent5-17-12.doc">May 15 2012</a><br />
+              NEW CASTLE COUNTY YOUTH PHILANTHROPY BOARD TO PRESENT $12,500 IN GRANTS</p>
+            <p class="bodytext"><a href="Download/PRs/PRs2012/maFFWGrants5-17-12.doc">May 1, 2012</a><br />
+              FRIENDS OF HOCKESSIN COLORED SCHOOL #107 CONTINUE EFFORTS TO SAVE HISTORIC PROPERTY</p>
+            <p class="bodytext"><a href="Download/PRs/PRs2012/maYPBNCCPresentation5-15-12.doc">April 30 2012</a> <a href="images/SussexYPB4-26-12.jpg">(photo)</a><br />
+              SUSSEX COUNTY YOUTH PHILANTHROPY BOARD PRESENTS $10,000 IN GRANTS</p>
+            <p class="bodytext"><a href="Download/PRs/PRs2012/prFleming6-6-12.doc">April 24 2012</a><br />
+              SUSSEX COUNTY YOUTH PHILANTHROPY BOARD TO PRESENT $10,000 IN GRANTS</p>
+            <p class="bodytext"><a href="Download/PRs/PRs2012/ma21stCenturyGilmanAward4-23-12.doc">April 23 2012</a> <a href="images/SkipSchoenhals.png">(photo)</a><br />
+              SCHOENHALS TO RECEIVE GILMAN AWARD FOR IMPROVING THE LIVES OF CHILDREN </p>
+            <p class="bodytext"><a href="Download/PRs/PRs2012/prYPBKentAwards4-23-12.doc">April 23 2012</a> <a href="Download/YPB/YPB2012/KentYPB4-18-2012.JPG">(photo)</a><br />
+KENT COUNTY YOUTH PHILANTHROPY BOARD PRESENTS $10,000 IN GRANTS</p>
+            <p class="bodytext"><a href="Download/PRs/PRs2012/prHCS107Lien3-28-12.doc"></a><a href="Download/PRs/PRs2012/maYPBKentPresentation4-16-12.doc">April 16 2012</a><br />
+              KENT COUNTY YOUTH PHILANTHROPY BOARD TO PRESENT $10,000 IN GRANTS</p>
+            <p class="bodytext"><a href="Download/PRs/PRs2012/prHCS107Lien3-28-12.doc">March 28, 2012</a><br />
+              CONCERNED CITIZENS SAVE HISTORIC HOCKESSIN COLORED SCHOOL #107</p>
+            <p class="bodytext"><a href="Download/PRs/PRs2012/prEDiSSchol3-28-12.doc">March 28, 2012</a><br />
+              EDiS EXTENDS DEADLINE FOR SCHOLARSHIP APPLICATIONS </p>
+            <p class="bodytext"><a href="Download/PRs/PRs2012/prEquipGrants3-22-12.doc">March 22, 2012</a><br />
+              DCF AWARDS $25,000 IN EQUIPMENT GRANTS STATEWIDE  </p>
+            <p class="bodytext"><a href="Download/PRs/PRs2012/prDPAAward3-15-12.doc">March 15, 2012</a><br />
+              DCF WINS FIRST PLACE FOR 25th ANNIVERSARY COMMUNICATIONS PROGRAM  </p>
+            <p class="bodytext"><a href="Download/PRs/PRs2012/prScholarshipReminder3-7-12.doc">March 7, 2012</a><br />
+MORE THAN 300 SCHOLARSHIPS AVAILABLE FOR 2012-2013 SCHOOL YEAR </p>
+            <p class="bodytext"><a href="Download/PRs/PRs2012/prCountyBank2-10-12.doc">February 10, 2012</a> <a href="Download/PRs/PRs2012/prYPBSussexAwards4-30-12.doc">(photo)</a><br />
+              DCF WELCOMES COUNTY BANK AS NEW CORPORATE PARTNER </p>
+            <p class="bodytext"><a href="Download/PRs/PRs2012/prTNGGrantsAwarded2-9-12.doc">February 9, 2012</a> <br />
+THE NEXT GENERATION AWARDS $35,000 IN GRANTS TO FIGHT CHILDHOOD OBESITY  </p>
+            <p class="bodytext"><a href="Download/PRs/PRs2012/prTNGGrantsProgram2-7-12.doc">February 7, 2012</a> <br />
+              THE NEXT GENERATION WILL PRESENT $35,000 IN GRANTS TO LOCAL NONPROFITS</p>
+            <p class="bodytext"><a href="Download/PRs/PRs2012/prTNGBoardMembers1-24-12.doc"></a><a href="Download/PRs/PRs2012/prTNGGrantsProgram1-31-12.doc">January 31, 2012</a> <br />
+              THE NEXT GENERATION WILL PRESENT $35,000 IN GRANTS TO LOCAL NONPROFITS </p>
+            <p class="bodytext"><a href="Download/PRs/PRs2012/prTNGBoardMembers1-24-12.doc">January 24, 2012</a> <br />
+              (Photos: <a href="Download/TNG2011/BradHolden2011-PreferredPic.jpg">Bradley Holden</a>, <a href="images/NextGen/NextGenNorth/JennKinkus2011.jpg">Jennifer Kinkus</a>, <a href="Download/PRs/PRs2012/BrittanyMason2012.jpg">Brittany Mason</a>, <a href="Download/PRs/PRs2012/maYPBSussexPresentation4-24-12.doc">Jason Mellinger</a>, <a href="Download/TNG2011/Daniel_Struble2011.JPG">Dan Struble</a>)<br />
+              NEW BOARD MEMBERS JOIN THE NEXT GENERATION</p>
+            <p class="bodytext"><a href="Download/PRs/PRs2012/prChildLiteracyGrantsl1-20-12.doc">January 20, 2012</a><br />
+              DCF AWARDS $234,354 IN EARLY CHILDHOOD LITERACY GRANTS TO NEW CASTLE COUNTY SCHOOLS</p>
+            <p class="bodytext"><a href="Download/PRs/PRs2012/prHockessinColoredSchool1-11-12.doc"></a><a href="Download/PRs/PRs2012/prTNGChipsTickets1-13-12.doc">January 13, 2012</a><br />
+              TICKETS NOW ON SALE FOR 2nd ANNUAL CHIPS FOR CHARITY CASINO NIGHT  </p>
+            <p class="bodytext"><a href="Download/PRs/PRs2012/prHockessinColoredSchool1-11-12.doc">January 11, 2012</a> (<a href="Download/PRs/PRs2012/maChildrensLitEvent5-17-12.doc">historical information</a>)<br />
+              COMMUNITY BEGINS WORK TO RAISE $210,000  TO SAVE HISTORIC HOCKESSIN COLORED SCHOOL #107 </p>
+            <p class="bodytext"><a href="Download/PRs/PRs2012/prTNGGrants1-5-12.doc">January 5, 2012</a> (<a href="Download/PRs/PRs2012/ma2FFWGrants5-21-12.doc">photo</a>)<br />
+              THE NEXT GENERATION AWARDS $35,000 IN GRANTS TO FIGHT CHILDHOOD OBESITY</p>
+            <p class="bodytext"><a href="Download/PRs/PRs2012/maYPBSussexPresentation4-24-12.doc"></a><a href="Download/PRs/PRs2012/prCollaborativeGrants1-4-12.doc">January 4, 2012</a> (<a href="contact.html">photo</a>)<br />
+              DCF AWARDS $220,000 TO FUND STATEWIDE PROJECTS TO REDUCE CHILD SEXUAL ABUSE, EXPAND MENTORING AND EMPOWER FINANCIALLY VULNERABLE DELAWAREANS</p>
+            <p class="bodytext"><a href="Download/PRs/PRs2012/maYPBSussexPresentation4-24-12.doc"></a><a href="contact.html"> </a></p>
+<p class="left">&nbsp;</p>
+
+                      <br /></td>
+                  </tr>
+                </table>
+                  <br />
+
+
+                  </td>
+                <td width="40">&nbsp;</td>
+              </tr>
+            </table></td>
+          </tr>
+        </table></td>
+      </tr>
+    </table></td>
+  </tr>
+  <!--<tr hright="28">
+ <td height="28" bgcolor="#849bbf" class="footer" ><div align="center"></div></td>
+  </tr> -->
+</table>
+<p>&nbsp;</p>
+<div align="center">
+  <p>
+  <span class="footer"> &copy; 2010 Delaware Community Foundation &nbsp;  |  &nbsp; 100 W. 10th Street, Suite 115 &nbsp;  |  &nbsp; P.O. Box 1636 &nbsp;  |  &nbsp; Wilmington, DE 19899<br />
+  Please email comments, corrections or suggestions to <strong><a href="mailto:info@delcf.org" class="side">info@delcf.org</a></strong></span><br />
+    <br />
+  </p>
+</div><br /><br />
+</body>
+</html>

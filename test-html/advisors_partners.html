@@ -1,0 +1,344 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Delaware Community Foundation | For Professional Advisors | Our Charitable Partners Program</title>
+
+<link href="styles.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-29013850-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+<body onload="MM_preloadImages('images/LogosIconsButtons/button_login2.gif','images/LogosIconsButtons/button_donation2.gif','images/LogosIconsButtons/button_catalogue2.gif')">
+<script type="text/javascript">
+
+/***********************************************
+* Ultimate Fade-In Slideshow (v1.51): © Dynamic Drive (http://www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit http://www.dynamicdrive.com/ for this script and 100s more.
+***********************************************/
+
+var fadeimages=new Array()
+//SET IMAGE PATHS. Extend or contract array as needed
+fadeimages[0]=["home1.jpg", "", ""] //plain image syntax
+fadeimages[1]=["home2.jpg", "", ""] //plain image syntax
+fadeimages[2]=["home3.jpg", "", ""] //plain image syntax
+fadeimages[3]=["home4.jpg", "", ""] //plain image syntax
+fadeimages[4]=["home5.jpg", "", ""] //plain image syntax
+fadeimages[5]=["home6.jpg", "", ""] //plain image syntax
+
+var fadebgcolor="white"
+
+////NO need to edit beyond here/////////////
+
+var fadearray=new Array() //array to cache fadeshow instances
+var fadeclear=new Array() //array to cache corresponding clearinterval pointers
+
+var dom=(document.getElementById) //modern dom browsers
+var iebrowser=document.all
+
+function fadeshow(theimages, fadewidth, fadeheight, borderwidth, delay, pause, displayorder){
+this.pausecheck=pause
+this.mouseovercheck=0
+this.delay=delay
+this.degree=10 //initial opacity degree (10%)
+this.curimageindex=0
+this.nextimageindex=1
+fadearray[fadearray.length]=this
+this.slideshowid=fadearray.length-1
+this.canvasbase="canvas"+this.slideshowid
+this.curcanvas=this.canvasbase+"_0"
+if (typeof displayorder!="undefined")
+theimages.sort(function() {return 0.5 - Math.random();}) //thanks to Mike (aka Mwinter) :)
+this.theimages=theimages
+this.imageborder=parseInt(borderwidth)
+this.postimages=new Array() //preload images
+for (p=0;p<theimages.length;p++){
+this.postimages[p]=new Image()
+this.postimages[p].src=theimages[p][0]
+}
+
+var fadewidth=fadewidth+this.imageborder*2
+var fadeheight=fadeheight+this.imageborder*2
+
+if (iebrowser&&dom||dom) //if IE5+ or modern browsers (ie: Firefox)
+document.write('<div id="master'+this.slideshowid+'" style="position:relative;width:'+fadewidth+'px;height:'+fadeheight+'px;overflow:hidden;"><div id="'+this.canvasbase+'_0" style="position:absolute;width:'+fadewidth+'px;height:'+fadeheight+'px;top:0;left:0;filter:progid:DXImageTransform.Microsoft.alpha(opacity=10);opacity:0.1;-moz-opacity:0.1;-khtml-opacity:0.1;background-color:'+fadebgcolor+'"></div><div id="'+this.canvasbase+'_1" style="position:absolute;width:'+fadewidth+'px;height:'+fadeheight+'px;top:0;left:0;filter:progid:DXImageTransform.Microsoft.alpha(opacity=10);opacity:0.1;-moz-opacity:0.1;-khtml-opacity:0.1;background-color:'+fadebgcolor+'"></div></div>')
+else
+document.write('<div><img name="defaultslide'+this.slideshowid+'" src="'+this.postimages[0].src+'"></div>')
+
+if (iebrowser&&dom||dom) //if IE5+ or modern browsers such as Firefox
+this.startit()
+else{
+this.curimageindex++
+setInterval("fadearray["+this.slideshowid+"].rotateimage()", this.delay)
+}
+}
+
+function fadepic(obj){
+if (obj.degree<100){
+obj.degree+=10
+if (obj.tempobj.filters&&obj.tempobj.filters[0]){
+if (typeof obj.tempobj.filters[0].opacity=="number") //if IE6+
+obj.tempobj.filters[0].opacity=obj.degree
+else //else if IE5.5-
+obj.tempobj.style.filter="alpha(opacity="+obj.degree+")"
+}
+else if (obj.tempobj.style.MozOpacity)
+obj.tempobj.style.MozOpacity=obj.degree/101
+else if (obj.tempobj.style.KhtmlOpacity)
+obj.tempobj.style.KhtmlOpacity=obj.degree/100
+else if (obj.tempobj.style.opacity&&!obj.tempobj.filters)
+obj.tempobj.style.opacity=obj.degree/101
+}
+else{
+clearInterval(fadeclear[obj.slideshowid])
+obj.nextcanvas=(obj.curcanvas==obj.canvasbase+"_0")? obj.canvasbase+"_0" : obj.canvasbase+"_1"
+obj.tempobj=iebrowser? iebrowser[obj.nextcanvas] : document.getElementById(obj.nextcanvas)
+obj.populateslide(obj.tempobj, obj.nextimageindex)
+obj.nextimageindex=(obj.nextimageindex<obj.postimages.length-1)? obj.nextimageindex+1 : 0
+setTimeout("fadearray["+obj.slideshowid+"].rotateimage()", obj.delay)
+}
+}
+
+fadeshow.prototype.populateslide=function(picobj, picindex){
+var slideHTML=""
+if (this.theimages[picindex][1]!="") //if associated link exists for image
+slideHTML='<a href="'+this.theimages[picindex][1]+'" target="'+this.theimages[picindex][2]+'">'
+slideHTML+='<img src="'+this.postimages[picindex].src+'" border="'+this.imageborder+'px">'
+if (this.theimages[picindex][1]!="") //if associated link exists for image
+slideHTML+='</a>'
+picobj.innerHTML=slideHTML
+}
+
+
+fadeshow.prototype.rotateimage=function(){
+if (this.pausecheck==1) //if pause onMouseover enabled, cache object
+var cacheobj=this
+if (this.mouseovercheck==1)
+setTimeout(function(){cacheobj.rotateimage()}, 100)
+else if (iebrowser&&dom||dom){
+this.resetit()
+var crossobj=this.tempobj=iebrowser? iebrowser[this.curcanvas] : document.getElementById(this.curcanvas)
+crossobj.style.zIndex++
+fadeclear[this.slideshowid]=setInterval("fadepic(fadearray["+this.slideshowid+"])",50)
+this.curcanvas=(this.curcanvas==this.canvasbase+"_0")? this.canvasbase+"_1" : this.canvasbase+"_0"
+}
+else{
+var ns4imgobj=document.images['defaultslide'+this.slideshowid]
+ns4imgobj.src=this.postimages[this.curimageindex].src
+}
+this.curimageindex=(this.curimageindex<this.postimages.length-1)? this.curimageindex+1 : 0
+}
+
+fadeshow.prototype.resetit=function(){
+this.degree=10
+var crossobj=iebrowser? iebrowser[this.curcanvas] : document.getElementById(this.curcanvas)
+if (crossobj.filters&&crossobj.filters[0]){
+if (typeof crossobj.filters[0].opacity=="number") //if IE6+
+crossobj.filters(0).opacity=this.degree
+else //else if IE5.5-
+crossobj.style.filter="alpha(opacity="+this.degree+")"
+}
+else if (crossobj.style.MozOpacity)
+crossobj.style.MozOpacity=this.degree/101
+else if (crossobj.style.KhtmlOpacity)
+crossobj.style.KhtmlOpacity=this.degree/100
+else if (crossobj.style.opacity&&!crossobj.filters)
+crossobj.style.opacity=this.degree/101
+}
+
+
+fadeshow.prototype.startit=function(){
+var crossobj=iebrowser? iebrowser[this.curcanvas] : document.getElementById(this.curcanvas)
+this.populateslide(crossobj, this.curimageindex)
+if (this.pausecheck==1){ //IF SLIDESHOW SHOULD PAUSE ONMOUSEOVER
+var cacheobj=this
+var crossobjcontainer=iebrowser? iebrowser["master"+this.slideshowid] : document.getElementById("master"+this.slideshowid)
+crossobjcontainer.onmouseover=function(){cacheobj.mouseovercheck=1}
+crossobjcontainer.onmouseout=function(){cacheobj.mouseovercheck=0}
+}
+this.rotateimage()
+}
+
+</script>
+
+
+
+<table width="770" border="0" align="center" cellpadding="0" cellspacing="0" style="border: solid gray 1px;">
+  <tr hright="23">
+ <td height="23" background="images/LogosIconsButtons/top_colors.jpg" ><table width="770" border="0" cellspacing="0" cellpadding="0">
+   <tr><table width="770" border="0" align="center" cellpadding="0" cellspacing="0" style="border: solid gray 1px;">
+  <tr hright="23">
+ <td height="23" background="images/LogosIconsButtons/top_colors.jpg" ><table width="770" border="0" cellspacing="0" cellpadding="0">
+   <tr>
+     <td width="67" align="center"><a href="give.html" title="Give" class="side">Give</a></td>
+     <td width="118" align="center"><a href="newsroom.html" title="Newsroom" class="side">Newsroom</a></td>
+     <td width="114" align="center"><a href="contact.html" title="Contact Us" class="side">Contact Us</a></td>
+
+     <td width="452" align="right" class="footer"><!--<strong>Search: &nbsp;
+       <input name="textfield" type="text" style="width:130px; height:13px; border:solid 1px #849bbf; COLOR: #496792; FONT: 8pt Verdana; " id="textfield" title="Enter your search term here"/>
+</strong>--></td>
+     <td width="19">&nbsp;</td>
+   </tr>
+ </table></td>
+  </tr>
+
+   <tr>
+    <td><table width="770" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="162" align="left" valign="top" bgcolor="#eff2f7"><table width="162" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td><a href="index.html"><img src="images/LogosIconsButtons/logo.gif" alt="Back To Home" title="Back To Home" width="162" height="95" hspace="0" vspace="0" border="0" /></a></td>
+          </tr>
+          <tr>
+            <td><Div class="nav12">
+
+		<A href="index.html"> Home</A>
+			<a href="about.html"> About DCF</a>
+
+
+
+
+
+				<A href="ways.html"> Ways To Give</A><A href="fundholders.html"> For Our Fundholders</A><A href="grants.html"> Apply For Grants</A>
+		<A href="scholarships.html"> Apply For Scholarships</A>
+
+		<Div class="nav12select"><A href="advisors.html" class="side"> For Professional Advisors</A></Div>
+           <Div class="navsub">
+
+				<A href="advisors_help.html">>  How We Can Help</A>
+				<a href="advisors_planning.html">>   Gift Planning</a>
+				<A href="advisors_resources.html">>   Tools & Resources</A>
+				<Div class="navsubselect"><A href="advisors_partners.html">>   Our Charitable <br />
+					&nbsp;  &nbsp;Partners Program</A></Div>
+				<A href="http://delcf.giftlaw.com/?pageID=37">>   GiftLaw</A></Div>
+		<A href="events.html"> Event Registration</A>
+		<A href="contact.html"> Contact Us</A></Div>
+              </td>
+          </tr>
+          <tr>
+                <td align="center" valign="middle"><img src="images/Headers/header_quicklinks.jpg" alt="Quick Links" width="162" height="33" /><br />      <A HREF="https://online.delcf.org/"><img src="images/LogosIconsButtons/button_login.gif" alt="Current Donor Log-In" width="162" height="31" hspace="0" vspace="0" border="0" id="Image1" onmouseover="MM_swapImage('Image1','','images/LogosIconsButtons/button_login2.gif',1)" onmouseout="MM_swapImgRestore()" /></a><br />
+                  <a href="../donate.php"><img src="images/LogosIconsButtons/button_donation.gif" alt="Make A Donation" name="Image2" width="162" height="34" hspace="0" vspace="0" border="0" id="Image2" onmouseover="MM_swapImage('Image2','','images/LogosIconsButtons/button_donation2.gif',1)" onmouseout="MM_swapImgRestore()" /></a><br />
+                  <a href="../donations2.php?f=1"><img src="images/LogosIconsButtons/button_catalogue.gif" alt="Charitable Catalogue" width="162" height="32" hspace="0" vspace="0" border="0" id="Image3" onmouseover="MM_swapImage('Image3','','images/LogosIconsButtons/button_catalogue2.gif',1)" onmouseout="MM_swapImgRestore()" /></a>  <br />
+                  <br />
+                
+<iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FDelawareCommunityFoundation&amp;width=80&amp;layout=button_count&amp;action=like&amp;show_faces=true&amp;share=true&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:130px; height:21px;" allowTransparency="true"></iframe><br/>
+                      
+                    </a></strong> </span><strong><a href="http://twitter.com/@DelCommunity"><img src="images/LogosIconsButtons/twitter-logo.jpg" title="@DelCommunity on Twitter" alt="By: @DelCommunity on Twitter" width="63" height="25" hspace="0" vspace="6" border="1" /></a></strong>
+               <br /> <script src="//platform.linkedin.com/in.js" type="text/javascript">
+ lang: en_US
+</script>
+<script type="IN/FollowCompany" data-id="1717942" data-counter="right"></script>
+              
+              <p>    
+                  <a href="/contact_form.php"><span class="nav12select"><strong>JOIN OUR <br />
+                    MAILING LIST</strong></span></a><strong><a href="/contact_form.php"><span class="nav12select"><br />
+                      </span></a><br />
+                    </strong><a href="http://www.cfstandards.org"><img src="cflogo.gif" alt="CF Logo" width="162" height="114" hspace="0" vspace="0" border="0" /></a></p>
+              </div>       </p>
+                  </p></td>
+              </tr>
+            </table></td>
+          <td width="612" align="left" valign="top" bgcolor="#FFFFFF"><table border="0" cellspacing="0" cellpadding="0">
+              <tr>
+
+            <td align="left" valign="top"><img src="images/LogosIconsButtons/spacer.gif" alt="DCF" width="225" height="95" /><img src="images/LogosIconsButtons/tagline.gif" alt="Connecting People Who Care" title="Connecting People Who Care" width="383" height="95" /></td>
+          </tr>
+          <tr>
+            <td><img src="images/Headers/header_for_professional_advisors.jpg" alt="For Professional Advisors" title="For Professional Advisors" width="608" height="243" /></td>
+          </tr>
+         <!-- <tr>
+            <td bgcolor="#FFFFFF">&nbsp;</td>
+          </tr> -->
+          <tr>
+            <td><table width="608" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="28">&nbsp;</td>
+                <td width="556"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td height="45" align="left" valign="middle"><span class="header">Our Charitable Fund Partners Program</span></td>
+                  </tr>
+                  <tr>
+                    <td>
+                        <span class="bodytext"> The Delaware Community Foundation  <strong>Charitable Fund Partners Program</strong> creates a value-added partnership between financial advisors and the DCF. The program enables financial advisors to keep a client's assets under management while making it possible for the client to have a charitable fund at the Foundation. The client and financial advisor benefit from the Foundation's local expertise, personalized service, community leadership and charitable gift planning and services.
+                        <br />
+                        <br />
+</span><span class="subhead">What are the advantages of DCF charitable funds?
+ </span><span class="bodytext"><br />
+ A DCF charitable fund is flexible, may have added tax advantages over other forms of giving and helps clients make charitable giving an effective part of their overall financial plan. <br />
+ <br />
+ The Charitable Fund Partners Program enables individuals and families to establish donor advised funds with the DCF without changing the investment manager. Donor advised funds offer maximum flexibility. The client receives an immediate tax deduction while avoiding capital gains tax on appreciated assets, may add to the fund at anytime and can recommend grants to charities of their choice in Delaware and other states. In addition, as compared to a private foundation, there is no 2% excise tax on net investment income and no 5% annual distribution requirements. <br />
+ <br />
+ The Delaware Community Foundation helps your clients direct their charitable giving by exercising due diligence in screening the charities they wish to support. Our professional staff can advise on needs in the community that best match their charitable interests. We can provide life income gifts, such as charitable remainder trusts and gift annuities. The DCF provides grantmaking expertise and other support services to help maximize the impact of charitable gifts and develop your client's strategy for philanthropy over time. <br />
+ <br />
+ </span><span class="subhead">Who can participate in the Program? </span><span class="bodytext"><br />
+ Clients who are able to contribute at least $100,000 to establish a charitable fund with the DCF may participate in the Charitable Fund Partners Program. The DCF charges an administrative fee to the account based on assets under management. <br />
+ <br />
+ Note: The financial advisor firm and the Delaware Community Foundation are separate entities and are not affiliates. A fund established through the Charitable Fund Partners Program will pay an administrative fee to the DCF and an investment management fee to the financial advisory firm in accordance with the published fee schedule. All charitable gifts are irrevocable. After the gift is made, the assets belong to the DCF. The DCF does not provide legal or tax advice. Clients should discuss potential tax benefits with their tax advisor. </span><br />
+                          <br />
+                          <p align="right"><br />
+                      </p></td>
+                  </tr>
+                </table>
+                  <br />
+
+
+                  </td>
+                <td width="24">&nbsp;</td>
+              </tr>
+            </table></td>
+          </tr>
+        </table></td>
+      </tr>
+    </table></td>
+  </tr>
+ <!-- <tr hright="28">
+ <td height="28" bgcolor="#849bbf" class="footer" ><div align="center">Delaware Community Foundation | 100 West 10th St. | Suite 115 | Wilmington, DE | phone: 302/571-8004 | fax: 302/571-1553</div></td>
+  </tr>-->
+</table>
+<div align="center">
+  <p>
+  <span class="footer"> &copy; 2010 Delaware Community Foundation &nbsp;  |  &nbsp; 100 W. 10th Street, Suite 115 &nbsp;  |  &nbsp; P.O. Box 1636 &nbsp;  |  &nbsp; Wilmington, DE 19899<br />
+  Please email comments, corrections or suggestions to <strong><a href="mailto:info@delcf.org" class="side">info@delcf.org</a></strong></span><br />
+    <br />
+  </p>
+</div><br /><br />
+</body>
+</html>

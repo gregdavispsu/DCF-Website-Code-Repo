@@ -1,0 +1,434 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Welcome to the Delaware Community Foundation</title>
+<link href="styles.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+<script type="text/xml">
+<!--
+<oa:widgets>
+  <oa:widget wid="2149022" binding="#OAWidget" />
+</oa:widgets>
+-->
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-29013850-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+<body onload="MM_preloadImages('button_login2.gif','button_donation2.gif','button_catalogue2.gif','images/circles-ffw.gif','images/circles-tng.gif','images/circles-hc.gif','images/circles-aae.gif','images/circles-ypb.gif')">
+<script type="text/javascript">
+
+/***********************************************
+* Ultimate Fade-In Slideshow (v1.51): © Dynamic Drive (http://www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit http://www.dynamicdrive.com/ for this script and 100s more.
+***********************************************/
+
+var fadeimages=new Array()
+//SET IMAGE PATHS. Extend or contract array as needed
+fadeimages[0]=["home1.jpg", "", ""] //plain image syntax
+fadeimages[1]=["home2.jpg", "", ""] //plain image syntax
+fadeimages[2]=["home3.jpg", "", ""] //plain image syntax
+fadeimages[3]=["home4.jpg", "", ""] //plain image syntax
+fadeimages[4]=["home5.jpg", "", ""] //plain image syntax
+fadeimages[5]=["home6.jpg", "", ""] //plain image syntax
+
+var fadebgcolor="white"
+
+////NO need to edit beyond here/////////////
+
+var fadearray=new Array() //array to cache fadeshow instances
+var fadeclear=new Array() //array to cache corresponding clearinterval pointers
+
+var dom=(document.getElementById) //modern dom browsers
+var iebrowser=document.all
+
+function fadeshow(theimages, fadewidth, fadeheight, borderwidth, delay, pause, displayorder){
+this.pausecheck=pause
+this.mouseovercheck=0
+this.delay=delay
+this.degree=10 //initial opacity degree (10%)
+this.curimageindex=0
+this.nextimageindex=1
+fadearray[fadearray.length]=this
+this.slideshowid=fadearray.length-1
+this.canvasbase="canvas"+this.slideshowid
+this.curcanvas=this.canvasbase+"_0"
+if (typeof displayorder!="undefined")
+theimages.sort(function() {return 0.5 - Math.random();}) //thanks to Mike (aka Mwinter) :)
+this.theimages=theimages
+this.imageborder=parseInt(borderwidth)
+this.postimages=new Array() //preload images
+for (p=0;p<theimages.length;p++){
+this.postimages[p]=new Image()
+this.postimages[p].src=theimages[p][0]
+}
+
+var fadewidth=fadewidth+this.imageborder*2
+var fadeheight=fadeheight+this.imageborder*2
+
+if (iebrowser&&dom||dom) //if IE5+ or modern browsers (ie: Firefox)
+document.write('<div id="master'+this.slideshowid+'" style="position:relative;width:'+fadewidth+'px;height:'+fadeheight+'px;overflow:hidden;"><div id="'+this.canvasbase+'_0" style="position:absolute;width:'+fadewidth+'px;height:'+fadeheight+'px;top:0;left:0;filter:progid:DXImageTransform.Microsoft.alpha(opacity=10);opacity:0.1;-moz-opacity:0.1;-khtml-opacity:0.1;background-color:'+fadebgcolor+'"></div><div id="'+this.canvasbase+'_1" style="position:absolute;width:'+fadewidth+'px;height:'+fadeheight+'px;top:0;left:0;filter:progid:DXImageTransform.Microsoft.alpha(opacity=10);opacity:0.1;-moz-opacity:0.1;-khtml-opacity:0.1;background-color:'+fadebgcolor+'"></div></div>')
+else
+document.write('<div><img name="defaultslide'+this.slideshowid+'" src="'+this.postimages[0].src+'"></div>')
+
+if (iebrowser&&dom||dom) //if IE5+ or modern browsers such as Firefox
+this.startit()
+else{
+this.curimageindex++
+setInterval("fadearray["+this.slideshowid+"].rotateimage()", this.delay)
+}
+}
+
+function fadepic(obj){
+if (obj.degree<100){
+obj.degree+=10
+if (obj.tempobj.filters&&obj.tempobj.filters[0]){
+if (typeof obj.tempobj.filters[0].opacity=="number") //if IE6+
+obj.tempobj.filters[0].opacity=obj.degree
+else //else if IE5.5-
+obj.tempobj.style.filter="alpha(opacity="+obj.degree+")"
+}
+else if (obj.tempobj.style.MozOpacity)
+obj.tempobj.style.MozOpacity=obj.degree/101
+else if (obj.tempobj.style.KhtmlOpacity)
+obj.tempobj.style.KhtmlOpacity=obj.degree/100
+else if (obj.tempobj.style.opacity&&!obj.tempobj.filters)
+obj.tempobj.style.opacity=obj.degree/101
+}
+else{
+clearInterval(fadeclear[obj.slideshowid])
+obj.nextcanvas=(obj.curcanvas==obj.canvasbase+"_0")? obj.canvasbase+"_0" : obj.canvasbase+"_1"
+obj.tempobj=iebrowser? iebrowser[obj.nextcanvas] : document.getElementById(obj.nextcanvas)
+obj.populateslide(obj.tempobj, obj.nextimageindex)
+obj.nextimageindex=(obj.nextimageindex<obj.postimages.length-1)? obj.nextimageindex+1 : 0
+setTimeout("fadearray["+obj.slideshowid+"].rotateimage()", obj.delay)
+}
+}
+
+fadeshow.prototype.populateslide=function(picobj, picindex){
+var slideHTML=""
+if (this.theimages[picindex][1]!="") //if associated link exists for image
+slideHTML='<a href="'+this.theimages[picindex][1]+'" target="'+this.theimages[picindex][2]+'">'
+slideHTML+='<img src="'+this.postimages[picindex].src+'" border="'+this.imageborder+'px">'
+if (this.theimages[picindex][1]!="") //if associated link exists for image
+slideHTML+='</a>'
+picobj.innerHTML=slideHTML
+}
+
+
+fadeshow.prototype.rotateimage=function(){
+if (this.pausecheck==1) //if pause onMouseover enabled, cache object
+var cacheobj=this
+if (this.mouseovercheck==1)
+setTimeout(function(){cacheobj.rotateimage()}, 100)
+else if (iebrowser&&dom||dom){
+this.resetit()
+var crossobj=this.tempobj=iebrowser? iebrowser[this.curcanvas] : document.getElementById(this.curcanvas)
+crossobj.style.zIndex++
+fadeclear[this.slideshowid]=setInterval("fadepic(fadearray["+this.slideshowid+"])",50)
+this.curcanvas=(this.curcanvas==this.canvasbase+"_0")? this.canvasbase+"_1" : this.canvasbase+"_0"
+}
+else{
+var ns4imgobj=document.images['defaultslide'+this.slideshowid]
+ns4imgobj.src=this.postimages[this.curimageindex].src
+}
+this.curimageindex=(this.curimageindex<this.postimages.length-1)? this.curimageindex+1 : 0
+}
+
+fadeshow.prototype.resetit=function(){
+this.degree=10
+var crossobj=iebrowser? iebrowser[this.curcanvas] : document.getElementById(this.curcanvas)
+if (crossobj.filters&&crossobj.filters[0]){
+if (typeof crossobj.filters[0].opacity=="number") //if IE6+
+crossobj.filters(0).opacity=this.degree
+else //else if IE5.5-
+crossobj.style.filter="alpha(opacity="+this.degree+")"
+}
+else if (crossobj.style.MozOpacity)
+crossobj.style.MozOpacity=this.degree/101
+else if (crossobj.style.KhtmlOpacity)
+crossobj.style.KhtmlOpacity=this.degree/100
+else if (crossobj.style.opacity&&!crossobj.filters)
+crossobj.style.opacity=this.degree/101
+}
+
+
+fadeshow.prototype.startit=function(){
+var crossobj=iebrowser? iebrowser[this.curcanvas] : document.getElementById(this.curcanvas)
+this.populateslide(crossobj, this.curimageindex)
+if (this.pausecheck==1){ //IF SLIDESHOW SHOULD PAUSE ONMOUSEOVER
+var cacheobj=this
+var crossobjcontainer=iebrowser? iebrowser["master"+this.slideshowid] : document.getElementById("master"+this.slideshowid)
+crossobjcontainer.onmouseover=function(){cacheobj.mouseovercheck=1}
+crossobjcontainer.onmouseout=function(){cacheobj.mouseovercheck=0}
+}
+this.rotateimage()
+}
+
+</script>
+
+
+
+<table width="770" border="0" align="center" cellpadding="0" cellspacing="0" style="border: solid gray 1px;">
+  <tr hright="23">
+ <td height="23" background="top_colors.jpg" ><table width="770" border="0" cellspacing="0" cellpadding="0">
+   <tr>
+     <td width="67" align="center"><a href="give.html" title="Give" class="side">Give</a></td>
+     <td width="118" align="center"><a href="newsroom.html" title="Newsroom" class="side">Newsroom</a></td>
+     <td width="114" align="center"><a href="contact.html" title="Contact Us" class="side">Contact Us</a></td>
+     <td width="452" align="right" class="footer"><!--<strong>Search: &nbsp;
+       <input name="textfield" type="text" style="width:130px; height:13px; border:solid 1px #849bbf; COLOR: #496792; FONT: 8pt Verdana; " id="textfield" />
+</strong>--></td>
+     <td width="19">&nbsp;</td>
+   </tr>
+ </table></td>
+  </tr>
+
+   <tr>
+    <td><table width="770" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="162" align="left" valign="top" bgcolor="#eff2f7"><table width="162" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td><a href="index.html"><img src="logo.gif" alt="Back To Home" width="162" height="95" hspace="0" vspace="0" border="0" /></a></td>
+          </tr>
+          <tr>
+            <td><Div class="nav12">
+
+		<A href="index.html"> Home</A>
+				<a href="about.html"> About DCF</a>
+				<A href="ways.html"> Ways To Give</A><A href="fundholders.html"> For Our Fundholders</A><A href="grants.html"> Apply For Grants</A>
+		<A href="scholarships.html"> Apply For Scholarships</A>
+
+		<A href="advisors.html"> For Professional Advisors</A>
+		<A href="registration.php"> Event Registration</A>
+		<A href="contact.html"> Contact Us</A></Div>              </td>
+          </tr>
+          <tr>
+            <td><img src="header_quicklinks.gif" alt="Quick Links" width="162" height="33" /><br /><a href="login.html"><img src="button_login.gif" alt="Current Donor Log-In" width="162" height="31" hspace="0" vspace="0" border="0" id="Image1" onmouseover="MM_swapImage('Image1','','button_login2.gif',1)" onmouseout="MM_swapImgRestore()" /></a>
+             <a href="make_donation.php"><img src="button_donation.gif" alt="Make A Donation" name="Image2" width="162" height="34" hspace="0" vspace="0" border="0" id="Image2" onmouseover="MM_swapImage('Image2','','button_donation2.gif',1)" onmouseout="MM_swapImgRestore()" /></a>
+           <a href="donations2.php?f=1"><img src="button_catalogue.gif" alt="Charitable Catalogue" width="162" height="32" hspace="0" vspace="0" border="0" id="Image3" onmouseover="MM_swapImage('Image3','','button_catalogue2.gif',1)" onmouseout="MM_swapImgRestore()" /></a>
+              <a href="http://twitter.com/@DelCommunity"><img src="images/twitter-logo.jpg" title="@DelCommunity on Twitter" alt="By: @DelCommunity on Twitter" width="82" height="27" hspace="16" vspace="12" border="1" /></a>
+        
+ <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2FDelawareCommunityFoundation&amp;send=false&amp;layout=button_count&amp;width=146&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21" hspace="16" vspace="12" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:146px; height:21px;" allowTransparency="true"></iframe>
+                </a>
+
+              <a href=http://bestpractices.cof.org/community/ListStandards.cfm</a> <img src="cflogo.gif" alt="CF Logo" width="162" height="114" hspace="0" vspace="0" border="0" /></p></td>
+          </tr>
+
+        </table></td>
+        <td width="608" align="left" valign="top" bgcolor="#FFFFFF"><table width="608" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left" valign="top">
+<img src="spacer.gif" alt="DCF" width="225" height="95" /><img src="taganim.gif" alt="Connecting People Who Care" width="383" height="95" /></td>
+          </tr>
+          <tr>
+            <td><script type="text/javascript">
+//new fadeshow(IMAGES_ARRAY_NAME, slideshow_width, slideshow_height, borderwidth, delay, pause (0=no, 1=yes), optionalRandomOrder)
+new fadeshow(fadeimages, 608, 243, 0, 8000, 1, "R")
+</script></td>
+          </tr>
+         <!-- <tr>
+            <td bgcolor="#FFFFFF">&nbsp;</td>
+          </tr> -->
+          <tr>
+            <td><table width="608" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="28">&nbsp;</td>
+                <td width="556"><table width="624" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="28">&nbsp;</td>
+                <td width="556"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td height="45" align="left" valign="middle"><span class="header">Grant Applications for Review 2013</span></td>
+                  </tr>
+                  <tr>
+                    <td><p class="bodytext"><span class="bodytext"><span class="bodytext">Dear Committee Members, 
+                      <br />                    
+                      </span>
+                    </span>
+                    <p class="bodytext">                        <span class="bodytext"><span class="bodytext">Thank you for participating in the grant-selection process. Below are PDFs of the grants for your review, broken down by groups and by field of interest. All applications are accessible to all members, regardless of group, and you are welcome to read as many as wish.</span> </span>                    
+                      <p class="bodytext"><span class="subhead">Access Your Grant Applications</span>                                            
+                      <p class="bodytext"><span class="bodytext"><span class="bodytext">Please go to your group's list and download the applications to review.
+                        </span>
+                        </span>
+                      </p>
+                      <ul>
+                        <li class="bodytext"><span class="bodytext">By clicking the first link under your group, you will download <strong>ALL  of your group's applications as a single PDF file. <u>Before you print, please note that these are very long files.</u></strong></em></span></li>
+                        <li class="bodytext"><span class="bodytext">If you prefer to download<strong> individual applications</strong>, click the appropriate links.</em></span></li>
+                      </ul>
+                      <p><span class="bodytext"><span class="subhead">Evaluation Process</span></span><br />
+                      
+                      <ul>
+                        <li class="bodytext"><span class="bodytext">Download the <a href="Download/Capital&amp;EquipGrants/Capital+Equip2013/2013 Cap. App. Evaluation Guidelines.docx">Application Evaluation Guidelines.</a></span></li>
+                        <li class="bodytext"><span class="bodytext">                          Download the scoring sheet, which is unique to your  group.</em></span></li>
+                        <li><span class="bodytext">Save it as a file named in this format: ScoreSheet-GroupNumber-YourLastName.doc (e.g., ScoreSheet-1-Smith.doc).</span></li>
+                        <li class="bodytext"><span class="bodytext">Download, review and score your group's applications on the single scoring sheet.</span></li>
+                        <li class="bodytext"><span class="bodytext">Email the single scoring sheet to me at <a href="mailto:bbouchelle@delcf.org">bbouchelle@delcf.org</a> by <strong>March 15. </strong></em></span></li>
+                        <li class="bodytext"><span class="bodytext">Please title the email &quot;Scores-GroupNumber-YourLastName&quot; (e.g., Scores-1-Smith).</span>                        </li>
+                      </ul>
+                      <p class="bodytext"><span class="bodytext"><span class="subhead">Abstentions</span></span></p>
+                      <blockquote>
+                        <p class="bodytext"><span class="bodytext">If you need to abstain from voting due to a personal or  professional affiliation with the applicant organization, on the scoresheet,  please indicate AB as the total  score in that line of the spreadsheet. </span></p>
+                      </blockquote>
+                      <p class="bodytext"><span class="bodytext"> Please contact me if you have any questions. </span></p>
+                      <span class="bodytext"><span class="bodytext">Thank you!<br />
+                                              Beth
+                      </p>
+                      </span>
+                      </span>
+                      <p class="style2">Group 1 (Hickok, Rapposelli, Cannon, Lamb, Gadde, Weber, Richter)  </p>
+                      <blockquote>
+                        <p class="bodytext"> <span class="bodytext">  <strong><a href="Download/Capital&amp;EquipGrants/Capital+Equip2013/Applications2013/Group1/Group 1 Score Sheet.xlsx">GROUP 1 SCORE SHEET</a></strong><br />
+                                <em><a href="Download/Capital&amp;EquipGrants/Capital+Equip2013/Applications2013/Group1/Group1_AllApps_small.pdf">*Download ALL Group 1
+                          applications as a single PDF.</a></em><a href="Download/Capital&amp;EquipGrants/Capital+Equip2013/Applications2013/Group1/Group1_AllApps.pdf"></a><em> (260 pages)</em><em></em></span>
+                        </p>
+                        <p class="bodytext"><strong>Arts &amp; Culture</strong><br />
+                          <a href="Download/Capital&amp;EquipGrants/Capital+Equip2013/Applications2013/Group1/DCCA.pdf">DCCA</a><br />
+                          <a href="Download/Capital&amp;EquipGrants/Capital+Equip2013/Applications2013/Group1/Greenbank Mill.pdf">Greenbank Mill</a><br />
+                          <a href="Download/Capital&amp;EquipGrants/Capital+Equip2013/Applications2013/Group1/Inner City.pdf">Inner City Cultural League</a> (K)<br />
+                          <a href="Download/Capital&amp;EquipGrants/Capital+Equip2013/Applications2013/Group1/Kalmar Nyckel.pdf">Kalmar Nyckel</a><br />
+                          <a href="Download/Capital&amp;EquipGrants/Capital+Equip2013/Applications2013/Group1/Lewes Historical Society.pdf">Lewes Historical Society</a> (S) <br />
+                          <a href="Download/Capital&amp;EquipGrants/Capital+Equip2013/Applications2013/Group1/Mid-Atlantic Ballet.pdf">Mid-Atlantic Ballet</a><br />
+                          <a href="Download/Capital&amp;EquipGrants/Capital+Equip2013/Applications2013/Group1/Music School.pdf">Music School of Delaware</a><br />
+                          <a href="Download/Capital&amp;EquipGrants/Capital+Equip2013/Applications2013/Group1/Ocean View Historical Society Grant Application.pdf">Ocean View Historical Society</a> (S) <br />
+                          <a href="Download/Capital&amp;EquipGrants/Capital+Equip2013/Applications2013/Group1/Rehoboth Beach Historical Society.pdf">Rehoboth Historical Society</a> (S) <br />
+                          <a href="Download/Capital&amp;EquipGrants/Capital+Equip2013/Applications2013/Group1/Smyrna Opera.pdf">Smyrna Opera House</a> (K) <br />
+                          <br />
+                          <strong>Environment </strong><br />
+                          <a href="Download/Capital&amp;EquipGrants/Capital+Equip2013/Applications2013/Group1/Delaware Wild Lands.pdf">Delaware Wild Lands</a></p>
+                        <p class="bodytext"><strong>                        Housing <br />
+                          </strong><a href="Download/Capital&amp;EquipGrants/Capital+Equip2013/Applications2013/Group1/Central DE HFH Capital Grant Application Jan 2013.pdf">Central DE Habitat</a> (K)<br />
+                          <a href="Download/Capital&amp;EquipGrants/Capital+Equip2013/Applications2013/Group1/DIMH.pdf">DIMH</a> (K)<br />
+                          <a href="Download/Capital&amp;EquipGrants/Capital+Equip2013/Applications2013/Group1/Habitat NCC.pdf">Habitat NCC</a></p>
+                        <p class="bodytext"><strong>Libraries<br />
+                          </strong><a href="Download/Capital&amp;EquipGrants/Capital+Equip2013/Applications2013/Group1/Friends of the Claymont Library.pdf">Claymont</a><br />
+                          <a href="Download/Capital&amp;EquipGrants/Capital+Equip2013/Applications2013/Group1/Greenwood Library Grant Application.pdf">Greenwood</a> (S)<br />
+                          <a href="Download/Capital&amp;EquipGrants/Capital+Equip2013/Applications2013/Group1/Wilmington Library Grant Application.pdf">Wilmington</a></p>
+                        <p class="bodytext"><strong>Other</strong><br />
+                          <a href="Download/Capital&amp;EquipGrants/Capital+Equip2013/Applications2013/Group1/Friends Riverview Cemetery.pdf">Friends of Riverview Cemetery</a></p>
+                      </blockquote>
+                                    <p class="style2">Group 2 (Bray, Schwartz,  Chick, Stockbridge, Lambert, Hawkins, Yabroff)</p>
+                      <blockquote>
+                        <p class="bodytext"> <strong><a href="Download/Capital&amp;EquipGrants/Capital+Equip2013/Applications2013/Group2/Group 2 Score Sheet.xls">GROUP 2 SCORE SHEET<br />
+                        </a></strong><a href="Download/Capital&amp;EquipGrants/Capital+Equip2013/Applications2013/Group2/Group2_AllApps_Small"><em>*Download ALL Group 2
+                          applications as a single PDF.</em></a><em> (282 pages)</em></p>
+                        <p class="bodytext"><strong>Children</strong><br />
+                          <a href="Download/Capital&amp;EquipGrants/Capital+Equip2013/Applications2013/Group2/All the Difference.pdf">All the Difference </a><br />
+                          <a href="Download/Capital&amp;EquipGrants/Capital+Equip2013/Applications2013/Group2/CHILDIncDCFJan22-2013.pdf">Child, Inc.</a><br />
+                          <a href="Download/Capital&amp;EquipGrants/Capital+Equip2013/Applications2013/Group2/Children &amp; Fam. First.pdf">Children &amp; Families First</a> (S) <br />
+                          <a href="Download/Capital&amp;EquipGrants/Capital+Equip2013/Applications2013/Group2/Children's Beach House.pdf">Children’s Beach House</a> (S) <br />
+                          <a href="Download/Capital&amp;EquipGrants/Capital+Equip2013/Applications2013/Group2/Duffy's Hope.pdf">Duffy’s Hope</a><br />
+                          <a href="Download/Capital&amp;EquipGrants/Capital+Equip2013/Applications2013/Group2/Eliz. Murphey School.pdf">Elizabeth Murphey School</a> (K) <br />
+                          <a href="Download/Capital&amp;EquipGrants/Capital+Equip2013/Applications2013/Group2/Girl Scouts.pdf">Girl Scouts</a><br />
+                          <a href="Download/Capital&amp;EquipGrants/Capital+Equip2013/Applications2013/Group2/Newark Day Nursery.pdf">Newark Day Nursery</a><br />
+                          <a href="Download/Capital&amp;EquipGrants/Capital+Equip2013/Applications2013/Group2/PAL of Wilm.pdf">PAL of Wilmington</a><br />
+                          <a href="Download/Capital&amp;EquipGrants/Capital+Equip2013/Applications2013/Group2/Primeros Pasos Grant Application.pdf">Primeros Pasos</a> (S) <br />
+                          <a href="Download/Capital&amp;EquipGrants/Capital+Equip2013/Applications2013/Group2/Wilmington Head Start Grant Application.pdf">Wilmington Head Start</a></p>
+                        <p class="bodytext"><strong>Animals</strong><br />
+                          <a href="Download/Capital&amp;EquipGrants/Capital+Equip2013/Applications2013/Group2/Changing Fates.pdf">Changing Fates</a> (S) <br />
+                          <a href="Download/Capital&amp;EquipGrants/Capital+Equip2013/Applications2013/Group2/Safe Haven.pdf">Safe Haven</a> (S) <br />
+                          <a href="Download/Capital&amp;EquipGrants/Capital+Equip2013/Applications2013/Group2/Tri State Bird Rescue Grant Application.pdf">Tri-State Bird</a></p>
+                        <p class="bodytext"><strong>Seniors</strong><br />
+                          <a href="Download/Capital&amp;EquipGrants/Capital+Equip2013/Applications2013/Group2/CHEER Grant Application.pdf">CHEER</a> (S)<br />
+                          <a href="Download/Capital&amp;EquipGrants/Capital+Equip2013/Applications2013/Group2/Frederica Senior.pdf">Frederica Senior</a> (K) <br />
+                          <a href="Download/Capital&amp;EquipGrants/Capital+Equip2013/Applications2013/Group2/MOT Senior.pdf">MOT</a><br />
+                          <a href="Download/Capital&amp;EquipGrants/Capital+Equip2013/Applications2013/Group2/Modern Maturity.pdf">Modern Maturity</a> (K) </p>
+</blockquote>
+<p class="style2">Group 3 (Danner, Schutt, Gilliam, McNeill,  Terrell, Deptula, Rossi) &nbsp;&nbsp;&nbsp;</p>
+<blockquote>
+  <p class="bodytext"><strong><a href="Download/Capital&amp;EquipGrants/Capital+Equip2013/Applications2013/Group3/Group 3 Score Sheet.xls">GROUP 3 SCORE SHEET</a><a href="Download/Capital&amp;EquipGrants/Capital+Equip2012/CapGrants2012/Group 3/Group3-ALL.pdf"><br />
+        </a></strong><a href="Download/Capital&amp;EquipGrants/Capital+Equip2013/Applications2013/Group3/Group3_AllApps_small.pdf"><em>*Download ALL Group 3
+    applications as a single PDF.</em></a><em> (318 pages)</em></p>
+  <p class="bodytext"><strong>Human &amp; Social Services <br />
+  </strong><a href="Download/Capital&amp;EquipGrants/Capital+Equip2013/Applications2013/Group3/Arc of DE Grant Application.pdf">ARC</a><br />
+  <a href="Download/Capital&amp;EquipGrants/Capital+Equip2013/Applications2013/Group3/DCUSA.pdf">DCUSA</a> (S) <br />
+  <a href="Download/Capital&amp;EquipGrants/Capital+Equip2013/Applications2013/Group3/Family Outreach.pdf">Family Outreach</a> (S) <br />
+  <a href="Download/Capital&amp;EquipGrants/Capital+Equip2013/Applications2013/Group3/Guadenzia.pdf">Gaudenzia</a><br />
+  <a href="Download/Capital&amp;EquipGrants/Capital+Equip2013/Applications2013/Group3/JFS.pdf">JFS</a><br />
+  <a href="Download/Capital&amp;EquipGrants/Capital+Equip2013/Applications2013/Group3/KSI.pdf">KSI</a> (S) <br />
+  <a href="Download/Capital&amp;EquipGrants/Capital+Equip2013/Applications2013/Group3/Mancus.pdf">Mancus</a><br />
+  <a href="Download/Capital&amp;EquipGrants/Capital+Equip2013/Applications2013/Group3/Ministry of Caring.pdf">Ministry of Caring</a><br />
+  <a href="Download/Capital&amp;EquipGrants/Capital+Equip2013/Applications2013/Group3/One Village Alliance Grant Application.pdf">One Village Alliance</a><br />
+  <a href="Download/Capital&amp;EquipGrants/Capital+Equip2013/Applications2013/Group3/Peoples Place.pdf">People's Place</a> (S) <br />
+  <a href="Download/Capital&amp;EquipGrants/Capital+Equip2013/Applications2013/Group3/Serenity Place.pdf">Serenity Place</a> (K) <br />
+  <a href="Download/Capital&amp;EquipGrants/Capital+Equip2013/Applications2013/Group3/SODAT Grant Application.pdf">Sodat</a><br />
+  <a href="Download/Capital&amp;EquipGrants/Capital+Equip2013/Applications2013/Group3/YWCA.pdf">YWCA</a></p>
+  <p class="bodytext"><strong> Community Centers<br />
+    </strong><a href="Download/Capital&amp;EquipGrants/Capital+Equip2013/Applications2013/Group3/CAMP Rehoboth 2013 DCF Capital Grant Application.pdf">CAMP Rehoboth</a> (S) <br />
+    <a href="Download/Capital&amp;EquipGrants/Capital+Equip2013/Applications2013/Group3/Claymont CC 2013 Capital Application.pdf">Claymont</a><br />
+    <a href="Download/Capital&amp;EquipGrants/Capital+Equip2013/Applications2013/Group3/Hilltop.pdf">Hilltop</a><br />
+    <a href="Download/Capital&amp;EquipGrants/Capital+Equip2013/Applications2013/Group3/Peoples Settlement.pdf">Peoples Settlement</a><br />
+    <a href="Download/Capital&amp;EquipGrants/Capital+Equip2013/Applications2013/Group3/St Anthonys Grant Applicaton.pdf">St. Anthony's</a></p>
+</blockquote>                    </td>
+                  </tr>
+                </table>
+                  <p />
+
+
+                  </td>
+                <td width="40">&nbsp;</td>
+              </tr>
+            </table>
+                  <p />
+
+
+                  </td>
+                <td width="24">&nbsp;</td>
+              </tr>
+            </table></td>
+          </tr>
+        </table></td>
+      </tr>
+    </table></td>
+  </tr>
+  <!--<tr hright="28">
+ <td height="28" bgcolor="#849bbf" class="footer" ><div align="center"></div></td>
+  </tr> -->
+</table>
+<div align="center">
+  <p><span class="footer">&copy; 2010 Delaware Community Foundation &nbsp;  |  &nbsp; 100 W. 10th Street, Suite 115 &nbsp;  |  &nbsp; P.O. Box 1636 &nbsp;  |  &nbsp; Wilmington, DE 19899<br />
+Please email comments, corrections or suggestions to <strong><a href="mailto:info@delcf.org" class="side">info@delcf.org</a></strong></span>
+    </p>
+</div><p /><p />
+</body>
+</html>

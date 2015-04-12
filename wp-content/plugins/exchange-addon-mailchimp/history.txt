@@ -1,0 +1,53 @@
+1.0.1 - 2013-08-06 - Lew Ayotte
+    Fixed bug in i18n directory naming
+1.0.0 - 2013-07-31 - Lew Ayotte
+	Initial Release
+1.0.2 - 2013-09-20 - Packaging Bot
+	Updated lib/updater to version 1.0.3
+1.0.3 - 2013-10-02 - Packaging Bot (lib/updater)
+	Big rewrite to the updater in order to make the code more flexible. This improves compatibility with plugins that allow for remote updating of plugins and themes.
+	The updater now supports providing changelog details for plugins and themes that have updates available. These details can be viewed by clicking the "View version **** details" link for the appropriate plugin or theme.
+1.0.4 - 2013-10-04 - Packaging Bot (lib/updater)
+	Enhancement: When releases with four version digits are released (such as 2.1.0.3), by default, the updater will not offer to update if just this last digit is updated. For instance, it will not automatically offer to update 2.1.0.1 to 2.1.0.3; rather, an automatic upgrade will become available when version 2.1.1 or greater is released. If you wish to force an update to these versions, you can add ithemes-updater-force-minor-update=1 to an admin page request (such as http://domain.com/wp-admin/index.php?ithemes-updater-force-minor-update=1) in order to force the updater make these releases available for an hour. If the update is not performed within the hour, the updater reverts back to default behavior.
+	Bug Fix: Corrected source of the following error when updating: Download failed. SSL certificate problem, verify that the CA cert is OK. Details: error:14090086:SSL routines:SSL3_GET_SERVER_CERTIFICATE:certificate verify failed
+	Bug Fix: Corrected source of the following warning: Warning: require_once(/api.php) [function.require-once]: failed to open stream: No such file or directory
+1.0.5 - 2013-10-07 - Packaging Bot (lib/updater)
+	Bug Fix: Corrected another source of the following warning which occur immediate after updating the plugin or theme: Warning: require_once(/api.php) [function.require-once]: failed to open stream: No such file or directory
+1.0.6 - 2013-10-22 - Lew Ayotte
+	Reorganizing the MailChimp Addon file hierachy for future development
+1.0.7 - 2013-10-22 - Lew Ayotte
+    Fixed include for MailChimp API Class
+1.0.8 - 2013-10-23 - Lew Ayotte
+    Fixed version number for updater script
+1.0.9 - 2013-10-28 - Packaging Bot (lib/updater)
+	Enhancement: Added a "Quick Release Updates" setting to the bottom of the licensing page. Enabling this option allows the site to receive automatic update notices for product quick releases (releases that do not have automatic update support by default).
+	Enhancement: Changed how the licensing page works on Multisite. Now it will appear at Settings > iThemes Licensing in the network admin Dashboard and at Settings > iThemes Licensing on sites when the current user is a network admin. This prevents exposing the licensing page to users that don't are not super users and thus should not be performing updates. As this update makes the functionality of the "Licensing Page Access" setting obsolete, the setting has been removed.
+	Enhancement: Using the ithemes-updater-force-minor-update query string variable will now force a data flush, allowing any available quick release updates to appear instantly.
+	Enhancement: Added "License" links to the Plugins and Themes pages for the Network Admin Dashboard of multisite installs.
+1.0.10 - 2013-12-13 - Packaging Bot (lib/updater)
+	Enhancement: Recently updated plugins and themes no longer report that an update is available.
+	Enhancement: Added alternate line styling to the listings on the licensing page.
+	Enhancement: Products with iThemes in the name will now properly capitalize the name.
+	Enhancement: The updater and licensing system now handle iThemes server outages without causing long page delays or by reporting confusing error messages.
+1.0.11 - 2013-12-18 - Packaging Bot (lib/updater)
+	Bug Fix: Removed unneeded check on package-info.ithemes.com which was causing performance issues on some sites.
+1.0.12 - 2013-12-19 - Packaging Bot (lib/updater)
+	Bug Fix: Licensing will now be universal across all sites of a multisite network. This means that you will only need to license on one site to have the license apply across the entire network.
+1.0.13 - 2014-02-03 - Packaging Bot (lib/updater)
+	Bug Fix: Licensing on SSL-enabled sites now works properly.
+1.0.14 - 2014-11-14 - Packaging Bot (lib/updater)
+	Enhancement: Reduced caching to allow updates to appear more quickly.
+	Enhancement: Authenticating users now uses the new authentication system.
+2.0.0 - 2014-12-03 - Lew Ayotte
+	Fixing bug in transaction hook
+	Adding Mailchimp list subscription feature for individual products
+	Updated Mailchimp API and SDK to 2.0
+	Adding guest checkout to signup process
+	Adding ability to disable 'opt-in' during registration/checkout
+2.0.1 - 2014-12-05 - Lew Ayotte
+	Adding first/last names during product subscribes
+	Modifying Mailchimp API to only include Mailchimp files when Mailchimp class is instantiated
+2.0.2 - 2015-01-13 - Lew Ayotte
+	Fix for error when MailChimp API key is missing, also moved a few try/catch blocks
+2.0.3 - 2015-02-12 - Lew Ayotte
+	Added better checking of MailChimp API key when saving settings and getting lists

@@ -1,0 +1,382 @@
+/*		********************		*/
+/*		Since Exchange 1.0.1		*/
+/*		********************		*/
+
+
+/* Store */
+
+.builder-module-block #it-exchange-store .featured-image-wrapper {
+	font-size: 0;
+}
+.builder-module-block #it-exchange-store .it-exchange-product-details {
+	border: 1px solid #EBEBEB;
+	padding-top: 0;
+}
+.builder-module-block #it-exchange-store h1.entry-title {
+	font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 1.2em;
+	margin: .5em 0 1em 0;
+	text-align: left;
+}
+#it-exchange-store .it-exchange-product-permalink {
+	background: #EBEBEB;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: .75em;
+	padding: .1em 1em;
+	margin-top: .75em;
+	border-radius: 3px;
+}
+
+
+/* Product */
+
+.builder-module-block #it-exchange-product .product-price {
+	margin: 0 0 1em 0;
+}
+#it-exchange-product .it-exchange-super-widget {
+	max-width: 80%;
+}
+#it-exchange-product .it-exchange-super-widget input[type="submit"] {
+	margin-bottom: 0;
+}
+/* Super Widget */
+
+.builder-module-block .widget_it-exchange-super-widget {
+	margin-left: 2em;
+}
+.builder-module-block .widget_it-exchange-super-widget input[type="submit"] {
+	margin-bottom: .5em;
+}
+.builder-module-block .it-exchange-super-widget .cart-items-wrapper .cart-item .item-info input {
+	padding: .2em 0;
+}
+.builder-module-block .it-exchange-super-widget .item-count {
+	text-align: left;
+}
+.builder-module-block .it-exchange-super-widget .item-count a {
+	text-decoration: underline;
+}
+.it-exchange-super-widget .cart-items-wrapper {
+	border: 1px solid #FFF;
+}
+.cart-action.cancel-update {
+	border-bottom: 1px solid #EBEBEB;
+}
+.quantity {
+	text-align: center;
+}
+.builder-module-block .widget_it-exchange-super-widget input[type="submit"].it-exchange-update-quantity-button {
+	margin-bottom: 0;
+	text-align: center;
+}
+.builder-module-block .it-exchange-super-widget .cart-items-wrapper .cart-item {
+	border-bottom: 1px solid #FFFFFF;
+}
+.builder-module-block .it-exchange-super-widget .cart-items-wrapper .cart-item:nth-child(odd) {
+	background: #E7E7E7;
+	border-bottom: 1px solid #DBDBDB;
+}
+
+
+/* Cart/Checkout */
+
+.builder-module-block #it-exchange-cart .featured-image-wrapper img {
+	margin: 0;
+}
+.builder-module-block #it-exchange-cart .cart-item-quantity {
+	width: 15%;
+	min-width: 15%;
+	text-align: center;
+}
+.builder-module-block #it-exchange-cart .cart-item-quantity input[type="number"] {
+	padding: .2em 0;
+	text-align: center;
+}
+.builder-module-block #it-exchange-cart .cart-item-remove a {
+	text-decoration: none;
+	color: #853219;
+}
+.builder-module-block #it-exchange-cart .totals-column.cart-column p {
+	margin: 0;
+}
+.builder-module-block #it-exchange-cart .cart-apply-coupons {
+	margin-bottom: 3em;
+}
+.builder-module-block .it-exchange-cancel-checkout {
+	background: #EBEBEB;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: .75em;
+	padding: .1em 1em;
+	margin-top: .5em;
+	border-radius: 3px;
+	display: inline-block;
+}
+
+
+/* Coupons */
+.builder-module-block .coupons-wrapper {
+	border-bottom: 1px solid #F0F0F0;
+}
+.builder-module-block .apply-coupon {
+	position: relative;
+	line-height: 1;
+	max-width: 56%;
+	margin-right: 2%;
+}
+.builder-module-block .it-exchange-apply-coupon-button {
+	position: absolute;
+	margin: 0;
+}
+
+
+/* Error Messages */
+
+.builder-module-block .it-exchange-super-widget .it-exchange-messages.it-exchange-errors li {
+	border: 1px solid #FFD5D5;
+	margin-bottom: .5em;
+}
+
+
+/* Account - All Pages */
+
+.builder-module-block .it-exchange-customer-menu {
+	margin: 0 auto 3em auto;
+	display: table;
+}
+.builder-module-block .it-exchange-customer-menu a {
+	font-weight: normal;
+	font-size: inherit;
+	cursor: pointer;
+	display: inline-block;
+	background: #862A1F;
+	color: #FFFFFF;
+	padding: .5em 1em;
+	border: 1px solid transparent;
+	border-radius: 2px;
+	-webkit-font-smoothing: antialiased;
+	-webkit-appearance: none;
+	margin-bottom: 1.5em;
+	text-decoration: none;
+	-webkit-transition: all .2s ease-in;
+	-moz-transition: all .2s ease-in;
+	-o-transition: all .2s ease-in;
+	-ms-transition: all .2s ease-in;
+	transition: all .2s ease-in;
+}
+.builder-module-block .it-exchange-customer-menu a:hover {
+	background: #50130C;
+	color: #FFFFFF;
+}
+.builder-module-block .it-exchange-customer-menu .current a {
+	background: #50130C;
+	color: #FFFFFF;
+}
+
+
+/* Account - Profile */
+
+.it-exchange-customer-first-name,
+.it-exchange-customer-email,
+.it-exchange-customer-password1 {
+	float: left;
+	margin-right: 1em;
+}
+.it-exchange-customer-first-name label {
+	margin-top: 0;
+}
+
+/* Account - Purchases */
+
+#it-exchange-purchases .it-exchange-purchase {
+	padding-bottom: 0;
+	margin-bottom: 5em;
+	border-left: 1px solid #EBEBEB;
+	border-right: 1px solid #EBEBEB;
+}
+.builder-module-block #it-exchange-purchases .it-exchange-purchase-top {
+	background: #F7F7F7;
+	border: 1px solid #EBEBEB;
+	border-left: 0;
+	border-right: 0;
+	padding: .5em;
+	margin-bottom: 0;
+}
+.builder-module-block .it-exchange-purchase-top .it-exchange-purchase-total {
+	background: #EBEBEB;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: .1em 1em;
+	border-radius: 3px;
+}
+.builder-module-block .it-exchange-purchase-items {
+	border-bottom: 1px solid #EBEBEB;
+	padding: 1em;
+}
+#it-exchange-purchases .it-exchange-purchase-items .it-exchange-item-info {
+	margin-bottom: 0;
+}
+
+.builder-module-block .it-exchange-purchase-items .item-data h4 {
+	margin-left: 1.6em;
+	font-weight: 200;
+	text-transform: uppercase;
+}
+.builder-module-block .it-exchange-purchase-items .item-data *:last-child {
+	margin-bottom: 0;
+}
+.it-exchange-item-data-bottom *:last-child {
+	margin-bottom: 0;
+}
+
+
+/* Accounts - Downloads */
+
+.it-exchange-download-info {
+	margin-bottom: 3em;
+}
+.it-exchange-downloads-data {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.it-exchange-download-data {
+	margin-bottom: 2em;
+}
+.it-exchange-download-data:last-child {
+	margin-bottom: 0;
+}
+#it-exchange-downloads .it-exchange-download span {
+	display: block;
+	margin-left: 0;
+}
+#it-exchange-downloads .it-exchange-download-info span + span {
+	margin-left: 0;
+}
+.it-exchange-download-now a {
+	display: inline-block;
+	background: #862A1F;
+	color: #FFFFFF;
+	padding: .1em .75em;
+	margin: .25em 0 .5em 0;
+	border: 1px solid transparent;
+	border-radius: 2px;
+	-webkit-font-smoothing: antialiased;
+	-webkit-appearance: none;
+	text-decoration: none;
+}
+.it-exchange-download-product a.btn {
+	font-size: .8em;
+	margin: 0;
+	padding: .25em 1em;
+	background: #EBEBEB;
+	color: #000000;
+}
+
+
+/* Transaction/Confirmation Page Details */
+
+
+#it-exchange-confirmation .it-exchange-customer-menu {
+	display: block;
+	margin: 0;
+}
+#it-exchange-confirmation .it-exchange-customer-menu a {
+	margin-bottom: .5em;
+}
+#it-exchange-confirmation .it-exchange-transaction-meta p {
+	margin-bottom: 2em;
+}
+.it-exchange-transaction-meta {
+	margin-bottom: 3em;
+}
+.it-exchange-transaction-meta p {
+	margin: 0;
+}
+.it-exchange-transaction-product-download {
+	margin-bottom: 2em;
+}
+.it-exchange-transaction-product-download:last-child {
+	margin-bottom: 0;
+}
+#it-exchange-confirmation .it-exchange-downloads-data {
+	margin-left: 2em;
+}
+.it-exchange-transaction-product .entry-title {
+	padding: .5em;
+	margin: 0 0 1em 0;
+	text-align: left;
+	background: #EBEBEB;
+	border: 1px solid #EBEBEB;
+}
+.it-exchange-transaction-product-download-title {
+	margin-bottom: .5em;
+	border-bottom: 2px solid #F0EEEE;
+	padding: 0 .5em .25em .5em;
+	display: inline-block;
+}
+#it-exchange-confirmation span {
+	margin-left: 0;
+	display: block;
+}
+#it-exchange-confirmation .it-exchange-download-data span a {
+	display: inline-block;
+	background: #862A1F;
+	color: #FFFFFF;
+	padding: .1em .75em;
+	margin: .25em 0 .5em 0;
+	border: 1px solid transparent;
+	border-radius: 2px;
+	-webkit-font-smoothing: antialiased;
+	-webkit-appearance: none;
+	text-decoration: none;
+}
+/* Messages */
+
+.builder-module-block .it-exchange-messages {
+	margin-bottom: 1em;
+}
+
+
+/* Cart Coupons */
+
+.builder-module-block .remove-coupon {
+	color: #853219;
+	text-decoration: none;
+}
+
+
+
+/* Misc */
+
+.it_exchange_prod .entry-title {
+	font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	text-align: left;
+}
+
+
+/* Cart */
+#it-exchange-cart .it-exchange-cart-apply-coupons input.it-exchange-update-cart {
+	float: none;
+	font-size: 1em;
+	margin-top: 0;
+	text-transform: none;
+}
+#it-exchange-cart input.it-exchange-update-cart,
+#it-exchange-cart input.it-exchange-empty-cart {
+	font-size: .8em;
+	background: #D5D5D5;
+	color: #949494;
+	float: left;
+	margin-top: .75em;
+	text-transform: uppercase;
+}
+#it-exchange-cart input.it-exchange-update-cart:hover,
+#it-exchange-cart input.it-exchange-empty-cart:hover {
+	background: #50130C;
+	color: #FFFFFF;
+}
+#it-exchange-cart input.it-exchange-checkout-cart {
+	font-size: 1.2em;
+}

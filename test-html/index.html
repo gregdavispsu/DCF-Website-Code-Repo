@@ -1,0 +1,398 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Delaware Community Foundation</title>
+<link href="images/LogosIconsButtons/styles.css" rel="stylesheet" type="text/css" />
+<div id="fb-root"></div>
+
+
+
+<script type="text/javascript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-29013850-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-29013850-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<link href="styles.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+.bodytext table .bodytext td .bodytext strong {
+	text-align: center;
+}
+</style>
+</head>
+
+<body onload="MM_preloadImages('../button_login2.gif','../button_donation2.gif','../button_catalogue2.gif')">
+<script type="text/javascript">
+
+/***********************************************
+* Ultimate Fade-In Slideshow (v1.51): © Dynamic Drive (http://www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit http://www.dynamicdrive.com/ for this script and 100s more.
+***********************************************/
+
+var fadeimages=new Array()
+//SET IMAGE PATHS. Extend or contract array as needed
+fadeimages[0]=["Friends Slide 3.jpg", "/donations2.php?f=1"] //plain image syntax
+fadeimages[1]=["Friends Slide 2.jpg","/donations2.php?f=1"] //plain image syntax
+fadeimages[2]=["Friends Slide 1.jpg", "/donations2.php?f=1"] //plain image syntax
+fadeimages[3]=["home4.jpg", "/donations2.php?f=1"] //plain image syntax
+fadeimages[4]=["home5.jpg", "/donations2.php?f=1"] //plain image syntax
+fadeimages[5]=["Friends Slide 4.jpg", "/donations2.php?f=1"] //plain image syntax
+
+var fadebgcolor="white"
+
+////NO need to edit beyond here/////////////
+
+var fadearray=new Array() //array to cache fadeshow instances
+var fadeclear=new Array() //array to cache corresponding clearinterval pointers
+
+var dom=(document.getElementById) //modern dom browsers
+var iebrowser=document.all
+
+function fadeshow(theimages, fadewidth, fadeheight, borderwidth, delay, pause, displayorder){
+this.pausecheck=pause
+this.mouseovercheck=0
+this.delay=delay
+this.degree=10 //initial opacity degree (10%)
+this.curimageindex=0
+this.nextimageindex=1
+fadearray[fadearray.length]=this
+this.slideshowid=fadearray.length-1
+this.canvasbase="canvas"+this.slideshowid
+this.curcanvas=this.canvasbase+"_0"
+if (typeof displayorder!="undefined")
+theimages.sort(function() {return 0.5 - Math.random();}) //thanks to Mike (aka Mwinter) :)
+this.theimages=theimages
+this.imageborder=parseInt(borderwidth)
+this.postimages=new Array() //preload images
+for (p=0;p<theimages.length;p++){
+this.postimages[p]=new Image()
+this.postimages[p].src=theimages[p][0]
+}
+
+var fadewidth=fadewidth+this.imageborder*2
+var fadeheight=fadeheight+this.imageborder*2
+
+if (iebrowser&&dom||dom) //if IE5+ or modern browsers (ie: Firefox)
+document.write('<div id="master'+this.slideshowid+'" style="position:relative;width:'+fadewidth+'px;height:'+fadeheight+'px;overflow:hidden;"><div id="'+this.canvasbase+'_0" style="position:absolute;width:'+fadewidth+'px;height:'+fadeheight+'px;top:0;left:0;filter:progid:DXImageTransform.Microsoft.alpha(opacity=10);opacity:0.1;-moz-opacity:0.1;-khtml-opacity:0.1;background-color:'+fadebgcolor+'"></div><div id="'+this.canvasbase+'_1" style="position:absolute;width:'+fadewidth+'px;height:'+fadeheight+'px;top:0;left:0;filter:progid:DXImageTransform.Microsoft.alpha(opacity=10);opacity:0.1;-moz-opacity:0.1;-khtml-opacity:0.1;background-color:'+fadebgcolor+'"></div></div>')
+else
+document.write('<div><img name="defaultslide'+this.slideshowid+'" src="'+this.postimages[0].src+'"></div>')
+
+if (iebrowser&&dom||dom) //if IE5+ or modern browsers such as Firefox
+this.startit()
+else{
+this.curimageindex++
+setInterval("fadearray["+this.slideshowid+"].rotateimage()", this.delay)
+}
+}
+
+function fadepic(obj){
+if (obj.degree<100){
+obj.degree+=10
+if (obj.tempobj.filters&&obj.tempobj.filters[0]){
+if (typeof obj.tempobj.filters[0].opacity=="number") //if IE6+
+obj.tempobj.filters[0].opacity=obj.degree
+else //else if IE5.5-
+obj.tempobj.style.filter="alpha(opacity="+obj.degree+")"
+}
+else if (obj.tempobj.style.MozOpacity)
+obj.tempobj.style.MozOpacity=obj.degree/101
+else if (obj.tempobj.style.KhtmlOpacity)
+obj.tempobj.style.KhtmlOpacity=obj.degree/100
+else if (obj.tempobj.style.opacity&&!obj.tempobj.filters)
+obj.tempobj.style.opacity=obj.degree/101
+}
+else{
+clearInterval(fadeclear[obj.slideshowid])
+obj.nextcanvas=(obj.curcanvas==obj.canvasbase+"_0")? obj.canvasbase+"_0" : obj.canvasbase+"_1"
+obj.tempobj=iebrowser? iebrowser[obj.nextcanvas] : document.getElementById(obj.nextcanvas)
+obj.populateslide(obj.tempobj, obj.nextimageindex)
+obj.nextimageindex=(obj.nextimageindex<obj.postimages.length-1)? obj.nextimageindex+1 : 0
+setTimeout("fadearray["+obj.slideshowid+"].rotateimage()", obj.delay)
+}
+}
+
+fadeshow.prototype.populateslide=function(picobj, picindex){
+var slideHTML=""
+if (this.theimages[picindex][1]!="") //if associated link exists for image
+slideHTML='<a href="'+this.theimages[picindex][1]+'" target="'+this.theimages[picindex][2]+'">'
+slideHTML+='<img src="'+this.postimages[picindex].src+'" border="'+this.imageborder+'px">'
+if (this.theimages[picindex][1]!="") //if associated link exists for image
+slideHTML+='</a>'
+picobj.innerHTML=slideHTML
+}
+
+
+fadeshow.prototype.rotateimage=function(){
+if (this.pausecheck==1) //if pause onMouseover enabled, cache object
+var cacheobj=this
+if (this.mouseovercheck==1)
+setTimeout(function(){cacheobj.rotateimage()}, 100)
+else if (iebrowser&&dom||dom){
+this.resetit()
+var crossobj=this.tempobj=iebrowser? iebrowser[this.curcanvas] : document.getElementById(this.curcanvas)
+crossobj.style.zIndex++
+fadeclear[this.slideshowid]=setInterval("fadepic(fadearray["+this.slideshowid+"])",50)
+this.curcanvas=(this.curcanvas==this.canvasbase+"_0")? this.canvasbase+"_1" : this.canvasbase+"_0"
+}
+else{
+var ns4imgobj=document.images['defaultslide'+this.slideshowid]
+ns4imgobj.src=this.postimages[this.curimageindex].src
+}
+this.curimageindex=(this.curimageindex<this.postimages.length-1)? this.curimageindex+1 : 0
+}
+
+fadeshow.prototype.resetit=function(){
+this.degree=10
+var crossobj=iebrowser? iebrowser[this.curcanvas] : document.getElementById(this.curcanvas)
+if (crossobj.filters&&crossobj.filters[0]){
+if (typeof crossobj.filters[0].opacity=="number") //if IE6+
+crossobj.filters(0).opacity=this.degree
+else //else if IE5.5-
+crossobj.style.filter="alpha(opacity="+this.degree+")"
+}
+else if (crossobj.style.MozOpacity)
+crossobj.style.MozOpacity=this.degree/101
+else if (crossobj.style.KhtmlOpacity)
+crossobj.style.KhtmlOpacity=this.degree/100
+else if (crossobj.style.opacity&&!crossobj.filters)
+crossobj.style.opacity=this.degree/101
+}
+
+
+fadeshow.prototype.startit=function(){
+var crossobj=iebrowser? iebrowser[this.curcanvas] : document.getElementById(this.curcanvas)
+this.populateslide(crossobj, this.curimageindex)
+if (this.pausecheck==1){ //IF SLIDESHOW SHOULD PAUSE ONMOUSEOVER
+var cacheobj=this
+var crossobjcontainer=iebrowser? iebrowser["master"+this.slideshowid] : document.getElementById("master"+this.slideshowid)
+crossobjcontainer.onmouseover=function(){cacheobj.mouseovercheck=1}
+crossobjcontainer.onmouseout=function(){cacheobj.mouseovercheck=0}
+}
+this.rotateimage()
+}
+
+</script>
+ <table width="774" border="0" align="center" cellpadding="0" cellspacing="0" style="border: solid gray 1px; color: #FFF;">
+  
+<td height="23" background="images/LogosIconsButtons/top_colors.jpg" ><table width="770" border="0" cellspacing="0" cellpadding="0">
+   <tr>
+     <td width="67" align="center"><a href="give.html" title="Give" class="side">Give</a></td>
+     <td width="118" align="center"><a href="newsroom.html" title="Newsroom" class="side">Newsroom</a></td>
+     <td width="114" align="center"><a href="contact.html" title="Contact Us" class="side">Contact Us</a></td>
+
+     <td width="452" align="right" class="footer"><!--<strong>Search: &nbsp;
+       <input name="textfield" type="text" style="width:130px; height:13px; border:solid 1px #849bbf; COLOR: #496792; FONT: 8pt Verdana; " id="textfield" />
+</strong>--></td>
+     <td width="19">&nbsp;</td>
+   </tr>
+ </table></td>
+  </tr>
+
+  <tr>
+    <td><table width="774" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="162" align="left" valign="top" bgcolor="#eff2f7"><table width="162" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td><a href="index.html"><img src="images/LogosIconsButtons/logo.gif" alt="Back To Home" title="Back To Home" width="162" height="95" hspace="0" vspace="0" border="0" /></a></td>
+              </tr>
+              <tr>
+                <td><div class="nav12"> <a href="index.html"> Home</a> <a href="about.html"> About DCF</a> <a href="ways.html"> Ways To Give</a><a href="fundholders.html"> For Our Fundholders</a><a href="grants.html"> Apply For Grants</a> <a href="/scholarships.html"> Apply For Scholarships</a> <a href="advisors.html"> For Professional Advisors</a> <a href="events.html"> Event Registration</a> <a href="contact.html"> Contact Us</a></div></td>
+              </tr>
+              <tr>
+                <td align="center" valign="middle"><img src="images/Headers/header_quicklinks.jpg" alt="Quick Links" width="162" height="33" /><br />      <A HREF="https://online.delcf.org/"><img src="images/LogosIconsButtons/button_login.gif" alt="Current Donor Log-In" width="162" height="31" hspace="0" vspace="0" border="0" id="Image1" onmouseover="MM_swapImage('Image1','','images/LogosIconsButtons/button_login2.gif',1)" onmouseout="MM_swapImgRestore()" /></a><br />
+                  <a href="give.html"><img src="images/LogosIconsButtons/button_donation.gif" alt="Make A Donation" name="Image2" width="162" height="34" hspace="0" vspace="0" border="0" id="Image2" onmouseover="MM_swapImage('Image2','','images/LogosIconsButtons/button_donation2.gif',1)" onmouseout="MM_swapImgRestore()" /></a><br />  <a href="donations2.php?f=1"><img src="images/LogosIconsButtons/button_catalogue.gif" alt="Charitable Catalogue" width="162" height="32" hspace="0" vspace="0" border="0" id="Image3" onmouseover="MM_swapImage('Image3','','images/LogosIconsButtons/button_catalogue2.gif',1)" onmouseout="MM_swapImgRestore()" /></a>  <br />
+                  <br />
+                
+<iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FDelawareCommunityFoundation&amp;width=80&amp;layout=button_count&amp;action=like&amp;show_faces=true&amp;share=true&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:130px; height:21px;" allowTransparency="true"></iframe><br/>
+                      
+                    </a></strong> </span><strong><a href="http://twitter.com/@DelCommunity"><img src="images/LogosIconsButtons/twitter-logo.jpg" title="@DelCommunity on Twitter" alt="By: @DelCommunity on Twitter" width="63" height="25" hspace="0" vspace="6" border="1" /></a></strong>
+               <br /> <script src="//platform.linkedin.com/in.js" type="text/javascript">
+ lang: en_US
+</script>
+<script type="IN/FollowCompany" data-id="1717942" data-counter="right"></script>
+              
+              <p>    
+                  <a href="/contact_form.php"><span class="nav12select"><strong>JOIN OUR <br />
+                    MAILING LIST</strong></span></a><strong><a href="/contact_form.php"><span class="nav12select"><br />
+                      </span></a><br />
+                    </strong><a href="http://www.cfstandards.org"><img src="cflogo.gif" alt="CF Logo" width="162" height="114" hspace="0" vspace="0" border="0" /></a></p>
+              </div>       </p>
+                  </p></td>
+              </tr>
+            </table></td>
+          <td width="612" align="left" valign="top" bgcolor="#FFFFFF"><table border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td align="left" valign="top"><img src="images/LogosIconsButtons/spacer.gif" alt="DCF" width="225" height="95" /><img src="images/LogosIconsButtons/tagline.gif" alt="Connecting People Who Care" title="Connecting People Who Care" width="383" height="95" /></td>
+              </tr>
+              <tr>
+                <td><script type="text/javascript">
+//new fadeshow(IMAGES_ARRAY_NAME, slideshow_width, slideshow_height, borderwidth, delay, pause (0=no, 1=yes), optionalRandomOrder)
+new fadeshow(fadeimages, 608, 243, 0, 8000, 1, "R")
+</script></td>
+              </tr>
+              <!-- <tr>
+            <td bgcolor="#FFFFFF">&nbsp;</td>
+          </tr> -->
+              <tr>
+                <td><table width="569" border="0" cellspacing="6
+            " cellpadding="0">
+                    <tr>
+                      <td width="557" height="33" align="left" valign="middle"><span class="header">Welcome to the Delaware Community Foundation</span></td>
+                    </tr>
+                    <tr>
+                      <td valign="top"><table width="200" border="2" align="right" cellpadding="4" cellspacing="4">
+                        
+                        <tr bgcolor="#6484b3" class="TableHead">
+                          <th bgcolor="#6484b3" class="nav12" scope="col">Get Involved!</th>
+                        </tr>
+                        <tr>
+                          <td height="42" class="bodytext"><a href="AAEFD.html" class="navsub">African American Empowerment Fund</a></td>
+                        </tr>
+                        <tr>
+                          <td height="30"><span class="bodytext"><a href="ffw.html" class="FFWsubhed"><span class="FFWHed"><span class="navsub">Fund for Women</span></span></a></span></td>
+                        </tr>
+                        <tr>
+                          <td height="26"><span class="bodytext"><a href="NextGen.html">The Next Generation</a></span></td>
+                        </tr>
+                        <tr>
+                          <td height="26"><span class="bodytext"><a href="YPB.html">Youth Philanthropy Boards</a></span></td>
+                        </tr>
+                        </table>
+                        <p class="bodytext">At the Delaware Community Foundation, we connect people who care with the  causes they care about, helping individuals and organizations create charitable funds that become permanent sources of funding for charitable causes. We also: </p>
+<ul>
+                          <li><span class="subhead"><strong>- Inspire and expand philanthropy</strong></span><span class="bodytext"><br />
+                          </span></li>
+                          <li><span class="subhead"><strong>- Empower nonprofit organizations</strong></span> <span class="bodytext"><br />
+                          </span></li>
+                          <li><span class="subhead"><strong>- Maximize the power of giving</strong></span> <span class="bodytext"><br />
+                          </span></li>
+                          <li><span class="subhead"><strong>- Engage future leaders in philanthropy</strong></span></li>
+                      </ul>
+                        <p><span class="bodytext">At the DCF, we make it easy for generous people to do great things for the First State. <a href="/contact.html">Contact us</a> for help figuring out what <strong><em>your</em></strong> gift can do for Delaware. </span></p>
+<hr height=".0
+                      5" />
+                        <p><span class="header">What's New at the DCF?</span>
+                        <table width="99%" border="0" align="left" valign="top" cellpadding="4" cellspacing="5">
+                        <tr bordercolor="#111111">
+                          <td height="16" colspan="3" align="left" valign="top"><p class="header"><strong>FUND STATEMENTS &amp; CHARITABLE CATALOG  ONLINE</strong>: <strong> NEW DCF <em><a href="http://online.delcf.org">FOUNDATION CONNECTION</a></em></strong></p>
+                            <p class="bodytext"><span class="subhead"><strong><a href="http://online.delcf.org"><img src="images/Online_Post_It.jpg" alt="Online Post-It" width="287" height="172" hspace="16" vspace="8" align="right" /></a>DCF FUNDHOLDERS</strong></span> <br />
+                              See your statements, research charitable organizations, and make grant recommendations on the new website!</p>
+                            <p class="bodytext"><strong class="subhead">DELAWARE NONPROFITS</strong><br />
+                              Make your case to our donors! Share information about your organization and funding needs by creating a profile in the <em>Charitable Catalog</em>!</p>
+                            <p><br />
+                              </p>
+                            <hr /></td>
+                        </tr>
+                        <tr bordercolor="#111111">
+                          <td align="left" valign="top"><span class="style2">&gt;</span></td>
+                          <td colspan="2" align="left" valign="top" class="bodytext">
+                            <strong>New  Guidelines for 2014 Collaborative Grants </strong>
+                            <p>The  Delaware Community Foundation will be modifying the Collaborative Grant  guidelines for the fall of 2014. </p>
+                            <p>This  year, DCF&rsquo;s Collaborative Grants will be awarded for projects involving a  collaboration of two or more nonprofits within a single county. (In the past,  projects were required to include organizations from all three counties.) </p>
+                            <p>The DCF  expects to award one grant in each county. The maximum request per application  is $100,000.</p>
+                            <p><strong>Applications will be available  July 1 at <a href="http://www.delcf.org/grants">www.delcf.org/grants</a>. The  deadline is September 15.</strong></p>
+                            <p>Past  Collaborative Grants have supported projects including the Stewards of Children  sexual abuse prevention program, the $tand by Me Financial Empowerment program,  the Anti-Hunger Coalition, and the Delaware Aging Network.</p>
+                            <hr /></td>
+                        </tr>
+                         <tr bordercolor="#111111">
+                          <td align="left" valign="top"><span class="style2">&gt;</span></td>
+                          <td colspan="2" align="left" valign="top" class="bodytext">
+                            <strong>Apply for Grants to Provide  Child Mental Health Services in Kent &amp; Sussex</strong><strong><a href="NextGenSouth.html"><img src="images/NextGen/Logo.jpg" alt="Next Gen logo" hspace="8" vspace="8" align="right" /></a></strong><br />
+                          </p>
+                            <p><strong><a href="Download/NextGen2014/South/Grant_App_2014.doc">Applications</a></strong> are now available for  2014 grants from <a href="NextGenSouth.html">The Next Generation of Southern Delaware</a>! Organizations providing children's mental health services in Kent and Sussex Counties are invited to apply.</p>
+                            <p>Last year, Next Gen South awarded $12,500 in grants to three nonprofit organizations providing programs to benefit children’s mental health.<br />
+                              <br />
+                              <strong>-- La Esperanza </strong>received $5,000 to help support its Victims Services Program, which provides counseling for Latino children who are victims of domestic violence and/or sexual abuse in Sussex County.</p>
+                            <p> <strong>-- Delaware Guidance Services</strong> received $5,000 to help support therapy sessions for at-risk children in Sussex County. </p>
+                            <p><strong> -- Girl Scouts of the Chesapeake Bay</strong> received $2,500 to help support its bully prevention “Be a Friend First” (BFF) program to high-risk girls in Kent County. </p>
+                            <p><br />
+                            
+                            <hr /></td>
+                        <tr bordercolor="#111111">
+                          <td align="left" valign="top"><span class="style2">&gt;</span></td>
+                          <td height="16" colspan="2" align="left" class="bodytext">
+                            
+                            <p><strong><a href="/calculator.html"><img src="/images/Plant_Growing.png" alt="Grow!" width="160" height="95" hspace="16" align="left" /></a></strong></p>
+                            <p><strong>Giving is Forever Through Endowed Funds</strong></p>
+                            <p>Try our  <strong><a href="/calculator.html">endowment calculator</a></strong> to see how your gift's impact can grow stronger every year, forever. </p>
+                            <p>&nbsp;
+                            <p><br />
+                            </p>                            
+                            <hr />
+                          <p>&nbsp;</p></td>
+                          
+                        </table>
+                      <br /></td>
+                    </tr>
+                  </table>
+                <br /></td>
+                <td>&nbsp;</td>
+              </tr>
+          </table></td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+</td>
+</tr>
+<!-- <tr hright="28">
+ <td height="28" bgcolor="#849bbf" class="footer" ><div align="center">Delaware Community Foundation | 100 West 10th St. | Suite 115 | Wilmington, DE | phone: 302/571-8004 | fax: 302/571-1553</div></td>
+  </tr>-->
+</table>
+<div align="center">
+  <p> <span class="footer"> &copy; 2010 Delaware Community Foundation &nbsp;  |  &nbsp; 100 W. 10th Street, Suite 115 &nbsp;  |  &nbsp; P.O. Box 1636 &nbsp;  |  &nbsp; Wilmington, DE 19899<br />
+    Please email comments, corrections or suggestions to <strong><a href="mailto:info@delcf.org" class="side">info@delcf.org</a></strong></span><br />
+    <br />
+  </p>
+</div>
+<br />
+<br />
+</body>
+</html>

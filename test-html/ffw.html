@@ -1,0 +1,513 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Delaware Community Foundation | Ways To Give | Community Programs &amp; Special Funds | Fund For Women</title>
+
+<link href="../styles.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-29013850-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+
+<body onload="MM_preloadImages('../button_login2.gif','../button_donation2.gif','../button_catalogue2.gif')">
+<script type="text/javascript">
+
+/***********************************************
+* Ultimate Fade-In Slideshow (v1.51): © Dynamic Drive (http://www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit http://www.dynamicdrive.com/ for this script and 100s more.
+***********************************************/
+
+var fadeimages=new Array()
+//SET IMAGE PATHS. Extend or contract array as needed
+fadeimages[0]=["home1.jpg", "", ""] //plain image syntax
+fadeimages[1]=["home2.jpg", "", ""] //plain image syntax
+fadeimages[2]=["home3.jpg", "", ""] //plain image syntax
+fadeimages[3]=["home4.jpg", "", ""] //plain image syntax
+fadeimages[4]=["home5.jpg", "", ""] //plain image syntax
+fadeimages[5]=["home6.jpg", "", ""] //plain image syntax
+
+var fadebgcolor="white"
+
+////NO need to edit beyond here/////////////
+
+var fadearray=new Array() //array to cache fadeshow instances
+var fadeclear=new Array() //array to cache corresponding clearinterval pointers
+
+var dom=(document.getElementById) //modern dom browsers
+var iebrowser=document.all
+
+function fadeshow(theimages, fadewidth, fadeheight, borderwidth, delay, pause, displayorder){
+this.pausecheck=pause
+this.mouseovercheck=0
+this.delay=delay
+this.degree=10 //initial opacity degree (10%)
+this.curimageindex=0
+this.nextimageindex=1
+fadearray[fadearray.length]=this
+this.slideshowid=fadearray.length-1
+this.canvasbase="canvas"+this.slideshowid
+this.curcanvas=this.canvasbase+"_0"
+if (typeof displayorder!="undefined")
+theimages.sort(function() {return 0.5 - Math.random();}) //thanks to Mike (aka Mwinter) :)
+this.theimages=theimages
+this.imageborder=parseInt(borderwidth)
+this.postimages=new Array() //preload images
+for (p=0;p<theimages.length;p++){
+this.postimages[p]=new Image()
+this.postimages[p].src=theimages[p][0]
+}
+
+var fadewidth=fadewidth+this.imageborder*2
+var fadeheight=fadeheight+this.imageborder*2
+
+if (iebrowser&&dom||dom) //if IE5+ or modern browsers (ie: Firefox)
+document.write('<div id="master'+this.slideshowid+'" style="position:relative;width:'+fadewidth+'px;height:'+fadeheight+'px;overflow:hidden;"><div id="'+this.canvasbase+'_0" style="position:absolute;width:'+fadewidth+'px;height:'+fadeheight+'px;top:0;left:0;filter:progid:DXImageTransform.Microsoft.alpha(opacity=10);opacity:0.1;-moz-opacity:0.1;-khtml-opacity:0.1;background-color:'+fadebgcolor+'"></div><div id="'+this.canvasbase+'_1" style="position:absolute;width:'+fadewidth+'px;height:'+fadeheight+'px;top:0;left:0;filter:progid:DXImageTransform.Microsoft.alpha(opacity=10);opacity:0.1;-moz-opacity:0.1;-khtml-opacity:0.1;background-color:'+fadebgcolor+'"></div></div>')
+else
+document.write('<div><img name="defaultslide'+this.slideshowid+'" src="'+this.postimages[0].src+'"></div>')
+
+if (iebrowser&&dom||dom) //if IE5+ or modern browsers such as Firefox
+this.startit()
+else{
+this.curimageindex++
+setInterval("fadearray["+this.slideshowid+"].rotateimage()", this.delay)
+}
+}
+
+function fadepic(obj){
+if (obj.degree<100){
+obj.degree+=10
+if (obj.tempobj.filters&&obj.tempobj.filters[0]){
+if (typeof obj.tempobj.filters[0].opacity=="number") //if IE6+
+obj.tempobj.filters[0].opacity=obj.degree
+else //else if IE5.5-
+obj.tempobj.style.filter="alpha(opacity="+obj.degree+")"
+}
+else if (obj.tempobj.style.MozOpacity)
+obj.tempobj.style.MozOpacity=obj.degree/101
+else if (obj.tempobj.style.KhtmlOpacity)
+obj.tempobj.style.KhtmlOpacity=obj.degree/100
+else if (obj.tempobj.style.opacity&&!obj.tempobj.filters)
+obj.tempobj.style.opacity=obj.degree/101
+}
+else{
+clearInterval(fadeclear[obj.slideshowid])
+obj.nextcanvas=(obj.curcanvas==obj.canvasbase+"_0")? obj.canvasbase+"_0" : obj.canvasbase+"_1"
+obj.tempobj=iebrowser? iebrowser[obj.nextcanvas] : document.getElementById(obj.nextcanvas)
+obj.populateslide(obj.tempobj, obj.nextimageindex)
+obj.nextimageindex=(obj.nextimageindex<obj.postimages.length-1)? obj.nextimageindex+1 : 0
+setTimeout("fadearray["+obj.slideshowid+"].rotateimage()", obj.delay)
+}
+}
+
+fadeshow.prototype.populateslide=function(picobj, picindex){
+var slideHTML=""
+if (this.theimages[picindex][1]!="") //if associated link exists for image
+slideHTML='<a href="'+this.theimages[picindex][1]+'" target="'+this.theimages[picindex][2]+'">'
+slideHTML+='<img src="'+this.postimages[picindex].src+'" border="'+this.imageborder+'px">'
+if (this.theimages[picindex][1]!="") //if associated link exists for image
+slideHTML+='</a>'
+picobj.innerHTML=slideHTML
+}
+
+
+fadeshow.prototype.rotateimage=function(){
+if (this.pausecheck==1) //if pause onMouseover enabled, cache object
+var cacheobj=this
+if (this.mouseovercheck==1)
+setTimeout(function(){cacheobj.rotateimage()}, 100)
+else if (iebrowser&&dom||dom){
+this.resetit()
+var crossobj=this.tempobj=iebrowser? iebrowser[this.curcanvas] : document.getElementById(this.curcanvas)
+crossobj.style.zIndex++
+fadeclear[this.slideshowid]=setInterval("fadepic(fadearray["+this.slideshowid+"])",50)
+this.curcanvas=(this.curcanvas==this.canvasbase+"_0")? this.canvasbase+"_1" : this.canvasbase+"_0"
+}
+else{
+var ns4imgobj=document.images['defaultslide'+this.slideshowid]
+ns4imgobj.src=this.postimages[this.curimageindex].src
+}
+this.curimageindex=(this.curimageindex<this.postimages.length-1)? this.curimageindex+1 : 0
+}
+
+fadeshow.prototype.resetit=function(){
+this.degree=10
+var crossobj=iebrowser? iebrowser[this.curcanvas] : document.getElementById(this.curcanvas)
+if (crossobj.filters&&crossobj.filters[0]){
+if (typeof crossobj.filters[0].opacity=="number") //if IE6+
+crossobj.filters(0).opacity=this.degree
+else //else if IE5.5-
+crossobj.style.filter="alpha(opacity="+this.degree+")"
+}
+else if (crossobj.style.MozOpacity)
+crossobj.style.MozOpacity=this.degree/101
+else if (crossobj.style.KhtmlOpacity)
+crossobj.style.KhtmlOpacity=this.degree/100
+else if (crossobj.style.opacity&&!crossobj.filters)
+crossobj.style.opacity=this.degree/101
+}
+
+
+fadeshow.prototype.startit=function(){
+var crossobj=iebrowser? iebrowser[this.curcanvas] : document.getElementById(this.curcanvas)
+this.populateslide(crossobj, this.curimageindex)
+if (this.pausecheck==1){ //IF SLIDESHOW SHOULD PAUSE ONMOUSEOVER
+var cacheobj=this
+var crossobjcontainer=iebrowser? iebrowser["master"+this.slideshowid] : document.getElementById("master"+this.slideshowid)
+crossobjcontainer.onmouseover=function(){cacheobj.mouseovercheck=1}
+crossobjcontainer.onmouseout=function(){cacheobj.mouseovercheck=0}
+}
+this.rotateimage()
+}
+
+</script>
+
+
+
+<table width="770" border="0" align="center" cellpadding="0" cellspacing="0" style="border: solid gray 1px; text-align: left;">
+  <tr hright="23">
+ <td height="23" background="../top_colors.jpg" ><table width="770" border="0" cellspacing="0" cellpadding="0">
+   <tr>
+     <td width="67" align="center"><a href="../give.html" title="Give" class="side">Give</a></td>
+     <td width="118" align="center"><a href="../newsroom.html" title="Newsroom" class="side">Newsroom</a></td>
+     <td width="114" align="center" class="side"><a href="../contact.html">Contact Us</a></td>
+     <td width="452" align="right" class="footer"><!--<strong>Search: &nbsp;
+       <input name="textfield" type="text" style="width:130px; height:13px; border:solid 1px #849bbf; COLOR: #496792; FONT: 8pt Verdana; " id="textfield" title="Enter your search term here"/>
+</strong>--></td>
+     <td width="19">&nbsp;</td>
+   </tr>
+ </table></td>
+  </tr>
+
+   <tr>
+    <td><table width="770" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="162" align="left" valign="top" bgcolor="#eff2f7"><table width="162" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td><a href="../index.html"><img src="logo.gif" alt="Back To Home" title="Back To Home" width="162" height="95" hspace="0" vspace="0" border="0" /></a></td>
+          </tr>
+          <tr>
+            <td><Div class="nav12">
+
+		<A href="../index.html"> Home</A>
+			<a href="../about.html"> About DCF</a>
+
+
+
+
+
+				<Div class="nav12select"><A href="../ways.html" class="side"> Ways To Give</A></Div>
+
+
+                 <Div class="navsub">
+
+				<A href="../ways_create.html">>  Create A Fund</A>
+				<a href="../ways_plan.html">>   Plan Your Legacy</a>
+				<Div class="navsubselect"><A href="../ways_community.html">>   Community Programs<br />
+				&nbsp;  &nbsp;& Special Funds</A></Div>
+				<A href="../ways_other.html">>   Other Ways To Support</A>
+				<A href="../ways_catalog.html">>   Our Charitable Catalog</A></Div>
+
+
+
+                <A href="../fundholders.html"> For Our Fundholders</A><A href="../grants.html"> Apply For Grants</A>
+		<A href="../scholarships.html"> Apply For Scholarships</A>
+
+		<A href="../advisors.html"> For Professional Advisors</A>
+		<A href="../events.html"> Event Registration</A>
+		<A href="../contact.html"> Contact Us</A></Div>
+              </td>
+          </tr>
+          <tr>
+            <td align="center"><img src="images/Headers/header_quicklinks.jpg" alt="Quick Links" width="162" height="33" /><br />
+             <A HREF="https://online.delcf.org/"><img src="images/LogosIconsButtons/button_login.gif" alt="Current Donor Log-In" width="162" height="31" hspace="0" vspace="0" border="0" id="Image1" onmouseover="MM_swapImage('Image1','','images/LogosIconsButtons/button_login2.gif',1)" onmouseout="MM_swapImgRestore()" /></a><br />
+                  <a href="../donate.php"><img src="images/LogosIconsButtons/button_donation.gif" alt="Make A Donation" name="Image2" width="162" height="34" hspace="0" vspace="0" border="0" id="Image2" onmouseover="MM_swapImage('Image2','','images/LogosIconsButtons/button_donation2.gif',1)" onmouseout="MM_swapImgRestore()" /></a><br />
+                  <a href="../donations2.php?f=1"><img src="images/LogosIconsButtons/button_catalogue.gif" alt="Charitable Catalogue" width="162" height="32" hspace="0" vspace="0" border="0" id="Image3" onmouseover="MM_swapImage('Image3','','images/LogosIconsButtons/button_catalogue2.gif',1)" onmouseout="MM_swapImgRestore()" /></a>  <br />
+                  <br />
+                
+<iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FDelawareCommunityFoundation&amp;width=80&amp;layout=button_count&amp;action=like&amp;show_faces=true&amp;share=true&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:130px; height:21px;" allowTransparency="true"></iframe><br/>
+                      
+                    </a></strong> </span><strong><a href="http://twitter.com/@DelCommunity"><img src="images/LogosIconsButtons/twitter-logo.jpg" title="@DelCommunity on Twitter" alt="By: @DelCommunity on Twitter" width="63" height="25" hspace="0" vspace="6" border="1" /></a></strong>
+               <br />
+                  
+                  
+                 <script src="//platform.linkedin.com/in.js" type="text/javascript">
+ lang: en_US
+</script>
+<script type="IN/FollowCompany" data-id="1717942" data-counter="right"></script>
+              
+              <p>    
+                  <a href="/contact_form.php"><span class="nav12select"><strong>JOIN OUR <br />
+                    MAILING LIST</strong></span></a><strong><a href="/contact_form.php"><span class="nav12select"><br />
+                      </span></a><br />
+                    </strong><a href="http://www.cfstandards.org"><img src="cflogo.gif" alt="CF Logo" width="162" height="114" hspace="0" vspace="0" border="0" /></a>
+              <p></p></td>
+          </tr>
+        </table></td>
+        <td width="608" align="left" valign="top" bgcolor="#FFFFFF"><table width="608" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td align="left" valign="top"><img src="../spacer.gif" alt="DCF" width="225" height="95" /><img src="../tagline.gif" alt="Connecting People Who Care" title="Connecting People Who Care" width="383" height="95" /></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+          </tr>
+         <!-- <tr>
+            <td bgcolor="#FFFFFF">&nbsp;</td>
+          </tr> -->
+          <tr>
+            <td><table width="608" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="28">&nbsp;</td>
+                <td width="556"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td height="70" align="left" valign="middle"><img src="../header_ffw.jpg" alt="Ways To Give" title="Ways To Give" width="608" height="243" /><p><img src="../images/LogosIconsButtons/leaf-ffw.gif" align="left" hspace="5" border="0" /></td>
+                  </tr>
+                  <tr>
+                    <td><table style="border-collapse: collapse; text-align: left;" id="AutoNumber3" width="100%" border="0" bordercolor="#111111" cellpadding="2" cellspacing="0">
+                      <tbody>
+                        <tr>
+                          <td width="3%">&nbsp;</td>
+                          <td width="50%" align="left" valign="bottom"><p class="bodytext">Since 1994, the <strong>Fund for Women</strong> has been making a
+                              difference in the lives of women and girls in Delaware.
+                              As a Founder, you can make a greater impact through the power of their collective giving.</p>
+                            <p class="bodytext"><span style="text-align: left">                              Enjoy from the social and networking
+                              opportunities of being part of this dynamic group;
+                              building professional connections, strengthening community
+                              ties and helping them become philanthropic leaders.</span></p>
+                            <p class="bodytext"><a href="../Download/FFW/FFW2012/FounderList9-23-2012.pdf"><strong>See  our  list of Founders and join us today!</strong></a></p></td>
+                          <td width="1%">&nbsp;</td>
+                          <td width="46%" align="left" valign="top"><p class="bodytext"><a href="Download/FFW/FFW2013/FFW Brochure7-2013.pdf"><strong><img src="images/FFW/BecomeAFounder.jpg" alt="Become A Founder!" width="270" height="93" align="texttop" /></strong></a></p>
+                            <p class="bodytext">                              To become a Founder, you may make a one-time
+                              pledge or make contributions over  a five-year period.                              </p>
+                            <p class="bodytext"> Please see our <a href="Download/FFW/FFW2013/FFW Brochure7-2013.pdf"><strong>brochure and pledge form</strong></a>.</td>
+                        </tr>
+                        <tr>
+                          <td colspan="4" align="left" valign="middle" style="text-align: left"><p class="header">                          
+                            <hr height=".25" />
+                            <p class="bodytext"><span class="header"><strong>What's New with the Fund for Women?</strong></span>
+                              </p>
+                            <p class="bodytext">&nbsp;</p>
+                            
+                            
+                          </tr>
+                        <tr>
+                          <td align="left" valign="top"><span class="style2">&gt;</span></td>
+                          <td colspan="3" align="left" valign="top" class="bodytext"><strong><a href="Download/FFW/FFW2014/AR_042014.pdf"><img src="/images/FFW/FFW_AR_4-2014.jpg" alt=" hspace=" width="212" height="193" hspace="16" " border="2" align="right"16 /></a>2014 Annual Report to Our Founders</strong><br />
+                            <p>The Fund for Women's endowment recently exceeded $3 million and is helping thousands of girls and women in Delaware through strategic annual grants.</p>
+                            <p>Read our <a href="Download/FFW/FFW2014/AR_042014.pdf">2014 Annual Report</a> to learn more about how the Fund for Women is growing and giving. Maybe it will inspire you to <a href="http://weblink.donorperfect.com/Support_the_Fund_for_Women">become a Founder</a> or even <a href="http://weblink.donorperfect.com/FFWpledgePayAndDonationForm">make an additional gift</a> to support our Next Million campaign.
+</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp; </p>
+                            <hr height=".25" />
+                            <p class="bodytext"></p></td>
+                        </tr>
+                        <tr>
+                          <td align="left" valign="top"><span class="style2">&gt;</span></td>
+                          <td colspan="3" align="left" valign="top" class="bodytext"><strong>Enjoy our Spring <a href="http://origin.library.constantcontact.com/download/get/file/1110789388537-53/FFW+March+2014+NL.pdf">Newsletter</a>!</strong><strong><a href="http://origin.library.constantcontact.com/download/get/file/1110789388537-53/FFW+March+2014+NL.pdf"><img src="/images/FFW/Spring_2014_Newsletter.jpg" alt="" width="271" height="355"  hspace="16" border="2" align="right" /></a></strong><br />
+                            <p>A lot of exciting things are going on that will make a difference in the lives of women and girls in Delaware!</p>
+                            <p>We hope you'll enjoy reading about:</p>
+                            <ul>
+                              <li> Upcoming  Grant Awards Ceremony, where Ginger Ward will be awarded the Driving Force Award </li>
+                              <li> FFW grants making a difference through the
+                                <ul>
+                                  <li><a href="http://www.ywcade.org/site/c.ahKKIZMHIlI4E/b.8096235/k.A447/Summer_Programs.htm">YWCA's Summer Internship Teen Empowerment Program</a></li>
+                                  <li><a href="https://www.rmhde.org/">Ronald McDonald House</a></li>
+                                  <li><a href="http://www.girlsinc.org/resources/programs/girls-inc-friendly-peersuasion.html">Girls Inc. of Delaware's PEERsuasion</a></li>
+                                  <li><a href="http://www.cdow.org/catholic-diocese-of-wilmington-offices-and-ministries/catholic-charities/how-to-get-help-from-catholic-charities/catholic-charites-bayard-house/">Catholic Charities' Aftercare Housing Case Management Support Program</a>, and</li>
+                                  <li><a href="fbd.org">Food Bank of Delaware </a></li>
+                                  </ul>
+                                </li>
+                              <li> Sussex County Martinis and Makeovers </li>
+                              <li>And much more! <br />
+                                </li>
+                              </ul>
+                            <p class="bodytext">&nbsp;</p>
+  <hr height=".25" />
+                            <p class="bodytext"></p></td>
+                        </tr>
+                        <tr>
+                          <td align="left" valign="top"><span class="style2">&gt;</span></td>
+                          <td colspan="3" align="left" valign="top" class="bodytext"><strong><a href="http://www.thedcca.org/FromMyCollectionToYours2014"><img src="/images/FFW/ArtShow5-2014.jpg" alt="" width="250" height="178" hspace="16" border="2" align="right" /></a>DCCA's 4th Spring Silent Art Auction: <br />
+                            <em>                            Art grom My Collection to Yours</em></strong><br />
+                            <p>The <a href="http://www.thedcca.org/">Delaware Center for the Contemporary Art</a>s and the Fund for Women are teaming up for the DCCA's annual silent auction, featuring fantastic artworks from generous donors' collections.</p>
+                            <p>Thursday, May 1, 2014, 6-9 pm<br />
+                              Delaware Center for the Contemporary Arts <br />
+                              200 S. Madison St., Wilmington</p>
+                            <p>Get your<strong> <a href="http://www.thedcca.org/FromMyCollectionToYours2014"><strong>tickets</strong></a> </strong>today!<br />
+                              </p>
+  <hr height=".25" />
+                            <p class="bodytext"></p></td>
+                        </tr>
+                        <tr>
+                          <td align="left" valign="top"><span class="style2">&gt;</span></td>
+                          <td colspan="3" align="left" valign="top" class="bodytext"><strong class="subhead">Now Seeking <a href="Download/FFW/Fund for Women 1st Founder Nomination Form.doc">Nominations</a> for the 2014 First Founders' Award!<br />
+                            <br />
+                            </strong>Since 2007, the Fund for Women annually presents the First Founders’ Award to a Founder who:<br />
+                            <ul>
+                              <li>Has a record of exceptional generosity</li>
+                              <li> Demonstrates civic or charitable responsibility, and </li>
+                              <li> Whose leadership has encouraged others in serving our community in Delaware. </li>
+                              </ul>
+                            <p align="left" class="bodytext">Please nominate a Founder you feel has made a difference in our state and deserves to be spotlighted for her accomplishments and contributions. The recipient will be honored at our October breakfast. Nominations are accepted on a rolling basis. Nominations received after August 1 will be considered for next year's award<strong>.</strong> <br />
+                              <br />
+                              Please complete the <strong><a href="Download/FFW/Fund for Women 1st Founder Nomination Form.doc">nomination form</a></strong> and email it to <strong><a href="mailto:thefundforwomen@yahoo.com">thefundforwomen@yahoo.com</a></strong>.</p>
+                            <hr height=".25" />
+                            <br />
+                            
+                          </tr>
+                        <tr>
+                          <td align="left" valign="top"><span class="style2">&gt;</span></td>
+                          <td colspan="3" align="left" valign="top" class="bodytext"><span class="subhead">Give toward your pledge or give anew!</span>
+                            <p>In this season of giving, we invite you to continue -- or begin! -- your support of the Fund for Women.</p>
+                            <ul>
+                              <li><a href="http://weblink.donorperfect.com/FFWpledgePayAndDonationForm">I want to make a <strong>PLEDGE PAYMENT</strong> or an <strong>ADDITIONAL GIFT.</strong></a></li>
+                              </ul>
+                            <ul>
+                              <li><a href="http://weblink.donorperfect.com/Support_the_Fund_for_Women">I would like to <strong>BECOME A FOUNDER</strong> or<strong> MAKE SOMEONE A FOUNDER</strong>.</a></li>
+                              </ul>
+                            <a href="http://weblink.donorperfect.com/Support_the_Fund_for_Women"></a>
+                            <p>Thank you for your ongoing commitment to helping women and girls in Delaware. </p>
+                            <hr />
+                            
+                          </tr>
+                      </tbody>
+                    </table>
+
+
+                    <p class="left" style="line-height: 12pt; margin-top: 0pt;"><br />
+                      <span class="subhead"><b>About the Fund for Women<br />
+                      </b></span><span class="bodytext">Created in 1993, the Fund for Women at the Delaware
+                        Community Foundation is a permanent endowment and
+                        additional source of funding for programs that address the
+                        unmet needs of women and girls in Delaware. The original
+                        goal of the Fund was to obtain 1,000 Founders, each
+                        contributing $1,000 to create a $1 million lasting
+                        endowment. <span class="bodytext" style="margin: 0in 0in 0.0001pt;"><br />
+                        <br />
+                        More than 1,000 men and women have become Founders, and due
+  to their generosity and fundraising success, the endowment
+  now exceeds $2.8 million. The Fund for Women includes the Fund for Women Leadership
+  Fund, as well as the Mary E. Copper Memorial Fund, Lynn
+  Estes Friess Fund, Sally J. Knox Memorial Fund, Clara
+  Miller Trust Fund, Betsy Rawls Fund, and the Marjory Stone
+  Memorial Fund.</span><br />
+                        <br />
+                        </span></p>
+<p class="bodytext" style="margin: 0in 0in 0.0001pt;"><span class="subhead"><b>Fund for Women Grants</b></span></p>
+                    <p class="bodytext" style="margin: 0in 0in 0.0001pt; margin-bottom: 0pt;"> The Fund tor Women focuses its grant making on programs
+                      relating to the education of girls and women in health,
+                      wellness and life skills that lead to future economic
+                      self-sufficiency. Grant awards have supported:<br />
+                    </p>
+                    <p class="bodytext" style="margin: 0in 0in 0.0001pt; margin-bottom: 0pt;">&nbsp;</p>
+                    <table width="367" border="0">
+                      <tr>
+                        <td width="25">&nbsp;</td>
+                        <td width="153"><span class="bodytext" style="margin: 0in 0in 0.0001pt; margin-bottom: 0pt;">Housing</span></td>
+                        <td width="228"><span class="bodytext" style="margin: 0in 0in 0.0001pt; margin-bottom: 0pt;">Job training</span></td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td><span class="bodytext" style="margin: 0in 0in 0.0001pt; margin-bottom: 0pt;">Abuse counseling </span></td>
+                        <td><span class="bodytext" style="margin: 0in 0in 0.0001pt; margin-bottom: 0pt;">Financial
+                      literacy</span></td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td><span class="bodytext" style="margin: 0in 0in 0.0001pt; margin-bottom: 0pt;">Legal assistance </span></td>
+                        <td><span class="bodytext" style="margin: 0in 0in 0.0001pt; margin-bottom: 0pt;">Arts enrichment</span></td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td><span class="bodytext" style="margin: 0in 0in 0.0001pt; margin-bottom: 0pt;">Medical
+                      care</span></td>
+                        <td><span class="bodytext" style="margin: 0in 0in 0.0001pt; margin-bottom: 0pt;">Science education</span></td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td><span class="bodytext" style="margin: 0in 0in 0.0001pt; margin-bottom: 0pt;">Scholarships </span></td>
+                        <td><p class="bodytext" style="margin: 0in 0in 0.0001pt; margin-bottom: 0pt;">Sports programs </p>
+                          <p class="bodytext" style="margin: 0in 0in 0.0001pt; margin-bottom: 0pt;"></p></td>
+                      </tr>
+                      <tr>
+                        <td>&nbsp;</td>
+                        <td><span class="bodytext" style="margin: 0in 0in 0.0001pt; margin-bottom: 0pt;">Prenatal
+                      care</span></td>
+                        <td>&nbsp;</td>
+                      </tr>
+                  </table>
+                    <p class="bodytext" style="margin: 0in 0in 0.0001pt; margin-bottom: 0pt;"><br />
+                    </p>
+<p class="bodytext" style="margin: 0in 0in 0.0001pt; margin-bottom: 0pt;">Grant applications are  available
+  in November and due in January<span class="bodytext" style="margin: 0in 0in 0.0001pt; margin-bottom: 0pt;"> each year</span>. Awards are announced in May.  <span class="bodytext" style="margin: 0in 0in 0.0001pt; margin-bottom: 0pt;">In May 2013, 12 nonprofit organizations received a total of </span> $128,904 in
+  grants.</p>
+                    <p class="bodytext" style="margin: 0in 0in 0.0001pt;">&nbsp;</p>
+                    <p class="bodytext" style="margin: 0in 0in 0.0001pt;">For questions or to make gifts to the Fund, please call
+                      302.230.7000 or email <a href="mailto:TheFundForWomen@yahoo.com">TheFundForWomen@yahoo.com</a>.</p>
+                    <p class="left" style="margin: 0in 0in 0.0001pt;">&nbsp;</p>  <p align="right"><a href="../ways_community.html"><img src="../back.gif" alt="Back" width="16" height="16" hspace="0" vspace="0" border="0" align="absbottom" /></a> <span class="bodytext"><a href="../ways_community.html">Back To Previous Page</a></span><br />
+                      </p><br /></td>
+                  </tr>
+                </table>
+                  <br />
+
+
+                  </td>
+                <td width="24">&nbsp;</td>
+              </tr>
+            </table></td>
+          </tr>
+        </table></td>
+      </tr>
+    </table></td>
+  </tr>
+ <!-- <tr hright="28">
+ <td height="28" bgcolor="#849bbf" class="footer" ><div align="center">Delaware Community Foundation | 100 West 10th St. | Suite 115 | Wilmington, DE | phone: 302/571-8004 | fax: 302/571-1553</div></td>
+  </tr>-->
+</table>
+<div align="center">
+  <p>
+  <span class="footer"> &copy; 2010 Delaware Community Foundation &nbsp;  |  &nbsp; 100 W. 10th Street, Suite 115 &nbsp;  |  &nbsp; P.O. Box 1636 &nbsp;  |  &nbsp; Wilmington, DE 19899<br />
+  Please email comments, corrections or suggestions to <strong><a href="mailto:info@delcf.org" class="side">info@delcf.org</a></strong></span><br />
+    <br />
+  </p>
+</div><br /><br />
+</body>
+</html>

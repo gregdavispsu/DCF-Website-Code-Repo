@@ -1,0 +1,418 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Delaware Community Foundation | Ways To Give | Community Programs &amp; Special Funds | The Next Generation</title>
+
+<link href="styles.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+<style type="text/css">
+#AutoNumber3 tbody tr td table tr td table tr td #AutoNumber tbody tr .style2 p .header b em {
+	color: #006633;
+}
+#AutoNumber3 tbody tr td table tr td table tr td #AutoNumber tbody tr .style2 p .header b {
+	color: #063;
+}
+#AutoNumber3 tbody tr td table tr td table tr td #AutoNumber tbody tr td .subhead strong {
+	color: #006633;
+}
+</style>
+</head>
+
+<body onload="MM_preloadImages('button_login2.gif','button_donation2.gif','button_catalogue2.gif','../button_login2.gif','../button_donation2.gif','../button_catalogue2.gif')">
+<p>
+  <script type="text/javascript">
+
+/***********************************************
+* Ultimate Fade-In Slideshow (v1.51): © Dynamic Drive (http://www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit http://www.dynamicdrive.com/ for this script and 100s more.
+***********************************************/
+
+var fadeimages=new Array()
+//SET IMAGE PATHS. Extend or contract array as needed
+fadeimages[0]=["home1.jpg", "", ""] //plain image syntax
+fadeimages[1]=["home2.jpg", "", ""] //plain image syntax
+fadeimages[2]=["home3.jpg", "", ""] //plain image syntax
+fadeimages[3]=["home4.jpg", "", ""] //plain image syntax
+fadeimages[4]=["home5.jpg", "", ""] //plain image syntax
+fadeimages[5]=["home6.jpg", "", ""] //plain image syntax
+
+var fadebgcolor="white"
+
+////NO need to edit beyond here/////////////
+
+var fadearray=new Array() //array to cache fadeshow instances
+var fadeclear=new Array() //array to cache corresponding clearinterval pointers
+
+var dom=(document.getElementById) //modern dom browsers
+var iebrowser=document.all
+
+function fadeshow(theimages, fadewidth, fadeheight, borderwidth, delay, pause, displayorder){
+this.pausecheck=pause
+this.mouseovercheck=0
+this.delay=delay
+this.degree=10 //initial opacity degree (10%)
+this.curimageindex=0
+this.nextimageindex=1
+fadearray[fadearray.length]=this
+this.slideshowid=fadearray.length-1
+this.canvasbase="canvas"+this.slideshowid
+this.curcanvas=this.canvasbase+"_0"
+if (typeof displayorder!="undefined")
+theimages.sort(function() {return 0.5 - Math.random();}) //thanks to Mike (aka Mwinter) :)
+this.theimages=theimages
+this.imageborder=parseInt(borderwidth)
+this.postimages=new Array() //preload images
+for (p=0;p<theimages.length;p++){
+this.postimages[p]=new Image()
+this.postimages[p].src=theimages[p][0]
+}
+
+var fadewidth=fadewidth+this.imageborder*2
+var fadeheight=fadeheight+this.imageborder*2
+
+if (iebrowser&&dom||dom) //if IE5+ or modern browsers (ie: Firefox)
+document.write('<div id="master'+this.slideshowid+'" style="position:relative;width:'+fadewidth+'px;height:'+fadeheight+'px;overflow:hidden;"><div id="'+this.canvasbase+'_0" style="position:absolute;width:'+fadewidth+'px;height:'+fadeheight+'px;top:0;left:0;filter:progid:DXImageTransform.Microsoft.alpha(opacity=10);opacity:0.1;-moz-opacity:0.1;-khtml-opacity:0.1;background-color:'+fadebgcolor+'"></div><div id="'+this.canvasbase+'_1" style="position:absolute;width:'+fadewidth+'px;height:'+fadeheight+'px;top:0;left:0;filter:progid:DXImageTransform.Microsoft.alpha(opacity=10);opacity:0.1;-moz-opacity:0.1;-khtml-opacity:0.1;background-color:'+fadebgcolor+'"></div></div>')
+else
+document.write('<div><img name="defaultslide'+this.slideshowid+'" src="'+this.postimages[0].src+'"></div>')
+
+if (iebrowser&&dom||dom) //if IE5+ or modern browsers such as Firefox
+this.startit()
+else{
+this.curimageindex++
+setInterval("fadearray["+this.slideshowid+"].rotateimage()", this.delay)
+}
+}
+
+function fadepic(obj){
+if (obj.degree<100){
+obj.degree+=10
+if (obj.tempobj.filters&&obj.tempobj.filters[0]){
+if (typeof obj.tempobj.filters[0].opacity=="number") //if IE6+
+obj.tempobj.filters[0].opacity=obj.degree
+else //else if IE5.5-
+obj.tempobj.style.filter="alpha(opacity="+obj.degree+")"
+}
+else if (obj.tempobj.style.MozOpacity)
+obj.tempobj.style.MozOpacity=obj.degree/101
+else if (obj.tempobj.style.KhtmlOpacity)
+obj.tempobj.style.KhtmlOpacity=obj.degree/100
+else if (obj.tempobj.style.opacity&&!obj.tempobj.filters)
+obj.tempobj.style.opacity=obj.degree/101
+}
+else{
+clearInterval(fadeclear[obj.slideshowid])
+obj.nextcanvas=(obj.curcanvas==obj.canvasbase+"_0")? obj.canvasbase+"_0" : obj.canvasbase+"_1"
+obj.tempobj=iebrowser? iebrowser[obj.nextcanvas] : document.getElementById(obj.nextcanvas)
+obj.populateslide(obj.tempobj, obj.nextimageindex)
+obj.nextimageindex=(obj.nextimageindex<obj.postimages.length-1)? obj.nextimageindex+1 : 0
+setTimeout("fadearray["+obj.slideshowid+"].rotateimage()", obj.delay)
+}
+}
+
+fadeshow.prototype.populateslide=function(picobj, picindex){
+var slideHTML=""
+if (this.theimages[picindex][1]!="") //if associated link exists for image
+slideHTML='<a href="'+this.theimages[picindex][1]+'" target="'+this.theimages[picindex][2]+'">'
+slideHTML+='<img src="'+this.postimages[picindex].src+'" border="'+this.imageborder+'px">'
+if (this.theimages[picindex][1]!="") //if associated link exists for image
+slideHTML+='</a>'
+picobj.innerHTML=slideHTML
+}
+
+
+fadeshow.prototype.rotateimage=function(){
+if (this.pausecheck==1) //if pause onMouseover enabled, cache object
+var cacheobj=this
+if (this.mouseovercheck==1)
+setTimeout(function(){cacheobj.rotateimage()}, 100)
+else if (iebrowser&&dom||dom){
+this.resetit()
+var crossobj=this.tempobj=iebrowser? iebrowser[this.curcanvas] : document.getElementById(this.curcanvas)
+crossobj.style.zIndex++
+fadeclear[this.slideshowid]=setInterval("fadepic(fadearray["+this.slideshowid+"])",50)
+this.curcanvas=(this.curcanvas==this.canvasbase+"_0")? this.canvasbase+"_1" : this.canvasbase+"_0"
+}
+else{
+var ns4imgobj=document.images['defaultslide'+this.slideshowid]
+ns4imgobj.src=this.postimages[this.curimageindex].src
+}
+this.curimageindex=(this.curimageindex<this.postimages.length-1)? this.curimageindex+1 : 0
+}
+
+fadeshow.prototype.resetit=function(){
+this.degree=10
+var crossobj=iebrowser? iebrowser[this.curcanvas] : document.getElementById(this.curcanvas)
+if (crossobj.filters&&crossobj.filters[0]){
+if (typeof crossobj.filters[0].opacity=="number") //if IE6+
+crossobj.filters(0).opacity=this.degree
+else //else if IE5.5-
+crossobj.style.filter="alpha(opacity="+this.degree+")"
+}
+else if (crossobj.style.MozOpacity)
+crossobj.style.MozOpacity=this.degree/101
+else if (crossobj.style.KhtmlOpacity)
+crossobj.style.KhtmlOpacity=this.degree/100
+else if (crossobj.style.opacity&&!crossobj.filters)
+crossobj.style.opacity=this.degree/101
+}
+
+
+fadeshow.prototype.startit=function(){
+var crossobj=iebrowser? iebrowser[this.curcanvas] : document.getElementById(this.curcanvas)
+this.populateslide(crossobj, this.curimageindex)
+if (this.pausecheck==1){ //IF SLIDESHOW SHOULD PAUSE ONMOUSEOVER
+var cacheobj=this
+var crossobjcontainer=iebrowser? iebrowser["master"+this.slideshowid] : document.getElementById("master"+this.slideshowid)
+crossobjcontainer.onmouseover=function(){cacheobj.mouseovercheck=1}
+crossobjcontainer.onmouseout=function(){cacheobj.mouseovercheck=0}
+}
+this.rotateimage()
+}
+
+</script>
+  
+  
+  
+</p>
+<table width="770" border="0" align="center" cellpadding="0" cellspacing="0" class="bodytext" style="border: solid gray 1px;">
+  <tr hright="23">
+ <td width="770" height="23" background="top_colors.jpg" ><table width="770" border="0" cellspacing="0" cellpadding="0">
+   <tr>
+     <td width="67" align="center"><a href="give.html">Give</a></td>
+     <td width="118" align="center"><a href="newsroom.html">Newsroom</a></td>
+     <td width="114" align="center" class="side"><a href="contact.html">Contact Us</a></td>
+     <td width="452" align="right" class="footer"><!--<strong>Search: &nbsp;
+       <input name="textfield" type="text" style="width:130px; height:13px; border:solid 1px #849bbf; COLOR: #496792; FONT: 8pt Verdana; " id="textfield" title="Enter your search term here"/>
+</strong>--></td>
+     <td width="19">&nbsp;</td>
+   </tr>
+ </table></td>
+  </tr>
+
+   <tr>
+    <td><table width="770" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="162" align="left" valign="top" bgcolor="#eff2f7"><table width="162" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td><a href="index.html"><img src="logo.gif" alt="Back To Home" title="Back To Home" width="162" height="95" hspace="0" vspace="0" border="0" /></a></td>
+          </tr>
+          <tr>
+            <td><div class="nav12">
+
+		<a href="index.html"> Home</a>
+			<a href="about.html"> About DCF</a>
+
+
+
+
+
+				<div class="nav12select"><a href="ways.html" class="side"> Ways To Give</a></div>
+
+
+                 <div class="navsub">
+
+				<a href="ways_create.html">&gt;  Create A Fund</a>
+				<a href="ways_plan.html">&gt;   Plan Your Legacy</a>
+				<div class="navsubselect"><a href="ways_community.html">&gt;   Community Programs<br />
+				&nbsp;  &nbsp;&amp; Special Funds</a></div>
+				<a href="ways_other.html">&gt;   Other Ways To Support</a>
+				<a href="ways_catalog.html">&gt;   Our Charitable Catalog</a></div>
+
+
+
+                <a href="fundholders.html"> For Our Fundholders</a><a href="grants.html"> Apply For Grants</a>
+		<a href="scholarships.html"> Apply For Scholarships</a>
+
+		<a href="advisors.html"> For Professional Advisors</a>
+		<a href="events.html"> Event Registration</a>
+		<a href="contact.html"> Contact Us</a></Div>              </td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle"><img src="../header_quicklinks.gif" alt="Quick Links" width="162" height="33" /><br />
+                <a href="../login.html"><img src="../button_login.gif" alt="Current Donor Log-In" width="162" height="31" hspace="0" vspace="0" border="0" id="Image1" onmouseover="MM_swapImage('Image1','','../button_login2.gif',1)" onmouseout="MM_swapImgRestore()" /></a><br />
+                <a href="../donate.php"><img src="../button_donation.gif" alt="Make A Donation" name="Image2" width="162" height="34" hspace="0" vspace="0" border="0" id="Image2" onmouseover="MM_swapImage('Image2','','../button_donation2.gif',1)" onmouseout="MM_swapImgRestore()" /></a><br />
+                <a href="../donations2.php?f=1"><img src="../button_catalogue.gif" alt="Charitable Catalogue" width="162" height="32" hspace="0" vspace="0" border="0" id="Image3" onmouseover="MM_swapImage('Image3','','../button_catalogue2.gif',1)" onmouseout="MM_swapImgRestore()" /></a><br />
+              &nbsp;&nbsp;&nbsp;   <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2FDelawareCommunityFoundation&amp;send=false&amp;layout=button_count&amp;width=146&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21" hspace="16" vspace="12" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:116px; height:21px; text-align: center;" allowTransparency="true"></iframe>
+                </a>                <br><strong>&nbsp;<script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
+<script type="IN/FollowCompany" data-counter="right" data-id="2330474"></script>
+                
+                  <a href="/contact_form"><br />
+                  </a></strong>
+                <strong><a href="http://twitter.com/@DelCommunity"><img src="images/twitter-logo.jpg" title="@DelCommunity on Twitter" alt="By: @DelCommunity on Twitter" width="63" height="25" hspace="0" vspace="6" border="1" /></a></strong><br><a href="/contact_form"><span class="nav12select"><strong>JOIN OUR <br />
+                  MAILING LIST</strong></span></a><strong><a href="/contact_form"><span class="nav12select"><br />
+                    </span></a><br />
+                  </strong><a href="http://www.cfstandards.org"><img src="cflogo.gif" alt="CF Logo" width="162" height="114" hspace="0" vspace="0" border="0" /></a></p>                
+                </p></td>
+          </tr>
+
+        </table></td>
+        <td width="694" align="left" valign="top" bgcolor="#FFFFFF"><table width="607" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="607" align="left" valign="top"><img src="spacer.gif" alt="DCF" width="225" height="95" /><img src="tagline.gif" alt="Connecting People Who Care" title="Connecting People Who Care" width="383" height="95" /></td>
+          </tr>
+          <tr>
+            <td><img src="header_tng.jpg" alt="Ways To Give" title="Ways To Give" width="608" height="243" /></td>
+          </tr>
+         <!-- <tr>
+            <td bgcolor="#FFFFFF">&nbsp;</td>
+          </tr> -->
+          <tr>
+            <td><table width="608" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="22"><p>&nbsp;</p>
+                  <p>&nbsp;</p></td>
+                <td width="561"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td height="250"><table style="border-collapse: collapse;" id="AutoNumber3" width="100%" border="0" bordercolor="#111111"  cellspacing="3" height="371">
+                      <tbody>
+                        <tr>
+                          <td valign="top" width="50%" height="59"><table width="99%" border="0" cellspacing="6px" cellpadding="0">
+                            <tr>
+                              <td align="center" valign="top"><table width="98%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                  <td width="456" height="50" align="left" valign="middle">
+                                    <p><img src="images/leaf-tng.gif" width="243" height="47" align="left" /><em></td>
+                                  <td colspan="2" align="center" valign="middle"><a href="donations2.php?f=1125"><img src="images/TNGSouthButton.jpg" width="85" height="47" align="middle" /></a></td>
+                                  </tr>
+                                <tr>
+                                  <td height="25" align="left" valign="top" class="bodytext">
+                                    
+                                      <p class="bodytext"><span class="bodytext">The
+                                          Next Generation <span style="margin-bottom: 0pt">(TNG) </span>is a philanthropic organization whose mission is to develop young professionals into effective nonprofit board leaders. A Giving Circle of the Delaware Community Foundation, TNG's northern and southern chapters engage members in hands-on fundraising, grantmaking, community outreach, education and endowment building. Please see our <a href="Download/TNG2013/TNG_WhoWeAre2013.pdf">organizational overview</a> for more information. </span></p>
+                                    
+       </td>
+                                  <td width="90" align="right" valign="top"><a href="http://www.facebook.com/NextGenDE">
+                                    <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2FTNGSoDel&amp;send=false&amp;layout=button_count&amp;width=146&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21" hspace="0" vspace="6" scrolling="No" frameborder="0" style="border:none; overflow:hidden; width:90px; height:25px; text-align: middle;" allowtransparency="false"></iframe>
+                                  </a><a href="https://twitter.com/@NextGenDE"></a></td>
+                                  <td width="31" align="left" valign="top"><a href="https://twitter.com/@NextGenDE"><img src="images/GreenTwitter.jpg"  alt="Follow TNG!" width="31" height="28" vspace="2" border="0" align="left"/></a></td>
+                                  </tr>
+                                <tr>
+                                  <td height="800" colspan="3"><table style="border-collapse: collapse; color: #006633; text-align: left;" id="AutoNumber" border="0" bordercolor="#111111"  cellspacing="0" height="1114">
+                                    <tbody>
+                                   
+                                        <td height="8" colspan="4" align="left" valign="top" class="TNGGreenSubhed"></td>
+                                        </tr>
+                                      <tr class="TNGGreenSubhed">
+                                        <td width="144" height="27" align="center" valign="middle" bgcolor="#006600" class="style2" style="text-align: center"><a href="#About" class="TNGGreenSubhed"><span class="footer">About Us</span></a></td>
+                                        <td width="144" align="center" valign="middle" bgcolor="#006633" class="TNGGreenSubhed" style="text-align: center"><a href="#Events" class="TNGGreenSubhed"><span class="footer">Events</span></a></td>
+                                         <td width="145" align="center" valign="middle" bgcolor="#006633" class="TNGGreenSubhed" style="text-align: center"><a href="#News" class="TNGGreenSubhed"><span class="footer">News</span></a></td>
+                                     <td width="145" align="center" valign="middle" bgcolor="#006633" class="TNGGreenSubhed" style="text-align: center"><a href="#Join" class="TNGGreenSubhed"><span class="footer">Join Us!</span></a></td>
+                                      </tr>
+                                      <tr>
+                                        <td height="1079" colspan="4" align="left" valign="top"><p align="left" class="bodytext" style="margin-bottom: 0pt">&nbsp;</p>
+                                          <blockquote>
+                                            <p align="left" class="TNGGreenSubhed" style="font-size: 12px; margin-bottom: 0pt;  color: #006633;"><strong class="TNGGreenSubhed"><a name="About" id="About"></a>About Next Gen South</strong></p>
+                                            <blockquote>
+                                              <p align="left" class="TNGGreenSubhed" style="font-size: 12px; margin-bottom: 0pt; color: #006633;"><span class="TNGGreenSubhed"><span class="TNGStyle2"><strong>Overview</strong></span></span><br />
+                                                </p>
+                                              </blockquote>
+                                            <ul class="bodytext">
+                                              <li>Established in 2008, Next Gen-South is <strong>building an endowed fund at the DCF</strong> to generate money for charitable grants for decades to come. </li>
+                                              <li>In the summer of 2009, Next Gen-South <strong>will</strong> <strong>award its inaugural grants</strong>.</li>
+                                              <li>Next Gen-South is currently focused on supporting <strong>mental health services for children</strong>.</li>
+                                              </ul>
+                                            <blockquote>
+                                              <p class="TNGStyle2"><strong>Leadership</strong></p>
+                                              
+                                                <table width="414" height="355" border="0" cellpadding="0" cellspacing="0">
+                                                  <tr>
+                                                    <th scope="col"><p><strong><img src="images/TNG/NextGenSouth/KimWillson.jpg" alt="Kim Willson" width="140" height="170"  align="texttop" /></strong></p>
+                                                      <p><strong>Kim Willson<br />
+                                                        President</strong></p></th>
+                                                    <th scope="col"><p><strong><img src="images/TNG/NextGenSouth/Jason_Adkins.jpg"  alt="Jason Adkins" width="140" height="170" /></strong></p>
+                                                      <p><strong>Jason Adkins<br />
+                                                        Vice President</strong></p></th>
+                                                    <tr>
+                                                      <th scope="col"><p><strong><img src="images/TNG/NextGenSouth/ChristyVanderwende.jpg" width="140" height="170" alt="Christy Vanderwende" /></strong></p>
+                                                        <p><strong>Christy Vanderwende<br /> 
+                                                          Secretary
+                                                          </strong></p></th>
+                                                      <th scope="col"><p><strong><img src="images/TNG/NextGenSouth/brian_ellis.jpg" width="140" height="170" alt="Brian Ellis" /></strong></p>
+                                                        <p><strong>Brian Ellis<br /> 
+                                                          Treasurer
+                                                          </strong></p></th>
+                                                      </tr>
+                                                  </table>
+                                            </blockquote>
+                                            <hr />
+                                            <p><strong class="TNGGreenSubhed"><a name="Events" id="About2"></a>Events</strong></p>
+                                            <blockquote>
+                                              <p class="bodytext">                                              Under construction!</p>
+                                            </blockquote>
+                                            <hr />
+                                            <p class="subhead"><strong class="TNGGreenSubhed"><a name="News" id="News"></a><span class="TNGGreenSubhed">What's New?</span></strong><br />
+                                            </p>
+                                            <blockquote>
+                                              <p class="bodytext">The application period for this year's grants has closed. Next Gen-South's grants committee is currently conducting site visits and choosing awardees. Awardees will be announced in the fall.</p>
+                                            </blockquote>
+                                            <hr />
+                                            <strong class="TNGGreenSubhed"><a name="Join" id="Join"></a><span class="TNGGreenSubhed">Join us!</span></strong> </blockquote>
+                                          <ul>
+                                            <blockquote>
+                                              <p class="bodytext">F<span style="text-align: left" align="center">or more information, please contact <a href="mailto:MollyMichele@comcast.net"><strong>Molly King</strong></a>.</span></p>
+                                              </blockquote>
+                                          </ul>
+                                          <blockquote>
+                                            <hr />
+                                          </blockquote>                                          <p align="right"><span class="bodytext">For more information about <b>The Next Generation</b>, check out our </span><a href="ways_community.html" class="bodytext"><strong>Who We Are</strong></a> <span class="bodytext">flyer.<a href="ways_community.html" class="bodytext"><br />
+                                          </a>For  information about our <b>New Castle County chapter</b>, please visit <strong><a href="NextGenNorth-test.html">Next Gen North</a></strong>.</span></td>
+                                      </tr>
+                                                                          </table>
+
+      
+<p align="right"><a href="ways_community.html"><img src="back.gif" alt="Back" width="16" height="16" hspace="0" vspace="0" border="0" align="absbottom" /></a> <span class="bodytext"><a href="ways_community.html">Back To Previous Page</a></span></p></td>
+                                </tr>
+                              </table>                                <a href="https://twitter.com/@NextGenDE"></a></td>
+                            </tr>
+                          </table>                            <p class="bodytext">&nbsp;</p></td>
+                          </tr>
+                        </tbody>
+                      </table>                    </td></tr>
+                </table></td>
+                <td width="25">&nbsp;</td>
+              </tr>
+            </table></td>
+          </tr>
+        </table></td>
+      </tr>
+    </table></td>
+  </tr>
+ <!-- <tr hright="28">
+ <td height="28" bgcolor="#849bbf" class="footer" ><div align="center">Delaware Community Foundation | 100 West 10th St. | Suite 115 | Wilmington, DE | phone: 302/571-8004 | fax: 302/571-1553</div></td>
+  </tr>-->
+</table>
+<div align="center">
+  <p> <span class="footer">&copy; 2010 Delaware Community Foundation &nbsp;  |  &nbsp; 100 W. 10th Street, Suite 115 &nbsp;  |  &nbsp; P.O. Box 1636 &nbsp;  |  &nbsp; Wilmington, DE 19899<br />
+  Please email comments, corrections or suggestions to <strong><a href="mailto:info@delcf.org" class="side">info@delcf.org</a></strong></span><br />
+    <br />
+  </p>
+</div><br /><br />
+</body>
+</html>

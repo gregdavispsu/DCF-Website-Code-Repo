@@ -1,0 +1,80 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mass Page Remover\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-07-13 19:43-0500\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Wes Goodhoofd <w@wesg.ca>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: mass-page-remover.php:35
+msgid "There was no data submitted."
+msgstr ""
+
+#: mass-page-remover.php:91
+#, php-format
+msgid "Successfully removed %d pages in %.4lf seconds"
+msgstr ""
+
+#: mass-page-remover.php:93
+msgid "Error removing pages."
+msgstr ""
+
+#: mass-page-remover.php:112
+msgid "Mass Page Remover"
+msgstr ""
+
+#: mass-page-remover.php:113
+msgid "From this page, you can remove as many posts or pages as you like. Input a start and end post ID value, or write the page IDs directly, by separating them with commas. Use all fields for maximum efficiency."
+msgstr ""
+
+#: mass-page-remover.php:118
+msgid "Plugin Information"
+msgstr ""
+
+#: mass-page-remover.php:141
+msgid "First page to remove"
+msgstr ""
+
+#: mass-page-remover.php:142
+msgid "Last page to remove"
+msgstr ""
+
+#: mass-page-remover.php:143
+msgid "Individual pages (separate by commas)"
+msgstr ""
+
+#: mass-page-remover.php:147
+msgid "Remove Pages"
+msgstr ""
+
+#: mass-page-remover.php:201
+msgid "Post ID"
+msgstr ""
+
+#: mass-page-remover.php:202
+msgid "Post Title"
+msgstr ""
+
+#: mass-page-remover.php:203
+msgid "Post Date"
+msgstr ""
+
+#: mass-page-remover.php:236
+msgid " (Draft)"
+msgstr ""
+
+#: mass-page-remover.php:238
+msgid " (Published)"
+msgstr ""
+
+#: mass-page-remover.php:240
+msgid " (Future post)"
+msgstr ""
+

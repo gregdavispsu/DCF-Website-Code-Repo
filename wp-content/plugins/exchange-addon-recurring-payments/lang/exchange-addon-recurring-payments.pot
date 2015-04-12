@@ -1,0 +1,679 @@
+# Copyright (C) 2015 iThemes Exchange - Recurring Payments Add-on
+# This file is distributed under the same license as the iThemes Exchange - Recurring Payments Add-on package.
+msgid ""
+msgstr ""
+"Project-Id-Version: iThemes Exchange - Recurring Payments Add-on 1.0.24\n"
+"Report-Msgid-Bugs-To: http://ithemes.com/forum/\n"
+"POT-Creation-Date: 2015-02-25 13:06:45+00:00\n"
+"PO-Revision-Date: 2015-MO-DA HO:MI+ZONE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: api/theme/recurring-payments.php:84
+msgid "Cancel this subscription"
+msgstr ""
+
+#: api/theme/recurring-payments.php:94
+msgid "Subscription deactivated"
+msgstr ""
+
+#: api/theme/recurring-payments.php:97
+msgid "Subscription cancelled"
+msgstr ""
+
+#: api/theme/recurring-payments.php:100
+msgid "Subscription suspended"
+msgstr ""
+
+#: api/theme/recurring-payments.php:123
+msgid "Expires"
+msgstr ""
+
+#: api/theme/recurring-payments.php:150
+msgid "Payment"
+msgstr ""
+
+#: api/theme/recurring-payments.php:161
+msgid "of"
+msgstr ""
+
+#: exchange-addon-recurring-payments.php:30 lib/addon-settings.php:160
+msgid "Recurring Payments"
+msgstr ""
+
+#: exchange-addon-recurring-payments.php:31
+msgid ""
+"This add-on turns on recurring payments for supporting payment gateways."
+msgstr ""
+
+#: lib/addon-functions.php:53
+msgid ""
+"The Recurring Payments add-on requires iThemes Exchange version 1.3.0 or "
+"greater. %sPlease upgrade Exchange%s."
+msgstr ""
+
+#: lib/addon-functions.php:96
+msgid "every %s"
+msgstr ""
+
+#: lib/addon-functions.php:98
+msgid "every %s %s"
+msgstr ""
+
+#: lib/addon-functions.php:122
+msgid "(after %s %s free)"
+msgstr ""
+
+#: lib/addon-settings.php:33
+msgid "Cancellation Notification"
+msgstr ""
+
+#: lib/addon-settings.php:34
+msgid ""
+"Hello [it_exchange_email show=name],\n"
+"\n"
+"Your recurring payment has been cancelled.\n"
+"\n"
+"Thank you.\n"
+"[it_exchange_email show=sitename]"
+msgstr ""
+
+#: lib/addon-settings.php:40
+msgid "Expiration Notification"
+msgstr ""
+
+#: lib/addon-settings.php:41
+msgid ""
+"Hello [it_exchange_email show=name],\n"
+"\n"
+"Your recurring payment has expired.\n"
+"\n"
+"Thank you.\n"
+"[it_exchange_email show=sitename]"
+msgstr ""
+
+#: lib/addon-settings.php:131
+msgid "Recurring Payments Settings"
+msgstr ""
+
+#: lib/addon-settings.php:140
+msgid "Save Changes"
+msgstr ""
+
+#: lib/addon-settings.php:163
+msgid "Recurring Payment Cancelled Email"
+msgstr ""
+
+#: lib/addon-settings.php:165 lib/addon-settings.php:184
+msgid "Email Subject"
+msgstr ""
+
+#: lib/addon-settings.php:165 lib/addon-settings.php:184
+msgid ""
+"The subject you want users who have cancelled their subscriptions to receive."
+msgstr ""
+
+#: lib/addon-settings.php:169 lib/addon-settings.php:188
+msgid "Email Message"
+msgstr ""
+
+#: lib/addon-settings.php:169 lib/addon-settings.php:188
+msgid ""
+"The message you want users who have cancelled their subscriptions to receive."
+msgstr ""
+
+#: lib/addon-settings.php:182
+msgid "Recurring Payment Expired Email"
+msgstr ""
+
+#: lib/addon-settings.php:203
+msgid ""
+"Enter the email that is sent to administrator after a customer completes a "
+"successful purchase. HTML is accepted. Available shortcode functions:"
+msgstr ""
+
+#: lib/addon-settings.php:205
+msgid "You call these shortcode functions like this: %s"
+msgstr ""
+
+#: lib/addon-settings.php:207
+msgid "The buyer's first name"
+msgstr ""
+
+#: lib/addon-settings.php:208
+msgid "The buyer's full name, first and last"
+msgstr ""
+
+#: lib/addon-settings.php:209
+msgid "The buyer's username on the site, if they registered an account"
+msgstr ""
+
+#: lib/addon-settings.php:210
+msgid "Your site name"
+msgstr ""
+
+#: lib/addon-settings.php:211
+msgid "Adds a link to the login page on your website."
+msgstr ""
+
+#: lib/addon-settings.php:232
+msgid "Error. Please try again"
+msgstr ""
+
+#: lib/addon-settings.php:238
+msgid "Settings saved."
+msgstr ""
+
+#: lib/addon-settings.php:243
+msgid "Settings not saved."
+msgstr ""
+
+#: lib/addon-settings.php:259
+msgid "Please include an email subject for cancellations"
+msgstr ""
+
+#: lib/addon-settings.php:261
+msgid "Please include an email body for cancellations"
+msgstr ""
+
+#: lib/addon-settings.php:263
+msgid "Please include an email subject for expirations"
+msgstr ""
+
+#: lib/addon-settings.php:265
+msgid "Please include an email body for expirations"
+msgstr ""
+
+#: lib/product-features/class.recurring-payments-info.php:93
+msgid "Recurring Payments Info"
+msgstr ""
+
+#: lib/product-features/class.recurring-payments-info.php:107
+msgid "Recurring Payment options have moved to the Advanced section."
+msgstr ""
+
+#: lib/product-features/class.recurring-payments.php:97
+msgid "Recurring Options"
+msgstr ""
+
+#: lib/product-features/class.recurring-payments.php:128
+msgid "Day(s)"
+msgstr ""
+
+#: lib/product-features/class.recurring-payments.php:129
+msgid "Week(s)"
+msgstr ""
+
+#: lib/product-features/class.recurring-payments.php:130
+msgid "Month(s)"
+msgstr ""
+
+#: lib/product-features/class.recurring-payments.php:131
+msgid "Year(s)"
+msgstr ""
+
+#: lib/product-features/class.recurring-payments.php:138
+msgid "Enable Recurring Payments?"
+msgstr ""
+
+#: lib/product-features/class.recurring-payments.php:144
+msgid "Recurs every..."
+msgstr ""
+
+#: lib/product-features/class.recurring-payments.php:156
+msgid "Enable Auto-Renewing?"
+msgstr ""
+
+#: lib/product-features/class.recurring-payments.php:171
+msgid "Enable a Trial Period?"
+msgstr ""
+
+#: lib/product-features/class.recurring-payments.php:183
+msgid "Free trial for..."
+msgstr ""
+
+#: lib/required-hooks.php:21
+msgid ""
+"Your version of the Membership add-on is not compatible with your Recurring "
+"Payments add-on. Please update to version 1.2.16 or greater. %sClick here to "
+"upgrade the Membership add-on%s."
+msgstr ""
+
+#: lib/required-hooks.php:321
+msgid "forever"
+msgstr ""
+
+#: lib/required-hooks.php:392
+msgid "Subscription Settings"
+msgstr ""
+
+#: lib/required-hooks.php:400
+msgid "Subscription ID"
+msgstr ""
+
+#: lib/required-hooks.php:400
+msgid "This is the Subscription ID from the Payment Processor."
+msgstr ""
+
+#: lib/required-hooks.php:408
+msgid "Subscription Status"
+msgstr ""
+
+#: lib/required-hooks.php:408
+msgid ""
+"This is the status of the subscription in Exchange, not the transaction. It "
+"will not change the status in the Payment gateway."
+msgstr ""
+
+#: lib/required-hooks.php:410
+msgid "Active"
+msgstr ""
+
+#: lib/required-hooks.php:411
+msgid "Suspended"
+msgstr ""
+
+#: lib/required-hooks.php:412
+msgid "Cancelled"
+msgstr ""
+
+#: lib/required-hooks.php:413
+msgid "Deactivated"
+msgstr ""
+
+#: lib/required-hooks.php:418
+msgid "Subscription Expiration"
+msgstr ""
+
+#: lib/required-hooks.php:418
+msgid ""
+"Set this to change what Exchange sees as the customer expiration date, the "
+"Payment processor will still send webhooks if the payment expires or if new "
+"payments come through."
+msgstr ""
+
+#: lib/required-hooks.php:423
+msgid ""
+"Warning:  Changes to these settings can potentially remove this customer's "
+"access to their products."
+msgstr ""
+
+#: lib/required-hooks.php:476
+msgid "Unable to verify security none."
+msgstr ""
+
+#: lib/updater/admin.php:140
+msgid ""
+"To receive automatic updates for %l, use the <a href=\"%s\">iThemes "
+"Licensing</a> page found in the Settings menu."
+msgstr ""
+
+#: lib/updater/admin.php:147 lib/updater/admin.php:153
+#: lib/updater/settings-page.php:302
+msgid "iThemes Licensing"
+msgstr ""
+
+#: lib/updater/admin.php:181
+msgid "Manage iThemes product licenses to receive automatic upgrade support"
+msgstr ""
+
+#: lib/updater/admin.php:181
+msgid "License"
+msgstr ""
+
+#: lib/updater/api.php:41 lib/updater/api.php:59
+msgid ""
+"<p>Unable to get changelog data at this time.</p><p>Error <code>%1$s</code>: "
+"%2$s</p>"
+msgstr ""
+
+#: lib/updater/api.php:45
+msgid ""
+"<p>Unable to get changelog data at this time.</p><p>Error: Unrecognized "
+"response from <code>wp_remote_get</code>.</p>"
+msgstr ""
+
+#: lib/updater/api.php:49
+msgid ""
+"<p>Unable to get changelog data at this time.</p><p>Error code <code>%1$s</"
+"code>: %2$s</p>"
+msgstr ""
+
+#: lib/updater/api.php:61
+msgid ""
+"<p>Unable to get changelog data at this time.</p><p>Error: Unrecognized "
+"response from iThemes API server.</p>"
+msgstr ""
+
+#: lib/updater/server.php:78
+msgid ""
+"The server could not be contacted. Requests are delayed for %d minute to "
+"allow the server to recover."
+msgid_plural ""
+"The server could not be contacted. Requests are delayed for %d minutes to "
+"allow the server to recover."
+msgstr[0] ""
+msgstr[1] ""
+
+#: lib/updater/server.php:155
+msgid "The server was unable to be contacted."
+msgstr ""
+
+#: lib/updater/server.php:165
+msgid ""
+"An error occurred when communicating with the iThemes update server: %s (%s)"
+msgstr ""
+
+#: lib/updater/settings-page.php:77
+msgid ""
+"Incorrect password. Please make sure that you are supplying your iThemes "
+"membership username and password details."
+msgstr ""
+
+#: lib/updater/settings-page.php:81
+msgid ""
+"Invalid username. Please make sure that you are supplying your iThemes "
+"membership username and password details."
+msgstr ""
+
+#: lib/updater/settings-page.php:84
+msgid ""
+"The licensing server reports that the %1$s (%2$s) product is unknown. Please "
+"contact support for assistance."
+msgstr ""
+
+#: lib/updater/settings-page.php:87
+msgid ""
+"%1$s could not be licensed since the membership account is out of available "
+"licenses for this product. You can unlicense the product on other sites or "
+"upgrade your membership to one with a higher number of licenses in order to "
+"increase the amount of available licenses."
+msgstr ""
+
+#: lib/updater/settings-page.php:90
+msgid ""
+"%s could not be licensed due to an internal error. Please try to license %s "
+"again at a later time. If this problem continues, please contact iThemes "
+"support."
+msgstr ""
+
+#: lib/updater/settings-page.php:96
+msgid ""
+"An unknown error relating to the %1$s product occurred. Please contact "
+"iThemes support. Error details: %2$s"
+msgstr ""
+
+#: lib/updater/settings-page.php:98
+msgid ""
+"An unknown error occurred. Please contact iThemes support. Error details: %s"
+msgstr ""
+
+#: lib/updater/settings-page.php:129
+msgid "Settings saved"
+msgstr ""
+
+#: lib/updater/settings-page.php:136
+msgid ""
+"You must supply an iThemes membership username and password in order to "
+"license products."
+msgstr ""
+
+#: lib/updater/settings-page.php:138
+msgid ""
+"You must supply an iThemes membership username in order to license products."
+msgstr ""
+
+#: lib/updater/settings-page.php:140
+msgid ""
+"You must supply an iThemes membership password in order to license products."
+msgstr ""
+
+#: lib/updater/settings-page.php:142
+msgid ""
+"You must select at least one product to license. Ensure that you select the "
+"products that you wish to license in the listing below."
+msgstr ""
+
+#: lib/updater/settings-page.php:157
+msgid ""
+"An unknown server error occurred. Please try to license your products again "
+"at another time."
+msgstr ""
+
+#: lib/updater/settings-page.php:177
+msgid "Your product subscription has expired"
+msgstr ""
+
+#: lib/updater/settings-page.php:184
+msgid "Successfully licensed %l."
+msgstr ""
+
+#: lib/updater/settings-page.php:188 lib/updater/settings-page.php:193
+msgid "Unable to license %1$s. Reason: %2$s"
+msgstr ""
+
+#: lib/updater/settings-page.php:201
+msgid ""
+"You must supply an iThemes membership username and password in order to "
+"remove licenses."
+msgstr ""
+
+#: lib/updater/settings-page.php:203
+msgid ""
+"You must supply an iThemes membership username in order to remove licenses."
+msgstr ""
+
+#: lib/updater/settings-page.php:205
+msgid ""
+"You must supply an iThemes membership password in order to remove licenses."
+msgstr ""
+
+#: lib/updater/settings-page.php:207
+msgid ""
+"You must select at least one license to remove. Ensure that you select the "
+"licenses that you wish to remove in the listing below."
+msgstr ""
+
+#: lib/updater/settings-page.php:222
+msgid ""
+"An unknown server error occurred. Please try to remove licenses from your "
+"products again at another time."
+msgstr ""
+
+#: lib/updater/settings-page.php:243
+msgid "Unknown server error."
+msgstr ""
+
+#: lib/updater/settings-page.php:248
+msgid "Successfully removed license from %l."
+msgid_plural "Successfully removed licenses from %l."
+msgstr[0] ""
+msgstr[1] ""
+
+#: lib/updater/settings-page.php:252
+msgid "Unable to remove license from %1$s. Reason: %2$s"
+msgstr ""
+
+#: lib/updater/settings-page.php:324
+msgid "Settings"
+msgstr ""
+
+#: lib/updater/settings-page.php:330
+msgid "Quick Release Updates"
+msgstr ""
+
+#: lib/updater/settings-page.php:337
+msgid "Enable quick release updates"
+msgstr ""
+
+#: lib/updater/settings-page.php:340
+msgid ""
+"Some products have quick releases that are created to solve specific issues "
+"that some users experience. In order to avoid causing users to have updates "
+"show up too frequently, automatic updates to these quick releases are "
+"disabled by default. Enabling this feature allows quick releases to be "
+"available to the automatic update system. Using this option is only "
+"recommended if support has requested that you enable it in order to receive "
+"a quick release. You should disable this option at a later time after "
+"confirming that the quick release solves the issue for you."
+msgstr ""
+
+#: lib/updater/settings-page.php:347
+msgid "Save Settings"
+msgstr ""
+
+#: lib/updater/settings-page.php:366 lib/updater/settings-page.php:397
+#: lib/updater/settings-page.php:521 lib/updater/settings-page.php:589
+msgid "Product"
+msgstr ""
+
+#: lib/updater/settings-page.php:367 lib/updater/settings-page.php:399
+msgid "Member"
+msgstr ""
+
+#: lib/updater/settings-page.php:368 lib/updater/settings-page.php:401
+msgid "Expiration"
+msgstr ""
+
+#: lib/updater/settings-page.php:369 lib/updater/settings-page.php:402
+msgid "Remaining Licenses"
+msgstr ""
+
+#: lib/updater/settings-page.php:385
+msgid "Licensed Products"
+msgstr ""
+
+#: lib/updater/settings-page.php:391 lib/updater/settings-page.php:515
+msgid "Select All"
+msgstr ""
+
+#: lib/updater/settings-page.php:400
+msgid "Product Status"
+msgstr ""
+
+#: lib/updater/settings-page.php:410
+msgid "unlimited"
+msgstr ""
+
+#: lib/updater/settings-page.php:451 lib/updater/settings-page.php:545
+msgid "Select %s"
+msgstr ""
+
+#: lib/updater/settings-page.php:471
+msgid "Remove Licenses"
+msgstr ""
+
+#: lib/updater/settings-page.php:505
+msgid "Unlicensed Products"
+msgstr ""
+
+#: lib/updater/settings-page.php:507
+msgid ""
+"The following products have not been licensed. Licensing a product gives you "
+"access to automatic updates from within WordPress."
+msgstr ""
+
+#: lib/updater/settings-page.php:508
+msgid ""
+"To license products, select the products you wish to license, enter your "
+"iThemes membership username and password, and press the License Products "
+"button."
+msgstr ""
+
+#: lib/updater/settings-page.php:509
+msgid "Need help? <a href=\"%s\">Click here for a quick video tutorial</a>."
+msgstr ""
+
+#: lib/updater/settings-page.php:561
+msgid "License Products"
+msgstr ""
+
+#: lib/updater/settings-page.php:581
+msgid "Unrecognized Products"
+msgstr ""
+
+#: lib/updater/settings-page.php:583
+msgid ""
+"The following products were not recognized by the licensing system. This can "
+"be due to a bug in the product code, a temporary server issue, or because "
+"the product is no longer supported."
+msgstr ""
+
+#: lib/updater/settings-page.php:584
+msgid ""
+"Please check this page again at a later time to see if the problem resolves "
+"itself. If the product remains, please contact <a href=\"%s\">iThemes "
+"support</a> and provide them with the details given below."
+msgstr ""
+
+#: lib/updater/settings-page.php:590
+msgid "Type"
+msgstr ""
+
+#: lib/updater/settings-page.php:591
+msgid "Package"
+msgstr ""
+
+#: lib/updater/settings-page.php:592
+msgid "Version"
+msgstr ""
+
+#: lib/updater/settings-page.php:593
+msgid "Server Response"
+msgstr ""
+
+#: lib/updater/settings-page.php:603
+msgid "Unknown Error"
+msgstr ""
+
+#: lib/updater/settings-page.php:642
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] ""
+msgstr[1] ""
+
+#: lib/updater/settings-page.php:644
+msgid "%d hour"
+msgid_plural "%d hours"
+msgstr[0] ""
+msgstr[1] ""
+
+#: lib/updater/settings-page.php:646
+msgid "%d minute"
+msgid_plural "%d minutes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: lib/updater/settings-page.php:648
+msgid "%d second"
+msgid_plural "%d seconds"
+msgstr[0] ""
+msgstr[1] ""
+
+#: lib/updater/settings-page.php:651
+msgid "%s ago"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "iThemes Exchange - Recurring Payments Add-on"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "http://ithemes.com/exchange/recurring-payments/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Adds the recurring payments abilities to iThemes Exchange"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "iThemes"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://ithemes.com"
+msgstr ""
