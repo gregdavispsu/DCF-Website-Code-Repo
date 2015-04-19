@@ -1,9 +1,9 @@
-  /*
+/*
 Theme Name: DCF Custom
 Theme URI: http://ithemes.com/
-Description: This is a custom child theme designed & built specifically for the Delaware Community Foundation.
-Author: Greg Davis - 38solutions
-Author URI: http://38solutions.com/
+Description: This is a generated child theme for the Everett theme. You should activate and modify this theme instead of Everett. Doing so allows you to modify this child theme while allowing automatic upgrades for Everett.
+Author: iThemes
+Author URI: http://ithemes.com/
 Version: 5.0.30
 License: GNU General Public License v2.0
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -57,14 +57,8 @@ table, input, textarea, select {
 	box-sizing: border-box;
 	height: auto;
 	max-width: 100%;
-	font-size: large;
 }
 
-.calculatorTextBox {
-	background-color: #d5d5d5;
-	text-align: right;
-	color: #02002a;
-}
 
 /*********************************************
 	Main Background
@@ -94,10 +88,6 @@ a:focus {
 	color: #555C6F;
 }
 
-img {
-	border: 1px solid #2a5087;
-}
-
 
 /*********************************************
 	Button Link Styles
@@ -115,7 +105,7 @@ input[type="button"],
 	display: inline-block;
 	background: #2A4F86;  /*#862A1F; */
 	color: #FFFFFF;
-	padding: .5em;
+	padding: .5em 1em;
 	border: 1px solid transparent;
 	border-radius: 2px;
 	-webkit-font-smoothing: antialiased;
@@ -288,34 +278,6 @@ h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {
 	text-decoration: none;
 	border-bottom: 1px solid rgba(50, 56, 72, .4);
 }
-/*
-.builder-module-content .builder-module-sidebar-1-right .widget-background-wrapper {
-	border-left: 1px solid;
-	margin-left: 1px;
-	border-color: #436699;
-}
-*/
-
-.builder-module-content .builder-module-sidebar {
-	background-color: #FFEED1;  /* #FFDFA9; */
-	padding-right: .5em;
-	border-left: 1px solid #436699;
-}
-/* Green sidebar */
-#builder-layout-5465520ab164d .builder-module-content .builder-module-sidebar {
-	background-color: #C0EAE2;  
-}
-
-/* Gray Sidebar */
-
-#builder-layout-5465595e6d531 .builder-module-content .builder-module-sidebar {
-	background-color: #E5E5E5;  
-}
-
-
-.builder-module-content .builder-module-sidebar .widget {
-	margin-left: .3em;
-}
 
 /*********************************************
 	Header Module
@@ -378,7 +340,7 @@ h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {
 	display: block;
 	line-height: 2;
 	width: 100%;
-	padding: .75em 0 !important;
+	padding: 1.5em 0 !important;
 }
 .builder-module-navigation .builder-module-navigation-menu-wrapper {
     display: table;
@@ -403,27 +365,25 @@ h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {
 .builder-module-navigation .current_page_item li a,
 .builder-module-navigation .current-cat li a,
 .builder-module-navigation .current-menu-item li a {
-	font-size: 1.25em;
+	font-size: 1em;
 	font-weight: normal;
-	color: #FFFFFF;  /* 8F96A2; */ 
+	color: #C5C5C5;  /* 8F96A2; */ 
 	margin: 0 1.25em 0 0;
-	padding: 0 .5em 0 .5em;
+	padding: 0;
 	text-decoration: none;
 	text-transform: uppercase;
 	-webkit-font-smoothing: antialiased;
 }
-
 .builder-module-navigation .current_page_item a,
 .builder-module-navigation .current-cat a,
 .builder-module-navigation .current-menu-item a {
-	color: #C5C5C5;
+	color: #FFFFFF;
 }
 .builder-module-navigation li a:hover,
 .builder-module-navigation .current_page_item li a:hover,
 .builder-module-navigation .current-cat li a li a:hover,
 .builder-module-navigation .current-menu-item li a:hover {
-	color: #2A4F86;
-	background: #FFFFFF;
+	color: #FFFFFF;
 }
 /* second level stuff */
 .builder-module-navigation li ul {
@@ -448,10 +408,6 @@ h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {
 	margin: 0;
 	border-radius: 0;
 }
-.builder-module-navigation .current-menu-item li a:hover {
-	background: #2A4F86;
-	color: #FFFFFF;
-}
 .builder-module-navigation li li a:hover,
 .builder-module-navigation li li a.sfhover {
 	background: #2A4F86; /* #323848; */
@@ -460,7 +416,7 @@ h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {
 .builder-module-navigation li .current_page_item a,
 .builder-module-navigation li .current-cat a,
 .builder-module-navigation li .current-menu-item a {
-	background: #2A4F86;
+	background: #323848;
 	color: #FFFFFF;
 }
 .builder-module-navigation li ul ul {
@@ -509,14 +465,6 @@ h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {
 
 .builder-module-image .builder-module-element img {
 	margin: 0;
-}
-
-.builder-module-html-1 img {    /* No border for logo in header */
-	border: none;
-}
-
-#it-exchange-product .it-exchange-product-images-gallery img {
-	border: 1px solid #2a5087 !important;
 }
 
 /*********************************************
@@ -608,7 +556,7 @@ h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {
 }
 .entry-title,
 .entry-title * {
-	margin: 0 0 .2em 0;
+	margin: 0;
 	padding: 0;
 }
 .hentry .thumbnail-wrap {
@@ -703,16 +651,15 @@ h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {
 	margin-left: 0;
 }
 .builder-module-content .right.builder-module-sidebar h4.widget-title {
-	border-bottom: 1px solid #436699;
+	border-bottom: 1px solid #EBEBEB;
 	padding-bottom: .5em;
-	padding-left: .5em;
-	padding-top: .5em;
+	padding-left: 1.5em;
 }
 .builder-module-content .right.builder-module-sidebar h4.widget-title + * {
 	margin-left: 2em;
 }
 .builder-module-content .builder-module-sidebar {
-	padding-top: .25em;
+	padding-top: 2em;
 }
 .builder-module-content .middle .builder-module-element {
 	margin-right: 0;
@@ -757,7 +704,7 @@ h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {
 }
 
 .hentry img {
-	border: 1px solid #2a5087;
+
 }
 .hentry .alignright {
 	margin: 1em 0 1em 1.5em
@@ -841,12 +788,6 @@ h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {
 	border-top: 1px solid #EBEBEB;
 }
 
-.nav-previous {
-	float: left;
-}	
-.nav-next {
-	text-align: right;
-}
 
 /*********************************************
 	Page Specific Styling
@@ -1127,7 +1068,7 @@ table {
 	margin-bottom: 1.5em;
 }
 table, td, th {
-	border: none; /* 1px solid #CFCFCF; */
+	border: 1px solid #CFCFCF;
 	border-collapse: collapse;
 }
 th {
@@ -1148,7 +1089,7 @@ tfoot a {
 	padding: .25em;
 }
 caption {
-	border: none; /* 1px solid #CFCFCF; */
+	border: 1px solid #CFCFCF;
 	border-bottom: 0;
 	font-weight: bold;
 }
@@ -1299,7 +1240,7 @@ body #gform_wrapper_1 {
 
 body #gform_wrapper_1 .gform_footer {
     width: auto;
-    position: relative;
+    position: absolute;
     top: 46px;
     left: 46em;
     padding: 0;
@@ -1408,7 +1349,7 @@ body #gform_wrapper_1 .gform_footer {
 	text-decoration: none;
 }
 .widget_tag_cloud a:hover {
-	background: #436699;;
+	background: #E8B359;
 	color: #FFFFFF;
 }
 
@@ -1497,7 +1438,6 @@ body #gform_wrapper_1 .gform_footer {
 .it-featured-image img {
 	display: block;
 	width: inherit;
-	border: 1px solid #2a5087;
 }
 
 /* Theme Specific Styling */
@@ -1533,7 +1473,7 @@ body #gform_wrapper_1 .gform_footer {
 }
 .hentry .entry-footer,
 .hentry .entry-content {
-	padding: 0 1em;
+	padding: 0 2em;
 }
 /* Single Page Specific Styling */
 
@@ -1755,7 +1695,7 @@ body #gform_wrapper_1 .gform_footer {
 }
 
 .it-exchange-super-widget .it-exchange-sw-processing {
-	border:1px solid #2a5087 !important;
+	border:1px solid #2A4F86 !important;
 }
 .builder-module-block .it-exchange-super-widget .cart-items-wrapper .cart-item:nth-child(odd) {
 	background: #92ACD2 !important;
@@ -1802,10 +1742,3 @@ body #gform_wrapper_1 .gform_footer {
 
 .builder-module-content .it_exchange_prod {
 	padding: 0em !important;
-}
-
-.dcf-exchange-login-note {
-	font-style: italic;
-	font-size: smaller;
-	background-color: #fff16e;
-}

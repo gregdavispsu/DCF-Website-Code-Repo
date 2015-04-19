@@ -1,0 +1,69 @@
+/* Brad's edits */
+
+.image-full-window-background-wrapper {
+	padding: 0;
+}
+
+
+
+/* Comments */
+
+.commentlist li.comment,
+.commentlist li.trackback, 
+.commentlist li.pingback {
+	padding-right: 0;
+	padding-left: .75em;
+}
+.commentlist .comment-body {
+	margin-right: .5em;
+}
+
+.commentlist .children li.comment,
+.commentlist .children  li.trackback, 
+.commentlist .children  li.pingback {
+	border-right: 0;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;	
+	padding-right: 0;
+}
+
+
+
+
+/* Shopping Cart */
+
+.builder-module-block #it-exchange-cart .cart-item-thumbnail {
+	display: none;
+}
+
+.builder-module .builder-module-block #it-exchange-cart .cart-item-quantity {
+	width: 25%;
+	min-width: 25%;
+}
+
+
+
+
+
+/* Customer Menu */
+
+.builder-module .builder-module-block #it-exchange-customer-menu a {
+	font-size: .8em;
+}
+
+
+
+/* Downloads */
+.builder-module .builder-module-block #it-exchange-downloads .download-link a {
+	float: none;
+	margin-bottom: .2em;
+}
+
+/* Transactions */
+.builder-module .builder-module-block #it-exchange-confirmation .download-link {
+	float: none;
+}
+.builder-module .builder-module-block #it-exchange-confirmation .download-link a {
+	float: none;
+	margin-bottom: .2em;
+}

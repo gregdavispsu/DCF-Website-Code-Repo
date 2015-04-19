@@ -18,7 +18,7 @@ if( class_exists( 'SearchWP' ) ) {
  
 	// set up custom posts per page
 	function mySearchEnginePostsPerPage() {
-		return 40; // 40 posts per page
+		return 20; // 20 posts per page
 	}
 	add_filter( 'searchwp_posts_per_page', 'mySearchEnginePostsPerPage' );
  
@@ -78,16 +78,15 @@ get_header(); ?>
 				<!-- begin pagination -->
 				<?php if( $engine->maxNumPages > 1 ) : ?>
 				  <nav class="navigation paging-navigation" role="navigation">
-					<div id="nav-below" class="navigation loop-utility loop-utility-below">
-					<!-- <div class="nav-links"> -->
+					<div class="nav-links">
 					  <?php if( $prevPage ) : ?>
 						<div class="nav-previous">
-						  <a href="<?php echo get_permalink( 514 ); ?>?swpquery=<?php echo urlencode( $query ); ?>&amp;swppg=<?php echo $prevPage; ?>"><span class="meta-nav">&larr;</span> Previous</a>
+						  <a href="<?php echo get_permalink( 514 ); ?>?swpquery=<?php echo urlencode( $query ); ?>&amp;swppg=<?php echo $prevPage; ?>">Previous</a>
 						</div>
 					  <?php endif; ?>
 					  <?php if( $nextPage ) : ?>
-						<div class="nav-next">
-						  <a href="<?php echo get_permalink( 514 ); ?>?swpquery=<?php echo urlencode( $query ); ?>&amp;swppg=<?php echo $nextPage; ?>">Next <span class="meta-nav">&rarr;</span></a>
+						<div class="nav-previous">
+						  <a href="<?php echo get_permalink( 514 ); ?>?swpquery=<?php echo urlencode( $query ); ?>&amp;swppg=<?php echo $nextPage; ?>">Next</a>
 						</div>
 					  <?php endif; ?>
 					</div><!-- .nav-links -->

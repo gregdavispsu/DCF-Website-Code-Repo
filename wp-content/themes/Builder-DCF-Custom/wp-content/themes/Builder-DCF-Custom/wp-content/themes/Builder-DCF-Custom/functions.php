@@ -53,26 +53,6 @@ if ( function_exists( 'add_image_size' ) ) {
 		add_image_size( 'index_thumbnail', 0, 0, true );
 }
 
-// 38solutions - customization to change default button text from "Buy Now" to "Donate" 
-
-function my_translated_text_strings( $translated_text, $untranslated_text, $domain ) {
-
-            $translated_text = $untranslated_text;
-
-            if ( 'LION' === $domain || 'it-l10n-ithemes-exchange' === $domain ) {
-
-                            switch ( $untranslated_text ) {
-                                            case 'Buy Now' :
-                                                            $translated_text = 'Donate Now';
-                                                            break;
-                            }
-            }
-
-            return $translated_text;
-}
-add_filter( 'gettext', 'my_translated_text_strings', 10, 3 );
-add_filter( 'ngettext', 'my_translated_text_strings', 10, 3 );
-
 // 38solutions - remove Exchange js from loading on every page (which slows down the site)
 
 function my_stripe_enqueue_scripts() {
