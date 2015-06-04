@@ -4,7 +4,7 @@
 Plugin Name: LoopBuddy
 Plugin URI: http://ithemes.com/purchase/loopbuddy/
 Description: Create & manage fully custom loops with drag & drop ease and custom queries. Unlimited loops, queries, shortcodes, and widgets!
-Version: 1.4.24
+Version: 1.4.25
 Author: iThemes
 Author URI: http://ithemes.com/
 iThemes Package: loopbuddy
@@ -1483,8 +1483,7 @@ class pluginbuddy_loopbuddy {
 <!--
 						<div class="nav-previous"><?php echo $this->pb_lb_widget_link( __( '<span class="meta-nav">&larr;</span> Older', 'it-l10n-loopbuddy' ), 'next' ); ?></div>
 						<div class="nav-next"><?php echo $this->pb_lb_widget_link( __( 'Newer posts <span class="meta-nav">&rarr;</span>', 'it-l10n-loopbuddy' ), 'previous'  ); ?></div>	
--->					
-					</div><!-- #nav-below -->
+-->						</div><!-- #nav-below -->
 			<?php
 				}
 			} else {
