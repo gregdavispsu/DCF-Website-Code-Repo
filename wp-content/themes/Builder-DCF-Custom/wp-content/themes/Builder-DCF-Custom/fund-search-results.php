@@ -1,7 +1,16 @@
 <?php
 
 /* Template Name: SearchWP Fund Search Results */
- 
+
+	// perform the search
+
+
+function cmp1($a, $b)  /* 38solutions ticket ticket #189 */
+{
+	return strcmp($a->post_title, $b->post_title);
+}	
+	
+
 global $post;
  
 // retrieve our search query if applicable
@@ -11,6 +20,9 @@ $query = isset( $_REQUEST['swpquery'] ) ? sanitize_text_field( $_REQUEST['swpque
 $swppg = isset( $_REQUEST['swppg'] ) ? absint( $_REQUEST['swppg'] ) : 1;
  
 // begin SearchWP Supplemental Search Engine results retrieval
+
+usort($posts, "cmp1"); /* 38solutions ticket ticket #189 */
+
 if( class_exists( 'SearchWP' ) ) {
 	// instantiate SearchWP
 	$engine = SearchWP::instance();
@@ -18,13 +30,13 @@ if( class_exists( 'SearchWP' ) ) {
  
 	// set up custom posts per page
 	function mySearchEnginePostsPerPage() {
-		return 40; // 40 posts per page
+		return 600; // 600 posts per page
 	}
 	add_filter( 'searchwp_posts_per_page', 'mySearchEnginePostsPerPage' );
- 
-	// perform the search
+	
 	$posts = $engine->search( $supplementalSearchEngineName, $query, $swppg );
- 
+	
+	
 	// set up pagination
 	$prevPage = $swppg > 1 ? $swppg - 1 : false;
 	$nextPage = $swppg < $engine->maxNumPages ? $swppg + 1 : false;
@@ -52,13 +64,14 @@ get_header(); ?>
 			<!-- end search form -->
  
 			<?php if( !empty( $query ) ) : ?>
- 
+				<!-- <?php	usort($posts, "cmp1"); ?> -->
 				<header class="page-header">
 					<h1 class="page-title">Search Results</h1>
 				</header>
  
 				<?php if( !empty( $posts ) ) : ?>
 					<?php /* The Loop (start) */ ?>
+					 
 					<?php foreach ( $posts as $post ): setup_postdata( $post ); ?>
 						<div class="search-results">
 							<h3>
