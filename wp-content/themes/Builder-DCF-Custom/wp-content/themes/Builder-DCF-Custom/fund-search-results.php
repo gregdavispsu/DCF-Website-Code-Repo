@@ -30,7 +30,7 @@ if( class_exists( 'SearchWP' ) ) {
  
 	// set up custom posts per page
 	function mySearchEnginePostsPerPage() {
-		return 600; // 600 posts per page
+		return 2000; // 2000 posts per page
 	}
 	add_filter( 'searchwp_posts_per_page', 'mySearchEnginePostsPerPage' );
 	
