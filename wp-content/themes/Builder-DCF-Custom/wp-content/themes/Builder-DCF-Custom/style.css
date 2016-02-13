@@ -342,6 +342,20 @@ h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {
 	margin-left: .3em;
 }
 
+/* President's Blog */
+#builder-layout-56b66ec29dfb4 .builder-module-content .builder-module-sidebar {
+	background-color: #8b8681;
+	padding-right: 0;
+}
+#builder-layout-56b66ec29dfb4 .builder-module-content .builder-module-sidebar .widget-background-wrapper {
+	margin: 1em 1.5em;
+}
+
+#builder-layout-56b66ec29dfb4 .builder-module-content .builder-module-sidebar h4.widget-title {
+	color: #FFFFFF;
+}
+
+
 /*********************************************
 	Header Module
 *********************************************/
