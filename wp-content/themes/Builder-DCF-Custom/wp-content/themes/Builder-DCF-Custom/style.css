@@ -325,6 +325,10 @@ h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {
 	color: yellow;
 }
 
+.builder-module-content .builder-module-sidebar .widget {
+	margin-left: .3em;
+}
+
 
 /* Grey sidebar */
 #builder-layout-5465520ab164d .builder-module-content .builder-module-sidebar {
@@ -338,10 +342,6 @@ h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {
 }
 
 
-.builder-module-content .builder-module-sidebar .widget {
-	margin-left: .3em;
-}
-
 /* President's Blog */
 #builder-layout-56b66ec29dfb4 .builder-module-content .builder-module-sidebar {
 	background-color: #8b8681;
@@ -354,7 +354,6 @@ h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {
 #builder-layout-56b66ec29dfb4 .builder-module-content .builder-module-sidebar h4.widget-title {
 	color: #FFFFFF;
 }
-
 
 /*********************************************
 	Header Module
@@ -442,7 +441,7 @@ h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {
 .builder-module-navigation .current_page_item li a,
 .builder-module-navigation .current-cat li a,
 .builder-module-navigation .current-menu-item li a {
-	font-size: 1.25em;
+	font-size: 1.3em;
 	font-weight: normal;
 	color: #FFFFFF;  /* 8F96A2; */ 
 	margin: 0 1.25em 0 0;
@@ -491,13 +490,16 @@ h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {
 .builder-module-navigation .current_page_item li a,
 .builder-module-navigation .current-cat li a,
 .builder-module-navigation .current-menu-item li a {
-	color: #4D6480;   	
+	/* color: #4D6480; */
+	color: #BD6439; 	
 	float: none;
 	padding: .75em;
 	line-height: 1;
 	margin: 0;
 	border-radius: 0;
 	background: #FFFFFF;
+	text-transform: capitalize;
+	font-size: 1.05em;
 }
 .builder-module-navigation .current-menu-item li a:hover {
 	background: #4D6480;
@@ -1617,6 +1619,10 @@ body #gform_wrapper_1 .gform_footer {
 }
 .builder-module-html-1 {
 	padding-top: .5em !important;	
+}
+
+.builder-module-top a img {
+	max-width: 40%;
 }
 
 /* Social Media */
